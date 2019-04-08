@@ -30,8 +30,6 @@
     NSLog(@"ON INIT");
     
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:@"3231"];
-    NSLog(@"%@", placement);
-    
     DIOAdRequest *request = [placement newAdRequest];
     
     [request requestAdWithAdReceivedHandler:^(DIOAdProvider *adProvider) {
