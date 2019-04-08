@@ -1,0 +1,11 @@
+.DS_Store
+
+build/
+DerivedData/
+xcuserdata/
+*.xcworkspace
+
+*.dSYM/
+*.app/
+*.xcarchive/
+*.ipa
