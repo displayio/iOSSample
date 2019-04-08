@@ -1,2 +1,5 @@
 # iOSSample
-Sample iOS app demonstrating Display.io monetization SDK
+
+Import this project into XCode.
+
+Check [ViewController.m](iOSSample/ViewController.m) to see how it works with video interstitials.
