@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CMPDataStorageUserDefaults.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOConsentManager : NSObject
 
-@property (nonatomic, strong) id iabConsentProperties;
+- (NSString*)consentString;
+- (SubjectToGDPR)subjectToGDPR;
+- (BOOL)cmpPresent;
+- (NSString*)parsedVendorConsents;
+- (NSString*)parsedPurposeConsents;
+- (id)iabConsentProperties;
 
 @end
 

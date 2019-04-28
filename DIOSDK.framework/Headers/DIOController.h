@@ -63,6 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setCourseWithURLString:(NSString*)urlString;
 - (void)setHyperGeoWithIp:(NSString*)ip;
 - (void)handleUncaughtException:(NSException*)exception;
+- (BOOL)shouldApplyGDPRConstraints;
 
 @end
 

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (id)deviceHardwareData;
 + (id)deviceAdId;
++ (BOOL)isAdvertisingTrackingEnabled;
 
 @end
 
