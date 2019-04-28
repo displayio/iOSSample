@@ -32,6 +32,10 @@
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:@"3231"];
     DIOAdRequest *request = [placement newAdRequest];
     
+//    [request setYearOfBirth:1975];
+//    [request setGender:AD_REQUEST_MALE];
+//    [request setKeywords:@[@"house of cards", @"lamborghini"]];
+    
     [request requestAdWithAdReceivedHandler:^(DIOAdProvider *adProvider) {
         NSLog(@"AD RECEIVED");
         
