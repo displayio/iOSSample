@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PlacementViewController.h"
 
 #import <DIOSDK/DIOController.h>
 
@@ -19,58 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[DIOController sharedInstance] initializeWithAppId:@"6494" completionHandler:^{
-        [self onInit];
-    } errorHandler:^(NSString *error) {
-        [self onInitWithError:error];
-    }];
-}
+    NSString *appId = @"6494";
+    
+    id data = @[@{@"id": @"3231", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]},
+                @{@"id": @"4655", @"type": [NSNumber numberWithInt:PlacementTypeBanner]}];
 
-- (void)onInit {
-    NSLog(@"ON INIT");
-    
-    DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:@"3231"];
-    DIOAdRequest *request = [placement newAdRequest];
-    
-//    [request setYearOfBirth:1975];
-//    [request setGender:AD_REQUEST_MALE];
-//    [request setKeywords:@[@"house of cards", @"lamborghini"]];
-    
-    [request requestAdWithAdReceivedHandler:^(DIOAdProvider *adProvider) {
-        NSLog(@"AD RECEIVED");
+    [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
+        NSLog(@"ON INIT");
         
-        [adProvider loadAdWithLoadedHandler:^(DIOAd *ad) {
-            NSLog(@"AD LOADED");
-            
-            [ad showAdFromViewController:self eventHandler:^(DIOAdEvent event){
-                switch (event) {
-                    case DIOAdEventOnShown:
-                        NSLog(@"AdEventOnShown");
-                        break;
-                    case DIOAdEventOnFailedToShow:
-                        NSLog(@"AdEventOnFailedToShow");
-                        break;
-                    case DIOAdEventOnClicked:
-                        NSLog(@"AdEventOnClicked");
-                        break;
-                    case DIOAdEventOnClosed:
-                        NSLog(@"AdEventOnClosed");
-                        break;
-                    case DIOAdEventOnAdCompleted:
-                        NSLog(@"AdEventOnAdCompleted");
-                        break;
-                }
-            }];
-        } failedHandler:^(NSString *message){
-            NSLog(@"AD FAILED TO LOAD: %@", message);
-        }];
-    } noAdHandler:^{
-        NSLog(@"NO AD");
+        PlacementViewController *placementViewController = [PlacementViewController new];
+        placementViewController.data = data;
+        
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:placementViewController];
+        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:navigationController animated:NO completion:nil];
+    } errorHandler:^(NSString *error) {
+        NSLog(@"ON INIT WITH ERROR: %@", error);
     }];
-}
-
-- (void)onInitWithError:(NSString*)message {
-    NSLog(@"ON INIT WITH ERROR: %@", message);
 }
 
 @end

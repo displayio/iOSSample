@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, PlacementType) {
+    PlacementTypeInterstitial,
+    PlacementTypeBanner
+};
+
 @interface ViewController : UIViewController
 
-
 @end
-
