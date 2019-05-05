@@ -9,13 +9,20 @@
 #import <Foundation/Foundation.h>
 
 #import "DIOAdUnit.h"
-#import "DIOVideoPlayer.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOVideoAd : DIOAdUnit
 
-@property (nonatomic, strong) DIOVideoPlayer *player;
+@property (nonatomic, strong) id videoData;
+@property (nonatomic, strong) id videoParams;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSString *clickURL;
+@property (nonatomic, strong) OMIDDisplayioVideoEvents *omVideoEvents;
+@property (nonatomic) double ratio;
+
+- (void)parseMediaFile;
+- (void)triggerOmLoadedEvent;
 
 @end
 

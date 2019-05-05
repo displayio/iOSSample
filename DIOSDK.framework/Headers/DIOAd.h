@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL loaded;
 @property (nonatomic) BOOL impressed;
 @property (nonatomic) BOOL isInterstitial;
+@property (nonatomic) BOOL isBanner;
 
 /**
  Shows an ad.

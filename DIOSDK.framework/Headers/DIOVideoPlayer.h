@@ -2,17 +2,27 @@
 //  DIOVideoPlayer.h
 //  DIOSDK
 //
-//  Created by Ariel Malka on 2/20/19.
+//  Created by Ariel Malka on 4/25/19.
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 #import "OMIDImports.h"
 
-#import "DIOPlayerView.h"
-
 NS_ASSUME_NONNULL_BEGIN
+
+@interface TimeEvent : NSObject
+
+@property (nonatomic) double time; // Normalized (between 0 and 1)
+@property (nonatomic) int quartile;
+@property (nonatomic, strong) NSString *beacon;
+
+- (instancetype)initWithTime:(double)time quartile:(int)value;
+- (instancetype)initWithTime:(double)time beacon:(NSString*)value;
+
+@end
 
 typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
     DIOVideoPlayerEventStart,
@@ -45,13 +55,28 @@ typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
 
 @property (nonatomic, strong) id<DIOVideoPlayerDelegate> delegate;
 @property (nonatomic, strong) OMIDDisplayioVideoEvents *omVideoEvents;
+@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong) NSArray *progressEvents;
+@property (nonatomic, strong) id eventBeacons;
 
-- (instancetype)initWithHostView:(UIView*)hostView params:(id)params;
-- (void)startWithURL:(NSURL*)url;
-- (void)loadEvents:(id)events;
+/*
+ * https://developer.apple.com/documentation/avfoundation/media_assets_playback_and_editing/observing_the_playback_time?language=objc
+ */
+@property (nonatomic, strong) id periodicTimeObserver;
+@property (nonatomic, strong) id boundaryTimeObserver;
+
+@property (nonatomic) int periodicTimeObserverTicks;
+@property (nonatomic) int boundaryTimeObserverTicks;
+
+@property (nonatomic) double durationInSeconds;
+@property (nonatomic) BOOL muted;
+
 - (float)volumeLevel;
 - (double)duration;
-- (UIView*)view;
+
+- (void)loadEvents:(id)events;
+- (void)setupTimeEventsWithDuration:(CMTime)duration;
+- (void)castEvent:(DIOVideoPlayerEvent)event;
 - (void)impression;
 
 @end
