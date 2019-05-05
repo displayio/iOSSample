@@ -8,6 +8,7 @@
 
 #import "PlacementViewController.h"
 #import "ViewController.h"
+#import "AdViewController.h"
 
 @interface PlacementViewController ()
 
@@ -39,6 +40,14 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    AdViewController *adViewController = [[AdViewController alloc] init];
+    adViewController.placementId = self.data[indexPath.row][@"id"];
+    [self.navigationController pushViewController:adViewController animated:YES];
 }
 
 @end

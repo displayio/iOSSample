@@ -26,7 +26,7 @@
                 @{@"id": @"4655", @"type": [NSNumber numberWithInt:PlacementTypeBanner]}];
 
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
-        NSLog(@"ON INIT");
+        NSLog(@"CONTROLLER INITIALIZED");
         
         PlacementViewController *placementViewController = [PlacementViewController new];
         placementViewController.data = data;

@@ -16,6 +16,7 @@
 		A866C073225B8A8500A42940 /* DIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A866C071225B8A6C00A42940 /* DIOSDK.framework */; };
 		A866C074225B8A8500A42940 /* DIOSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A866C071225B8A6C00A42940 /* DIOSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAC227F245E00F7F906 /* PlacementViewController.m */; };
+		A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAF227F388600F7F906 /* AdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		A866C071225B8A6C00A42940 /* DIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIOSDK.framework; sourceTree = "<group>"; };
 		A87C4BAB227F245E00F7F906 /* PlacementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementViewController.h; sourceTree = "<group>"; };
 		A87C4BAC227F245E00F7F906 /* PlacementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacementViewController.m; sourceTree = "<group>"; };
+		A87C4BAE227F388600F7F906 /* AdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		A87C4BAF227F388600F7F906 /* AdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				A866C05E225B881E00A42940 /* ViewController.m */,
 				A87C4BAB227F245E00F7F906 /* PlacementViewController.h */,
 				A87C4BAC227F245E00F7F906 /* PlacementViewController.m */,
+				A87C4BAE227F388600F7F906 /* AdViewController.h */,
+				A87C4BAF227F388600F7F906 /* AdViewController.m */,
 				A866C060225B881E00A42940 /* Main.storyboard */,
 				A866C063225B881F00A42940 /* Assets.xcassets */,
 				A866C065225B881F00A42940 /* LaunchScreen.storyboard */,
@@ -170,6 +175,7 @@
 				A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */,
 				A866C05F225B881E00A42940 /* ViewController.m in Sources */,
 				A866C06A225B881F00A42940 /* main.m in Sources */,
+				A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */,
 				A866C05C225B881E00A42940 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
