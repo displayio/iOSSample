@@ -11,10 +11,6 @@
 
 #import <DIOSDK/DIOController.h>
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
 - (void)viewDidLoad {

@@ -10,10 +10,6 @@
 #import "ViewController.h"
 #import "AdViewController.h"
 
-@interface PlacementViewController ()
-
-@end
-
 @implementation PlacementViewController
 
 - (void)viewDidLoad {
