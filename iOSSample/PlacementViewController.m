@@ -45,7 +45,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    AdViewController *adViewController = [[AdViewController alloc] init];
+    AdViewController *adViewController = (AdViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AdViewController"];
     adViewController.placementId = self.data[indexPath.row][@"id"];
     [self.navigationController pushViewController:adViewController animated:YES];
 }

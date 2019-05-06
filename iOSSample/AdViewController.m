@@ -10,13 +10,23 @@
 
 @interface AdViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *loadButton;
+@property (weak, nonatomic) IBOutlet UIButton *showButton;
+
 @end
 
 @implementation AdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (IBAction)loadPressed:(id)sender {
+    NSLog(@"LOAD");
+}
+
+- (IBAction)showPressed:(id)sender {
+    NSLog(@"SHOW");
 }
 
 @end
