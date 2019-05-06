@@ -7,6 +7,7 @@
 //
 
 #import "AdViewController.h"
+#import "TableViewController.h"
 
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOBannerVast.h>
@@ -56,14 +57,14 @@
 
 - (IBAction)showPressed:(id)sender {
     if ([self.ad isKindOfClass:[DIOBannerVast class]]) {
-//        TableViewController *tableViewController = [TableViewController new];
-//        tableViewController.ad = self.ad;
-//
-//        self.ad = nil;
-//
-//        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
-//        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//        [self presentViewController:navigationController animated:YES completion:nil];
+        TableViewController *tableViewController = [TableViewController new];
+        tableViewController.ad = self.ad;
+
+        self.ad = nil;
+
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:navigationController animated:YES completion:nil];
     } else {
         [self.ad showAdFromViewController:self eventHandler:^(DIOAdEvent event){
             switch (event) {
