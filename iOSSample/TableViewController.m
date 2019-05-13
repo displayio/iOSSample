@@ -35,6 +35,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)close:(id)sender {
