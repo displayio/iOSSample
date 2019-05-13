@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (UITableViewCell*)dequeueReusableCellForIndexPath:(NSIndexPath*)indexPath fullWidth:(BOOL)fullWidth;
 - (void)tableViewDidScroll;
 
+- (void)update;
+
 @end
 
 NS_ASSUME_NONNULL_END

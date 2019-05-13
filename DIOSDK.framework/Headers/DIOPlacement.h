@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOPlacement : NSObject
 
 @property (nonatomic, strong) NSString *ID;
+@property (nonatomic, strong) id data;
 
 /**
  @return A new ad request for this placement.

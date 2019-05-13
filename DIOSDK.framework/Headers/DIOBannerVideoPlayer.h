@@ -8,6 +8,7 @@
 
 #import "DIOVideoPlayer.h"
 #import "DIOPlayerView.h"
+#import "DIOTableAdapter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic) double ratio;
+@property (nonatomic) BOOL finished;
+@property (nonatomic, strong) DIOTableAdapter *adapter;
 
 - (instancetype)initWithURL:(NSURL*)url params:(id)params;
 
