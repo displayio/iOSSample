@@ -10,13 +10,12 @@
 
 #import "DIOCell.h"
 #import "DIOBannerVideoPlayer.h"
-#import "DIOTableAdapter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOVideoCell : DIOCell
 
-- (void)attachVideoPlayer:(DIOBannerVideoPlayer*)player adapter:(DIOTableAdapter*)adapter fullWidth:(BOOL)fullWidth;
+- (void)attachVideoPlayer:(DIOBannerVideoPlayer*)player fullWidth:(BOOL)fullWidth;
 
 @end
 
