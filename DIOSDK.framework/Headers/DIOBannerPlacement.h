@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOBannerPlacement : DIOPlacement
 
+@property (nonatomic) BOOL fullWidth;
+@property (nonatomic) BOOL framed;
+
+- (instancetype)initWithId:(NSString*)ID;
+
 @end
 
 NS_ASSUME_NONNULL_END

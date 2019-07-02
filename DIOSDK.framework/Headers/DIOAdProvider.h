@@ -26,6 +26,8 @@ Loads an ad.
 
 - (instancetype)initWithAds:(NSMutableArray<DIOAdUnit*>*)ads;
 
+- (NSUInteger)adCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

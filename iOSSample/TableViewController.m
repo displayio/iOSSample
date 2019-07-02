@@ -79,7 +79,7 @@
             
         case 2:
         {
-            return [self.adapter dequeueReusableCellForIndexPath:indexPath fullWidth:NO];
+            return [self.adapter dequeueReusableCellForIndexPath:indexPath];
         }
     }
     
@@ -104,6 +104,11 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.adapter tableViewDidScroll];
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.adapter viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
 @end

@@ -16,10 +16,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *appId = @"6494";
+    NSString *appId = @"7522";
     
-    id data = @[@{@"id": @"3231", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]},
-                @{@"id": @"4655", @"type": [NSNumber numberWithInt:PlacementTypeBanner]}];
+    id data = @[@{@"id": @"4788", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Video
+                @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeBanner]}, // Video
+                @{@"id": @"5427", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Html
+                @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeBanner]}]; // Html
 
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");

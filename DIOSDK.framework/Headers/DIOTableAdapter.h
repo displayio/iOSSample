@@ -17,8 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithTableView:(UITableView*)tableView;
 - (void)setAd:(DIOAd*)ad forIndexPath:(NSIndexPath*)indexPath;
 - (CGFloat)heightForRowAtIndexPath:(NSIndexPath*)indexPath;
-- (UITableViewCell*)dequeueReusableCellForIndexPath:(NSIndexPath*)indexPath fullWidth:(BOOL)fullWidth;
+- (UITableViewCell*)dequeueReusableCellForIndexPath:(NSIndexPath*)indexPath;
 - (void)tableViewDidScroll;
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id)coordinator;
+
+- (void)update;
 
 @end
 

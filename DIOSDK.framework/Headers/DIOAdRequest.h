@@ -40,6 +40,8 @@ extern NSString* const AD_REQUEST_MALE;
  */
 - (void)setKeywords:(NSArray<NSString*>*)keywords;
 
+- (void)setDetailsRequired:(BOOL)detailsRequired;
+
 /**
  Requests an ad from the server.
  

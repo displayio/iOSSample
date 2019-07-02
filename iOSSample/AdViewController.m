@@ -11,6 +11,8 @@
 
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOBannerVast.h>
+#import <DIOSDK/DIOBannerHtml.h>
+#import <DIOSDK/DIOBannerPlacement.h>
 
 @interface AdViewController ()
 
@@ -33,9 +35,11 @@
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
     DIOAdRequest *adRequest = [placement newAdRequest];
     
-//    [adRequest setKeywords:@[@"house of cards", @"lamborghini"]];
-//    [adRequest setYearOfBirth:1975];
-//    [adRequest setGender:AD_REQUEST_MALE];
+    ((DIOBannerPlacement*)placement).fullWidth = YES;
+    
+    [adRequest setKeywords:@[@"house of cards", @"lamborghini"]];
+    [adRequest setYearOfBirth:1975];
+    [adRequest setGender:AD_REQUEST_MALE];
     
     [adRequest requestAdWithAdReceivedHandler:^(DIOAdProvider *adProvider) {
         NSLog(@"AD RECEIVED");
@@ -56,7 +60,7 @@
 }
 
 - (IBAction)showPressed:(id)sender {
-    if ([self.ad isKindOfClass:[DIOBannerVast class]]) {
+    if ([self.ad isKindOfClass:[DIOBannerVast class]] || [self.ad isKindOfClass:[DIOBannerHtml class]]) {
         TableViewController *tableViewController = [TableViewController new];
         tableViewController.ad = self.ad;
 

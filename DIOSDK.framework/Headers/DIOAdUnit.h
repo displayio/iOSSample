@@ -18,11 +18,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) OMIDDisplayioAdSession *omAdSession;
 
+@property (nonatomic, copy) void (^loadedHandler)(void);
+@property (nonatomic, copy) void (^noFillHandler)(void);
+
 - (instancetype)initWithRequestId:(NSString*)requestId data:(id)data offering:(id)offering;
 + (DIOAdUnit*)factoryWithRequestId:(NSString*)requestId data:(id)data offering:(id)offering;
 - (void)renderWithViewController:(UIViewController*)viewController eventHandler:(void (^)(DIOAdEvent event))eventHandler;
+- (void)didTransitionToSize:(CGSize)size;
 - (void)markImpressed;
 - (void)callImpressionBeacon;
+- (void)close;
+- (void)broadcastLoaded;
+- (void)broadcastNoFill;
 
 @end
 

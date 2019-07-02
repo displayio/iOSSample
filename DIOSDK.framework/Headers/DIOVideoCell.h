@@ -6,16 +6,14 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <AVFoundation/AVFoundation.h>
-
 #import "DIOCell.h"
-#import "DIOBannerVideoPlayer.h"
+#import "DIOBannerVast.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOVideoCell : DIOCell
 
-- (void)attachVideoPlayer:(DIOBannerVideoPlayer*)player fullWidth:(BOOL)fullWidth;
+- (void)attachAd:(DIOBannerVast*)ad;
 
 @end
 

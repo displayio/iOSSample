@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic) double ratio;
+@property (nonatomic) BOOL framed;
+@property (nonatomic) BOOL detailed;
 
 - (instancetype)initWithURL:(NSURL*)url params:(id)params;
 

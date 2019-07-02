@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)cellDidActivate;
 - (void)cellDidDeactivate;
+- (void)cellExposureDidChange:(int)exposure;
+- (void)tableViewDidTransitionToSize:(CGSize)size;
 
 @end
 

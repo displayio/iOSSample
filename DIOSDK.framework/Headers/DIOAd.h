@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL impressed;
 @property (nonatomic) BOOL isInterstitial;
 @property (nonatomic) BOOL isBanner;
+@property (nonatomic, strong) NSString *advertiserName;
+@property (nonatomic, strong) NSString *advertiserClickURL;
 
 /**
  Shows an ad.
