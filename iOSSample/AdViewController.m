@@ -35,7 +35,9 @@
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
     DIOAdRequest *adRequest = [placement newAdRequest];
     
-    ((DIOBannerPlacement*)placement).fullWidth = YES;
+    if ([placement isKindOfClass:[DIOBannerPlacement class]]) {
+        ((DIOBannerPlacement*)placement).fullWidth = YES;
+    }
     
     [adRequest setKeywords:@[@"house of cards", @"lamborghini"]];
     [adRequest setYearOfBirth:1975];
