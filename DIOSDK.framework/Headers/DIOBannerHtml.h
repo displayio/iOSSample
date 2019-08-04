@@ -9,20 +9,13 @@
 #import <Foundation/Foundation.h>
 
 #import "DIOHtmlAd.h"
-#import "DIOTableAdapter.h"
+#import "DIOInFeedView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOBannerHtml : DIOHtmlAd
+@interface DIOBannerHtml : DIOHtmlAd <DIOInFeedViewDelegate>
 
 @property (nonatomic) BOOL closed;
-@property (nonatomic, weak) DIOTableAdapter *adapter;
-@property (nonatomic, weak) NSLayoutConstraint *mraidViewHeightConstraint;
-
-- (void)activate;
-- (void)deactivate;
-- (void)cellExposureDidChange:(int)exposure;
-- (void)tableViewDidTransitionToSize:(CGSize)size;
 
 @end
 

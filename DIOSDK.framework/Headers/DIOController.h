@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOController : NSObject <CLLocationManagerDelegate>
 
+@property (nonatomic) BOOL initialized;
 @property (nonatomic, strong) NSMutableDictionary *placements;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 

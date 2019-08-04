@@ -10,11 +10,8 @@
 #import "CustomCell1.h"
 #import "CustomCell2.h"
 
-#import <DIOSDK/DIOTableAdapter.h>
-
 @interface TableViewController ()
 
-@property (nonatomic, strong) DIOTableAdapter *adapter;
 @property (nonatomic, strong) NSArray<NSArray<NSNumber*>*> *ids;
 
 @end
@@ -26,9 +23,7 @@
     
     [self.tableView registerClass:[CustomCell1 class] forCellReuseIdentifier:@"IDENTIFIER1"];
     [self.tableView registerClass:[CustomCell2 class] forCellReuseIdentifier:@"IDENTIFIER2"];
-    
-    self.adapter = [[DIOTableAdapter alloc] initWithTableView:self.tableView];
-    [self.adapter setAd:self.ad forIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"IDENTIFIER3"];
     
     self.ids = @[@[@1, @0, @1], @[@2, @0, @1], @[@0, @1, @0]];
     
@@ -39,7 +34,6 @@
 }
 
 - (void)close:(id)sender {
-    [self.ad finish];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -79,7 +73,20 @@
             
         case 2:
         {
-            return [self.adapter dequeueReusableCellForIndexPath:indexPath];
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER3" forIndexPath:indexPath];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            
+            UIView *view = [self.ad view];
+            
+            if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
+            [cell.contentView addSubview:view];
+            
+            [cell.contentView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
+            [cell.contentView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
+            [cell.contentView.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
+            [cell.contentView.bottomAnchor constraintEqualToAnchor:view.bottomAnchor].active = YES;
+            
+            return cell;
         }
     }
     
@@ -96,19 +103,10 @@
             return 100;
             
         case 2:
-            return [self.adapter heightForRowAtIndexPath:indexPath];
+            return [[self.ad view] height];
     }
     
     return 0;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self.adapter tableViewDidScroll];
-}
-
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id)coordinator {
-    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    [self.adapter viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
 @end

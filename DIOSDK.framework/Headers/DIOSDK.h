@@ -41,14 +41,11 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOMessageLogger.h>
 #import <DIOSDK/DIOBanner.h>
 #import <DIOSDK/DIOBannerVast.h>
-#import <DIOSDK/DIOCell.h>
-#import <DIOSDK/DIOVideoCell.h>
-#import <DIOSDK/DIOTableAdapter.h>
 #import <DIOSDK/DIOBannerVideoPlayer.h>
 #import <DIOSDK/DIOCustomWebView.h>
 #import <DIOSDK/DIOContainer.h>
 #import <DIOSDK/DIOMRAIDHelper.h>
 #import <DIOSDK/DIOBannerHtml.h>
-#import <DIOSDK/DIOHtmlCell.h>
 #import <DIOSDK/DIOMRAIDView.h>
 #import <DIOSDK/DIOMRAIDVideoPlayer.h>
+#import <DIOSDK/DIOInFeedView.h>

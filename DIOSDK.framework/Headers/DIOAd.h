@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DIOInFeedView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic, strong) NSString *advertiserClickURL;
 
 /**
- Shows an ad.
+ Shows an interstitial ad.
  
  @param controller The current view controller.
  @param eventHandler A block object to be executed when an event occur. This block takes one argument: the event type.
@@ -42,8 +42,12 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
  */
 - (void)showAdFromViewController:(UIViewController*)controller eventHandler:(void (^)(DIOAdEvent event))eventHandler;
 
-- (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
+/**
+ */
 - (void)finish;
+
+- (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
+- (DIOInFeedView*)view;
 
 @end
 

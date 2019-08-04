@@ -8,13 +8,13 @@
 
 #import "DIOVideoPlayer.h"
 #import "DIOPlayerView.h"
+#import "DIOInFeedView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOBannerVideoPlayer : DIOVideoPlayer
 
-@property (nonatomic, strong) UIView *view;
-@property (nonatomic) double ratio;
+@property (nonatomic, strong) DIOInFeedView *inFeedView;
 @property (nonatomic) BOOL framed;
 @property (nonatomic) BOOL detailed;
 
