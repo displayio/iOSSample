@@ -40,6 +40,13 @@ extern NSString* const AD_REQUEST_MALE;
  */
 - (void)setKeywords:(NSArray<NSString*>*)keywords;
 
+/**
+ Sets the content keywords for this ad request. Not sensitive to GDPR.
+ 
+ @param contentKeywords A list of contentKeywords.
+ */
+- (void)setContentKeywords:(NSArray<NSString*>*)contentKeywords;
+
 - (void)setDetailsRequired:(BOOL)detailsRequired;
 
 /**

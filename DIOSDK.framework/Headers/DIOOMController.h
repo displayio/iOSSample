@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (DIOOMController*)sharedInstance;
 
 - (void)initialize;
-- (OMIDDisplayioAdSession*)createHtmlAdSessionAndStartWithWebView:(UIView*)webView closeButtonView:(UIView*)closeButtonView;
+- (OMIDDisplayioAdSession*)createHtmlAdSessionWithWebView:(UIView*)webView closeButtonView:(UIView*)closeButtonView;
 - (NSString*)injectScriptContentIntoHtmlWithMarkUp:(NSString*)markup;
 - (void)callVideoEvent:(OMIDDisplayioVideoEvents*)videoEvents event:(DIOVideoPlayerEvent)event player:(DIOVideoPlayer*)player;
 - (OMIDDisplayioAdSession*)createVideoAdSessionWithVideoView:(UIView*)videoView verifications:(NSArray*)verifications;

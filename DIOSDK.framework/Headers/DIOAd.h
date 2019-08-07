@@ -42,10 +42,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
  */
 - (void)showAdFromViewController:(UIViewController*)controller eventHandler:(void (^)(DIOAdEvent event))eventHandler;
 
-/**
- */
 - (void)finish;
-
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
 - (DIOInFeedView*)view;
 

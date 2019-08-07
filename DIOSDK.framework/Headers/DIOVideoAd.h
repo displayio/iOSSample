@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)parseMediaFile;
 - (void)triggerOmLoadedEvent;
+- (void)callAdLoadBeacon;
 
 @end
 
