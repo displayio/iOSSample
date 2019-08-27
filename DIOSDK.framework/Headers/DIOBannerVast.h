@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOBannerVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOInFeedViewDelegate>
+@interface DIOBannerVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOBannerViewDelegate>
 
 @property (nonatomic, strong) DIOBannerVideoPlayer *player;
 

@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 #import "DIOHtmlAd.h"
-#import "DIOInFeedView.h"
+#import "DIOBannerView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOBannerHtml : DIOHtmlAd <DIOInFeedViewDelegate>
+@interface DIOBannerHtml : DIOHtmlAd <DIOBannerViewDelegate>
 
 @property (nonatomic) BOOL closed;
 

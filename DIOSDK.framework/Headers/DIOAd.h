@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOInFeedView.h"
+#import "DIOBannerView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 
 - (void)finish;
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
-- (DIOInFeedView*)view;
+- (DIOBannerView*)view;
 
 @end
 

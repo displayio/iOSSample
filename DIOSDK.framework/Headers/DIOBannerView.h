@@ -1,5 +1,5 @@
 //
-//  DIOInFeedView.h
+//  DIOBannerView.h
 //  DIOSDK
 //
 //  Created by Ariel Malka on 21/07/2019.
@@ -8,22 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol DIOInFeedViewDelegate <NSObject>
+@protocol DIOBannerViewDelegate <NSObject>
 
 @optional
 
 - (void)didMoveToWindow;
 - (void)didMoveFromWindow;
 - (void)exposureDidChange:(int)exposure;
-- (void)feedDidTransitionToSize:(CGSize)size;
+- (void)deviceOrientationDidChange;
 - (void)didActivate;
 - (void)didDeactivate;
 
 @end
 
-@interface DIOInFeedView : UIView
+@interface DIOBannerView : UIView
 
-@property (nonatomic, weak) id<DIOInFeedViewDelegate> delegate;
+@property (nonatomic, weak) id<DIOBannerViewDelegate> delegate;
 @property (nonatomic) double ratio;
 @property (nonatomic) double heightComplement;
 
