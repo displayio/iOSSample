@@ -27,7 +27,11 @@
 @property (nonatomic) double ratio;
 @property (nonatomic) double heightComplement;
 
-- (void)setContainedView:(UIView*)containedView ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth;
+/**
+ @return The height of the view when it fills the top view-controller's width
+ */
 - (double)height;
+
+- (void)setContainedView:(UIView*)containedView ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth;
 
 @end
