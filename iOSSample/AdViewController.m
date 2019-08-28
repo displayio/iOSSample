@@ -7,7 +7,9 @@
 //
 
 #import "AdViewController.h"
-#import "TableViewController.h"
+#import "InFeedViewController.h"
+#import "StaticViewController.h"
+#import "AdViewController.h"
 
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOBannerVast.h>
@@ -62,13 +64,22 @@
 }
 
 - (IBAction)showPressed:(id)sender {
-    if ([self.ad isKindOfClass:[DIOBannerVast class]] || [self.ad isKindOfClass:[DIOBannerHtml class]]) {
-        TableViewController *tableViewController = [TableViewController new];
-        tableViewController.ad = self.ad;
+    if (self.placementType == PlacementTypeBannerInFeed) {
+        InFeedViewController *viewController = [InFeedViewController new];
+        viewController.ad = self.ad;
 
         self.ad = nil;
 
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:navigationController animated:YES completion:nil];
+    } else if (self.placementType == PlacementTypeBannerStatic) {
+        StaticViewController *viewController = [StaticViewController new];
+        viewController.ad = self.ad;
+        
+        self.ad = nil;
+        
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         [self presentViewController:navigationController animated:YES completion:nil];
     } else {

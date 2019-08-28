@@ -1,22 +1,22 @@
 //
-//  TableViewController.m
+//  InFeedViewController.m
 //  iOSSample
 //
 //  Created by Ariel Malka on 4/23/19.
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "InFeedViewController.h"
 #import "CustomCell1.h"
 #import "CustomCell2.h"
 
-@interface TableViewController ()
+@interface InFeedViewController ()
 
 @property (nonatomic, strong) NSArray<NSArray<NSNumber*>*> *ids;
 
 @end
 
-@implementation TableViewController
+@implementation InFeedViewController
 
 - (void)viewDidLoad {
     [ super viewDidLoad];

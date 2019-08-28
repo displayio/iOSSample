@@ -7,7 +7,7 @@
 //
 
 #import "PlacementViewController.h"
-#import "ViewController.h"
+#import "PlacementType.h"
 #import "AdViewController.h"
 
 @implementation PlacementViewController
@@ -25,13 +25,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    switch ([self.data[indexPath.row][@"type"] intValue]) {
+    switch ([self.data[indexPath.row][@"type"] integerValue]) {
         case PlacementTypeInterstitial:
             cell.textLabel.text = @"Interstitial";
             break;
             
-        case PlacementTypeBanner:
-            cell.textLabel.text = @"Banner";
+        case PlacementTypeBannerInFeed:
+            cell.textLabel.text = @"Banner in-feed";
+            break;
+            
+        case PlacementTypeBannerStatic:
+            cell.textLabel.text = @"Banner static";
             break;
     }
     
@@ -42,7 +46,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     AdViewController *adViewController = (AdViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AdViewController"];
+    
     adViewController.placementId = self.data[indexPath.row][@"id"];
+    adViewController.placementType = [self.data[indexPath.row][@"type"] integerValue];
+    
     [self.navigationController pushViewController:adViewController animated:YES];
 }
 
