@@ -29,7 +29,9 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL loaded;
 @property (nonatomic) BOOL impressed;
 @property (nonatomic) BOOL isInterstitial;
+@property (nonatomic) BOOL isRewardedVideo;
 @property (nonatomic) BOOL isBanner;
+@property (nonatomic) BOOL isEndCard;
 @property (nonatomic, strong) NSString *advertiserName;
 @property (nonatomic, strong) NSString *advertiserClickURL;
 

@@ -54,6 +54,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setLocationBasedTargeting:(BOOL)enabled;
 
+/**
+ Allows to control if first call to Display.io server should use https protocol
+ (otherwise http will be used)
+ 
+ Should be called before -initializeWithAppId:completionHandler:errorHandler:
+ */
+- (void)requireHttpsInitialization;
+
 - (NSString*)appId;
 - (DIOServiceClient*)serviceClient;
 - (id)iabConsentData;
@@ -65,6 +73,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setHyperGeoWithIp:(NSString*)ip;
 - (void)handleUncaughtException:(NSException*)exception;
 - (BOOL)shouldApplyGDPRConstraints;
+- (BOOL)shouldApplyCOPPACompliance;
+- (BOOL)doesRequireHttpsInit;
 
 @end
 

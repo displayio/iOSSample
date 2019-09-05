@@ -49,3 +49,4 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOMRAIDView.h>
 #import <DIOSDK/DIOMRAIDVideoPlayer.h>
 #import <DIOSDK/DIOBannerView.h>
+#import <DIOSDK/DIORewardedVideo.h>
