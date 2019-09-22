@@ -14,11 +14,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, DIOCompliance) {
+    DIOComplianceUnknown = -1,
+    DIOComplianceNo = 0,
+    DIOComplianceYes = 1
+};
+
 @interface DIOController : NSObject <CLLocationManagerDelegate>
 
 @property (nonatomic) BOOL initialized;
 @property (nonatomic, strong) NSMutableDictionary *placements;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
+
+@property (nonatomic) DIOCompliance coppaCompliant;
+@property (nonatomic) DIOCompliance GDPRChildCompliant;
 
 /**
  @return The DIOController singleton.
@@ -74,6 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)handleUncaughtException:(NSException*)exception;
 - (BOOL)shouldApplyGDPRConstraints;
 - (BOOL)shouldApplyCOPPACompliance;
+- (BOOL)shouldApplyGDPRChildCompliance;
 - (BOOL)doesRequireHttpsInit;
 
 @end
