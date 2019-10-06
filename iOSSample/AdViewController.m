@@ -64,6 +64,8 @@
 }
 
 - (IBAction)showPressed:(id)sender {
+    self.showButton.enabled = NO;
+    
     if (self.placementType == PlacementTypeBannerInFeed) {
         InFeedViewController *viewController = [InFeedViewController new];
         viewController.ad = self.ad;
