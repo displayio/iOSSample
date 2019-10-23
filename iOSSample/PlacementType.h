@@ -11,8 +11,8 @@
 
 typedef NS_ENUM(NSInteger, PlacementType) {
     PlacementTypeInterstitial,
-    PlacementTypeBannerInFeed,
-    PlacementTypeBannerStatic
+    PlacementTypeInFeed,
+    PlacementTypeStatic
 };
 
 #endif /* PlacementType_h */

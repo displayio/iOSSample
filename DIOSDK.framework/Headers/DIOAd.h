@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOBannerView.h"
+#import "DIOInFeedView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL impressed;
 @property (nonatomic) BOOL isInterstitial;
 @property (nonatomic) BOOL isRewardedVideo;
-@property (nonatomic) BOOL isBanner;
+@property (nonatomic) BOOL isInFeed;
 @property (nonatomic) BOOL isEndCard;
 @property (nonatomic, strong) NSString *advertiserName;
 @property (nonatomic, strong) NSString *advertiserClickURL;
@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 
 - (void)finish;
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
-- (DIOBannerView*)view;
+- (DIOInFeedView*)view;
 
 @end
 

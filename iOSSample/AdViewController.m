@@ -12,9 +12,9 @@
 #import "AdViewController.h"
 
 #import <DIOSDK/DIOController.h>
-#import <DIOSDK/DIOBannerVast.h>
-#import <DIOSDK/DIOBannerHtml.h>
-#import <DIOSDK/DIOBannerPlacement.h>
+#import <DIOSDK/DIOInFeedVast.h>
+#import <DIOSDK/DIOInFeedHtml.h>
+#import <DIOSDK/DIOInFeedPlacement.h>
 
 @interface AdViewController ()
 
@@ -37,8 +37,8 @@
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
     DIOAdRequest *adRequest = [placement newAdRequest];
     
-    if ([placement isKindOfClass:[DIOBannerPlacement class]]) {
-        ((DIOBannerPlacement*)placement).fullWidth = YES;
+    if ([placement isKindOfClass:[DIOInFeedPlacement class]]) {
+        ((DIOInFeedPlacement*)placement).fullWidth = YES;
     }
     
     [adRequest setKeywords:@[@"house of cards", @"lamborghini"]];
@@ -66,7 +66,7 @@
 - (IBAction)showPressed:(id)sender {
     self.showButton.enabled = NO;
     
-    if (self.placementType == PlacementTypeBannerInFeed) {
+    if (self.placementType == PlacementTypeInFeed) {
         InFeedViewController *viewController = [InFeedViewController new];
         viewController.ad = self.ad;
 
@@ -75,7 +75,7 @@
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         [self presentViewController:navigationController animated:YES completion:nil];
-    } else if (self.placementType == PlacementTypeBannerStatic) {
+    } else if (self.placementType == PlacementTypeStatic) {
         StaticViewController *viewController = [StaticViewController new];
         viewController.ad = self.ad;
         

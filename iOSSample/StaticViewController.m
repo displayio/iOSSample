@@ -24,13 +24,13 @@
     
     //
     
-    DIOBannerView *bannerView = [self.ad view];
+    DIOInFeedView *inFeedView = [self.ad view];
     
-    [self.view addSubview:bannerView];
-    [bannerView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
-    [bannerView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
-    [bannerView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
-    [bannerView.heightAnchor constraintEqualToConstant:[bannerView height]].active = YES;
+    [self.view addSubview:inFeedView];
+    [inFeedView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
+    [inFeedView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+    [inFeedView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
+    [inFeedView.heightAnchor constraintEqualToConstant:[inFeedView height]].active = YES;
 }
 
 - (void)close:(id)sender {

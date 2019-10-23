@@ -30,12 +30,12 @@
             cell.textLabel.text = @"Interstitial";
             break;
             
-        case PlacementTypeBannerInFeed:
-            cell.textLabel.text = @"Banner in-feed";
+        case PlacementTypeInFeed:
+            cell.textLabel.text = @"In-feed";
             break;
             
-        case PlacementTypeBannerStatic:
-            cell.textLabel.text = @"Banner static";
+        case PlacementTypeStatic:
+            cell.textLabel.text = @"Static";
             break;
     }
     

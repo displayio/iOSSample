@@ -11,6 +11,7 @@
 
 #import "DIOPlacement.h"
 #import "DIOServiceClient.h"
+#import "DIOConsentManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,12 @@ typedef NS_ENUM(NSInteger, DIOCompliance) {
     DIOComplianceUnknown = -1,
     DIOComplianceNo = 0,
     DIOComplianceYes = 1
+};
+
+typedef NS_ENUM(NSInteger, DIOMediationPlatform) {
+    DIOMediationPlatformNone = 0,
+    DIOMediationPlatformMopub = 1,
+    DIOMediationPlatformAdmob = 2
 };
 
 @interface DIOController : NSObject <CLLocationManagerDelegate>
@@ -28,6 +35,7 @@ typedef NS_ENUM(NSInteger, DIOCompliance) {
 
 @property (nonatomic) DIOCompliance coppaCompliant;
 @property (nonatomic) DIOCompliance GDPRChildCompliant;
+@property (nonatomic) DIOMediationPlatform mediationPlatform;
 
 /**
  @return The DIOController singleton.
@@ -73,7 +81,9 @@ typedef NS_ENUM(NSInteger, DIOCompliance) {
 
 - (NSString*)appId;
 - (DIOServiceClient*)serviceClient;
+- (id)consentData;
 - (id)iabConsentData;
+- (void)setConsentData:(DIOConsentState) consentState gdprState:(DIOConsentState) gdprState;
 - (void)logWithMessage:(NSString*)message;
 - (void)logWithError:(NSString*)error trace:(NSArray<NSString*>*)trace data:(id)data;
 

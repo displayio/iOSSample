@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) void (^loadedHandler)(void);
 @property (nonatomic, copy) void (^noFillHandler)(void);
+@property (nonatomic, copy) void (^errorHandler)(NSString*);
 
 - (instancetype)initWithRequestId:(NSString*)requestId data:(id)data offering:(id)offering;
 + (DIOAdUnit*)factoryWithRequestId:(NSString*)requestId data:(id)data offering:(id)offering;
@@ -30,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)close;
 - (void)broadcastLoaded;
 - (void)broadcastNoFill;
+- (void)broadcastError:(NSError*)error;
 
 @end
 

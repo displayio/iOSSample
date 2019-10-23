@@ -20,11 +20,11 @@
     NSString *appId = @"7522";
     
     id data = @[@{@"id": @"4788", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Video
-                @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeBannerInFeed]}, // Video
-                @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeBannerStatic]}, // Video
+                @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Video
+                @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeStatic]}, // Video
                 @{@"id": @"5427", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Html
-                @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeBannerInFeed]}, // Html
-                @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeBannerStatic]}]; // Html
+                @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Html
+                @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeStatic]}]; // Html
 
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");

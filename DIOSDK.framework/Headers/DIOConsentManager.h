@@ -12,6 +12,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, DIOConsentState) {
+    DIOConsentStateYES,
+    DIOConsentStateNO,
+    DIOConsentStateUNKNOWN
+};
+#define consentTypeArray @"YES", @"NO", @"UNKNOWN", nil
+
 @interface DIOConsentManager : NSObject
 
 - (NSString*)consentString;
@@ -20,6 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*)parsedVendorConsents;
 - (NSString*)parsedPurposeConsents;
 - (id)iabConsentProperties;
+- (id)сonsentData;
+- (void)setConsentData:(DIOConsentState) consentState gdprState:(DIOConsentState) gdprState;
+- (NSString*) consentStateEnumToString:(DIOConsentState)state;
+- (DIOConsentState)consentState;
+- (DIOConsentState)gdprState;
+
 
 @end
 

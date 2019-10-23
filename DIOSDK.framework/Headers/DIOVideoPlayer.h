@@ -49,6 +49,10 @@ typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
 - (void)videoPlayerReadyToPlayWithDuration:(double)duration;
 - (void)videoPlayerEvent:(DIOVideoPlayerEvent)event;
 
+@optional
+- (void)videoPlayerPreloadDidSucceed;
+- (void)videoPlayerPreloadDidFailWithError:(NSError*)error;
+
 @end
 
 @interface DIOVideoPlayer : NSObject
