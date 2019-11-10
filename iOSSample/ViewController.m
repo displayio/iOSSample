@@ -34,6 +34,7 @@
         
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:placementViewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:NO completion:nil];
     } errorHandler:^(NSString *error) {
         NSLog(@"ON INIT WITH ERROR: %@", error);

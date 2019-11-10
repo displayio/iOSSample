@@ -74,6 +74,7 @@
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
     } else if (self.placementType == PlacementTypeStatic) {
         StaticViewController *viewController = [StaticViewController new];
@@ -83,6 +84,7 @@
         
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
     } else {
         [self.ad showAdFromViewController:self eventHandler:^(DIOAdEvent event){
