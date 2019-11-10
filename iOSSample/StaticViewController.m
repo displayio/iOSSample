@@ -34,6 +34,7 @@
 }
 
 - (void)close:(id)sender {
+    [self.ad finish];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
