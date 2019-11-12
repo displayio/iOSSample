@@ -56,11 +56,14 @@ typedef NS_ENUM(NSInteger, DIOMediationPlatform) {
 /**
  @param placementId The placement id as defined in the Display.io control panel.
  
- @return The corresponding placement object.
- 
- @throw An expection if DIOController is not initialized or if no placement object is found.
+ @return The corresponding placement object or nil if DIOController is not initialized or if no placement object is found.
 */
 - (DIOPlacement*)placementWithId:(NSString*)placementId;
+
+/**
+Stops all ads and releases the resources associated with each of them
+*/
+- (void)finishAllAds;
 
 /**
  Allows to control if location based targeting should be used (enabled by default.)

@@ -18,6 +18,14 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
     DIOAdEventOnAdCompleted
 };
 
+@class DIOAd;
+
+@protocol DIOAdClickDelegate <NSObject>
+
+- (void)onAdClicked:(DIOAd*)ad;
+
+@end
+
 @interface DIOAd : NSObject
 
 @property (nonatomic, strong) NSString *placementId;
@@ -34,6 +42,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL isEndCard;
 @property (nonatomic, strong) NSString *advertiserName;
 @property (nonatomic, strong) NSString *advertiserClickURL;
+@property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
 
 /**
  Shows an interstitial ad.
@@ -44,7 +53,21 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
  */
 - (void)showAdFromViewController:(UIViewController*)controller eventHandler:(void (^)(DIOAdEvent event))eventHandler;
 
+/**
+ Leaves ad's current screen (for in-feed video ads only)
+ */
+- (void)leave;
+
+/**
+ Re-enters ad's current screen (for in-feed video ads only)
+ */
+- (void)reenter;
+
+/**
+ Stops an ad and releases the resources associated with it
+ */
 - (void)finish;
+
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
 - (DIOInFeedView*)view;
 

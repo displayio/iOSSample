@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOOMController : NSObject
 
+@property (nonatomic, strong) OMIDDisplayioPartner *partner;
+
 + (DIOOMController*)sharedInstance;
 
 - (void)initialize;

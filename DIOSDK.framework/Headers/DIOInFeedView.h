@@ -13,7 +13,6 @@
 @optional
 
 - (void)didMoveToWindow;
-- (void)didMoveFromWindow;
 - (void)exposureDidChange:(int)exposure;
 - (void)deviceOrientationDidChange;
 - (void)didActivate;

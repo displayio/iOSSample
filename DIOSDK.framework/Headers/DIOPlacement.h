@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (DIOAdRequest*)lastAdRequest;
 - (DIOAdRequest*)adRequestById:(NSString*)requestId;
 - (void)removeAdRequestById:(NSString*)requestId;
+- (void)finishAllAds;
 
 @end
 
