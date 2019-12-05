@@ -21,9 +21,11 @@
     
     id data = @[@{@"id": @"4788", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Video
                 @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Video
+                @{@"id": @"6340", @"type": [NSNumber numberWithInt:PlacementTypeFeedInterstitial]}, // Video
                 @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeStatic]}, // Video
                 @{@"id": @"5427", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Html
                 @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Html
+                @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeFeedInterstitial]}, // Html
                 @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeStatic]}]; // Html
 
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{

@@ -1,24 +1,24 @@
 //
-//  InFeedViewController.m
+//  FeedViewController.m
 //  iOSSample
 //
 //  Created by Ariel Malka on 4/23/19.
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "InFeedViewController.h"
+#import "FeedViewController.h"
 #import "CustomCell1.h"
 #import "CustomCell2.h"
 
 #import <DIOSDK/DIOInFeedView.h>
 
-@interface InFeedViewController ()
+@interface FeedViewController ()
 
 @property (nonatomic, strong) NSArray<NSArray<NSNumber*>*> *ids;
 
 @end
 
-@implementation InFeedViewController
+@implementation FeedViewController
 
 - (void)viewDidLoad {
     [ super viewDidLoad];
@@ -106,7 +106,11 @@
             return 100;
             
         case 2:
-            return [(DIOInFeedView*)[self.ad view] height];
+            if (self.ad.isInFeed) {
+                return [(DIOInFeedView*)[self.ad view] height];
+            } else if (self.ad.isFeedInterstitial) {
+                return self.tableView.frame.size.height;
+            }
     }
     
     return 0;

@@ -7,7 +7,7 @@
 //
 
 #import "AdViewController.h"
-#import "InFeedViewController.h"
+#import "FeedViewController.h"
 #import "StaticViewController.h"
 #import "AdViewController.h"
 
@@ -66,8 +66,8 @@
 - (IBAction)showPressed:(id)sender {
     self.showButton.enabled = NO;
     
-    if (self.placementType == PlacementTypeInFeed) {
-        InFeedViewController *viewController = [InFeedViewController new];
+    if (self.placementType == PlacementTypeInFeed || self.placementType == PlacementTypeFeedInterstitial) {
+        FeedViewController *viewController = [FeedViewController new];
         viewController.ad = self.ad;
 
         self.ad = nil;

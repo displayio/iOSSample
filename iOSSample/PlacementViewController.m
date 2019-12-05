@@ -34,6 +34,10 @@
             cell.textLabel.text = @"In-feed";
             break;
             
+        case PlacementTypeFeedInterstitial:
+            cell.textLabel.text = @"Feed Interstital";
+            break;
+            
         case PlacementTypeStatic:
             cell.textLabel.text = @"Static";
             break;

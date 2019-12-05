@@ -19,7 +19,7 @@
 		A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAF227F388600F7F906 /* AdViewController.m */; };
 		A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB1228024D500F7F906 /* CustomCell2.m */; };
 		A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB2228024D500F7F906 /* CustomCell1.m */; };
-		A87C4BB9228024D600F7F906 /* InFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* InFeedViewController.m */; };
+		A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* FeedViewController.m */; };
 		A89B4913231552B200405FBA /* StaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B4912231552B200405FBA /* StaticViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		A87C4BB1228024D500F7F906 /* CustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell2.m; sourceTree = "<group>"; };
 		A87C4BB2228024D500F7F906 /* CustomCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell1.m; sourceTree = "<group>"; };
 		A87C4BB3228024D500F7F906 /* CustomCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell1.h; sourceTree = "<group>"; };
-		A87C4BB4228024D500F7F906 /* InFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InFeedViewController.h; sourceTree = "<group>"; };
-		A87C4BB5228024D500F7F906 /* InFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InFeedViewController.m; sourceTree = "<group>"; };
+		A87C4BB4228024D500F7F906 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		A87C4BB5228024D500F7F906 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		A87C4BB6228024D600F7F906 /* CustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell2.h; sourceTree = "<group>"; };
 		A89B4911231552B200405FBA /* StaticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticViewController.h; sourceTree = "<group>"; };
 		A89B4912231552B200405FBA /* StaticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticViewController.m; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 				A87C4BAC227F245E00F7F906 /* PlacementViewController.m */,
 				A87C4BAE227F388600F7F906 /* AdViewController.h */,
 				A87C4BAF227F388600F7F906 /* AdViewController.m */,
-				A87C4BB4228024D500F7F906 /* InFeedViewController.h */,
-				A87C4BB5228024D500F7F906 /* InFeedViewController.m */,
+				A87C4BB4228024D500F7F906 /* FeedViewController.h */,
+				A87C4BB5228024D500F7F906 /* FeedViewController.m */,
 				A89B4911231552B200405FBA /* StaticViewController.h */,
 				A89B4912231552B200405FBA /* StaticViewController.m */,
 				A87C4BB3228024D500F7F906 /* CustomCell1.h */,
@@ -202,7 +202,7 @@
 				A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */,
 				A866C05C225B881E00A42940 /* AppDelegate.m in Sources */,
 				A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */,
-				A87C4BB9228024D600F7F906 /* InFeedViewController.m in Sources */,
+				A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

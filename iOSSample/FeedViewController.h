@@ -1,5 +1,5 @@
 //
-//  InFeedViewController.h
+//  FeedViewController.h
 //  iOSSample
 //
 //  Created by Ariel Malka on 4/23/19.
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InFeedViewController : UITableViewController
+@interface FeedViewController : UITableViewController
 
 @property (nonatomic, strong) DIOAd *ad;
 
