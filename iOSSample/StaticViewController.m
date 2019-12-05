@@ -8,6 +8,8 @@
 
 #import "StaticViewController.h"
 
+#import <DIOSDK/DIOInFeedView.h>
+
 @interface StaticViewController ()
 
 @end
@@ -24,7 +26,7 @@
     
     //
     
-    DIOInFeedView *inFeedView = [self.ad view];
+    DIOInFeedView *inFeedView = (DIOInFeedView*)[self.ad view];
     
     [self.view addSubview:inFeedView];
     [inFeedView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;

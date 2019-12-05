@@ -10,6 +10,8 @@
 #import "CustomCell1.h"
 #import "CustomCell2.h"
 
+#import <DIOSDK/DIOInFeedView.h>
+
 @interface InFeedViewController ()
 
 @property (nonatomic, strong) NSArray<NSArray<NSNumber*>*> *ids;
@@ -104,7 +106,7 @@
             return 100;
             
         case 2:
-            return [[self.ad view] height];
+            return [(DIOInFeedView*)[self.ad view] height];
     }
     
     return 0;
