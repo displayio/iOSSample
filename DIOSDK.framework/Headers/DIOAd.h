@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOInFeedView.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,6 +40,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL isRewardedVideo;
 @property (nonatomic) BOOL isInFeed;
 @property (nonatomic) BOOL isEndCard;
+@property (nonatomic) BOOL isFeedInterstitial;
 @property (nonatomic, strong) NSString *advertiserName;
 @property (nonatomic, strong) NSString *advertiserClickURL;
 @property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
@@ -68,8 +69,11 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
  */
 - (void)finish;
 
+/**
+ */
+- (UIView*)view;
+
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
-- (DIOInFeedView*)view;
 
 @end
 

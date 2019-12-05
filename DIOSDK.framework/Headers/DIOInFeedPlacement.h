@@ -6,8 +6,6 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "DIOPlacement.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,8 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL fullWidth;
 @property (nonatomic) BOOL framed;
-
-- (instancetype)initWithId:(NSString*)ID;
 
 @end
 

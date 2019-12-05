@@ -11,11 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class DIOInFeedHtml;
+@class DIOHtmlAd;
 
 @interface DIOCustomWebView : WKWebView
 
-@property (nonatomic, weak) DIOInFeedHtml *ad;
+@property (nonatomic, weak) DIOHtmlAd *ad;
 
 - (void)loadMarkup:(NSString*)markup;
 

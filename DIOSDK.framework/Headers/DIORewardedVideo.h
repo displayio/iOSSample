@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <DIOSDK/DIOSDK.h>
+#import "DIOInterstitialVast.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

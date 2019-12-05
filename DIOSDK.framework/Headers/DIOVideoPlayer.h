@@ -82,6 +82,8 @@ typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
 - (void)setupTimeEventsWithDuration:(CMTime)duration;
 - (void)castEvent:(DIOVideoPlayerEvent)event;
 - (void)impression;
+- (void)preloadWithURL:(NSURL*)url;
+- (void)startWithURL:(NSURL*)url;
 
 @end
 
