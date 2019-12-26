@@ -171,7 +171,8 @@
   mraid.storePicture = function(URI) {
   }
 
-  mraid.createCalendarEvent = function() {
+  mraid.createCalendarEvent = function(parameters) {
+    window.webkit.messageHandlers.handler.postMessage({action: "createCalendarEvent", parameters: parameters});
   }
 
   mraid.open = function(url) {
@@ -199,6 +200,7 @@
   };
 
   mraid.useCustomClose = function(b) {
+    window.webkit.messageHandlers.handler.postMessage({action: "useCustomClose", b: b});
   }
 
   mraid.addEventListener = function (ev, cb) {

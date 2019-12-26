@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOMessageLogger : NSObject
 
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+
 - (void)logWithMessage:(NSString*)message;
 - (void)clear;
 - (NSString*)string;

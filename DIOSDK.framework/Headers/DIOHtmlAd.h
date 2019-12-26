@@ -29,8 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)close2;
 - (void)unload;
-- (void)fallback;
 - (void)playVideoWithURL:(NSURL*)url;
+- (void)useCustomClose:(BOOL)b;
+- (void)fallback;
 
 - (void)updateExpandPropertiesWithWidth:(int)width height:(int)height;
 - (void)updateMaxSizeWithWidth:(int)width height:(int)height;
@@ -49,8 +50,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)triggerReady;
 - (void)triggerViewableChangeWithIsViewable:(BOOL)isViewable;
 - (void)triggerStateChangeWithState:(NSString*)state;
-- (void)triggerExposureChangeWithExposure:(int)exposure width:(int)width height:(int)height;
+- (void)triggerExposureChangeWithExposure:(int)exposure x:(int)x y:(int)y width:(int)width height:(int)height;
 - (void)triggerSizeChangeWithWidth:(int)width height:(int)height;
+- (void)triggerErrorWithMessage:(NSString*)message action:(NSString*)action;
 
 @end
 

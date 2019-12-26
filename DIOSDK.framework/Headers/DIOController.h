@@ -94,6 +94,7 @@ Stops all ads and releases the resources associated with each of them
 - (void)setCourseWithURLString:(NSString*)urlString;
 - (void)setHyperGeoWithIp:(NSString*)ip;
 - (void)handleUncaughtException:(NSException*)exception;
+- (void)crash;
 - (BOOL)shouldApplyGDPRConstraints;
 - (BOOL)shouldApplyCOPPACompliance;
 - (BOOL)shouldApplyGDPRChildCompliance;

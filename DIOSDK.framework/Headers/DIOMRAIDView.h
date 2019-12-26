@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOMRAIDView : UIView
 
-- (void)setWebView:(UIView*)webView;
+- (void)setWebView:(UIView*)webView params:(id)params;
 
 @end
 

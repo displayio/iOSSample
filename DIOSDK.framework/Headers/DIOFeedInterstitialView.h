@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol DIOFeedInterstitialViewDelegate <NSObject>
 
 - (void)didMoveToWindow;
-- (void)exposureDidChange:(int)exposure;
+- (void)exposureDidChange:(int)exposure y:(int)y height:(int)height;
 - (void)didActivate;
 - (void)didDeactivate;
 

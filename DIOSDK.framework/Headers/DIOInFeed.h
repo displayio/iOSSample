@@ -6,8 +6,6 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "DIOAdUnit.h"
 
 NS_ASSUME_NONNULL_BEGIN

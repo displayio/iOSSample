@@ -41,6 +41,8 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL isInFeed;
 @property (nonatomic) BOOL isEndCard;
 @property (nonatomic) BOOL isFeedInterstitial;
+@property (nonatomic) BOOL isBanner;
+@property (nonatomic) BOOL isMediumRectangle;
 @property (nonatomic, strong) NSString *advertiserName;
 @property (nonatomic, strong) NSString *advertiserClickURL;
 @property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
@@ -73,6 +75,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
  */
 - (UIView*)view;
 
+- (UIViewController*)viewController;
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
 
 @end

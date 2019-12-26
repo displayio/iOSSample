@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (int)contentWidth;
 - (int)contentHeight;
 - (UIView*)closeButtonView;
+- (void)useCustomClose:(BOOL)b;
 - (void)didTransitionToSize:(CGSize)size;
 
 @end

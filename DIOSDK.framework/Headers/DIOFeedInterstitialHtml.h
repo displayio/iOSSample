@@ -6,14 +6,11 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "DIOHtmlAd.h"
-#import "DIOFeedInterstitialView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOFeedInterstitialHtml : DIOHtmlAd <DIOFeedInterstitialViewDelegate>
+@interface DIOFeedInterstitialHtml : DIOHtmlAd
 
 @property (nonatomic) BOOL closed;
 

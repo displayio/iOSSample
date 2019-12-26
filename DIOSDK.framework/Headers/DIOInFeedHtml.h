@@ -6,14 +6,11 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "DIOHtmlAd.h"
-#import "DIOInFeedView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInFeedHtml : DIOHtmlAd <DIOInFeedViewDelegate>
+@interface DIOInFeedHtml : DIOHtmlAd
 
 @property (nonatomic) BOOL closed;
 

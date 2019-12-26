@@ -13,7 +13,7 @@
 @optional
 
 - (void)didMoveToWindow;
-- (void)exposureDidChange:(int)exposure;
+- (void)exposureDidChange:(int)exposure y:(int)y height:(int)height;
 - (void)deviceOrientationDidChange;
 - (void)didActivate;
 - (void)didDeactivate;
@@ -29,8 +29,8 @@
 /**
  @return The height of the view when it fills the top view-controller's width
  */
-- (double)height;
+- (CGFloat)height;
 
-- (void)setContainedView:(UIView*)containedView ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth;
+- (void)setContainedView:(UIView*)view ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth;
 
 @end
