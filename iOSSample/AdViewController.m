@@ -8,7 +8,7 @@
 
 #import "AdViewController.h"
 #import "FeedViewController.h"
-#import "StaticViewController.h"
+#import "BannerViewController.h"
 #import "AdViewController.h"
 
 #import <DIOSDK/DIOController.h>
@@ -76,8 +76,8 @@
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
-    } else if (self.placementType == PlacementTypeStatic) {
-        StaticViewController *viewController = [StaticViewController new];
+    } else if (self.placementType == PlacementTypeBanner || self.placementType == PlacementTypeMediumRectangle) {
+        BannerViewController *viewController = [BannerViewController new];
         viewController.ad = self.ad;
         
         self.ad = nil;

@@ -38,8 +38,12 @@
             cell.textLabel.text = @"Feed Interstital";
             break;
             
-        case PlacementTypeStatic:
-            cell.textLabel.text = @"Static";
+        case PlacementTypeBanner:
+            cell.textLabel.text = @"Banner";
+            break;
+            
+        case PlacementTypeMediumRectangle:
+            cell.textLabel.text = @"Medium Rectangle";
             break;
     }
     

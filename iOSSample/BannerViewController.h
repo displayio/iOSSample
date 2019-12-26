@@ -1,5 +1,5 @@
 //
-//  StaticViewController.h
+//  BannerViewController.h
 //  iOSSample
 //
 //  Created by Ariel Malka on 8/27/19.
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface StaticViewController : UIViewController
+@interface BannerViewController : UIViewController
 
 @property (nonatomic, strong) DIOAd *ad;
 
