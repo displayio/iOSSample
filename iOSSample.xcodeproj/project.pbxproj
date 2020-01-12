@@ -21,6 +21,7 @@
 		A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB2228024D500F7F906 /* CustomCell1.m */; };
 		A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* FeedViewController.m */; };
 		A89B4913231552B200405FBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B4912231552B200405FBA /* BannerViewController.m */; };
+		A8E91F4723CB637E00ADCC93 /* FeedInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E91F4623CB637E00ADCC93 /* FeedInterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,8 @@
 		A87C4BB6228024D600F7F906 /* CustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell2.h; sourceTree = "<group>"; };
 		A89B4911231552B200405FBA /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		A89B4912231552B200405FBA /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		A8E91F4523CB637E00ADCC93 /* FeedInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedInterstitialViewController.h; sourceTree = "<group>"; };
+		A8E91F4623CB637E00ADCC93 /* FeedInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedInterstitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				A87C4BB5228024D500F7F906 /* FeedViewController.m */,
 				A89B4911231552B200405FBA /* BannerViewController.h */,
 				A89B4912231552B200405FBA /* BannerViewController.m */,
+				A8E91F4523CB637E00ADCC93 /* FeedInterstitialViewController.h */,
+				A8E91F4623CB637E00ADCC93 /* FeedInterstitialViewController.m */,
 				A87C4BB3228024D500F7F906 /* CustomCell1.h */,
 				A87C4BB2228024D500F7F906 /* CustomCell1.m */,
 				A87C4BB6228024D600F7F906 /* CustomCell2.h */,
@@ -202,6 +207,7 @@
 				A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */,
 				A866C05C225B881E00A42940 /* AppDelegate.m in Sources */,
 				A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */,
+				A8E91F4723CB637E00ADCC93 /* FeedInterstitialViewController.m in Sources */,
 				A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

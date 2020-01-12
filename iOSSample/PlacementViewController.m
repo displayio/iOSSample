@@ -9,6 +9,7 @@
 #import "PlacementViewController.h"
 #import "PlacementType.h"
 #import "AdViewController.h"
+#import "FeedInterstitialViewController.h"
 
 @implementation PlacementViewController
 
@@ -53,12 +54,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-    AdViewController *adViewController = (AdViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AdViewController"];
+    NSString *placementId = self.data[indexPath.row][@"id"];
+    PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
-    adViewController.placementId = self.data[indexPath.row][@"id"];
-    adViewController.placementType = [self.data[indexPath.row][@"type"] integerValue];
-    
-    [self.navigationController pushViewController:adViewController animated:YES];
+    if (placementType == PlacementTypeFeedInterstitial) {
+        FeedInterstitialViewController *viewController = [FeedInterstitialViewController new];
+        viewController.placementId = placementId;
+
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:navigationController animated:YES completion:nil];
+    } else {
+        AdViewController *adViewController = (AdViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AdViewController"];
+        adViewController.placementId = placementId;
+        adViewController.placementType = placementType;
+        
+        [self.navigationController pushViewController:adViewController animated:YES];
+    }
 }
 
 @end

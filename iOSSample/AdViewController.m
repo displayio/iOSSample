@@ -55,11 +55,11 @@
             
             self.loadButton.enabled = NO;
             self.showButton.enabled = YES;
-        } failedHandler:^(NSString *message){
-            NSLog(@"AD FAILED TO LOAD: %@", message);
+        } failedHandler:^(NSError *error){
+            NSLog(@"AD FAILED TO LOAD: %@", error.localizedDescription);
         }];
-    } noAdHandler:^{
-        NSLog(@"NO AD");
+    } noAdHandler:^(NSError *error){
+        NSLog(@"NO AD: %@", error.localizedDescription);
     }];
 }
 

@@ -38,8 +38,8 @@
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:NO completion:nil];
-    } errorHandler:^(NSString *error) {
-        NSLog(@"ON INIT WITH ERROR: %@", error);
+    } errorHandler:^(NSError *error) {
+        NSLog(@"ON INIT WITH ERROR: %@", error.localizedDescription);
     }];
 }
 

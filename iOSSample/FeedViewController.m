@@ -93,11 +93,7 @@
             return 120;
             
         case 2:
-            if (self.ad.isInFeed) {
-                return [(DIOInFeedView*)[self.ad view] height];
-            } else if (self.ad.isFeedInterstitial) {
-                return self.tableView.frame.size.height;
-            }
+            return [(DIOInFeedView*)[self.ad view] height];
     }
     
     return 0;
