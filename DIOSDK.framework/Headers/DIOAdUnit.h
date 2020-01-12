@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) void (^loadedHandler)(void);
 @property (nonatomic, copy) void (^noFillHandler)(void);
-@property (nonatomic, copy) void (^errorHandler)(NSString*);
+@property (nonatomic, copy) void (^errorHandler)(NSError*);
 
 - (instancetype)initWithRequestId:(NSString*)requestId data:(id)data offering:(id)offering;
 + (DIOAdUnit*)factoryWithRequestId:(NSString*)requestId data:(id)data offering:(id)offering;

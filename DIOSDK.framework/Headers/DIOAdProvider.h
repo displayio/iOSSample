@@ -20,9 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 Loads an ad.
  
  @param loadedHandler A block object to be executed when the ad has been loaded. This block takes one argument: the ad.
- @param failedHandler A block object to be executed when loading has failed. This block takes one argument: the error message.
+ @param failedHandler A block object to be executed when loading has failed. This block takes one argument: the error.
  */
-- (void)loadAdWithLoadedHandler:(void (^)(DIOAd*))loadedHandler failedHandler:(void (^)(NSString*))failedHandler;
+- (void)loadAdWithLoadedHandler:(void (^)(DIOAd*))loadedHandler failedHandler:(void (^)(NSError*))failedHandler;
 
 - (instancetype)initWithAds:(NSMutableArray<DIOAdUnit*>*)ads;
 

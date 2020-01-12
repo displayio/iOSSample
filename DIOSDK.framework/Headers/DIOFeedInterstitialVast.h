@@ -8,6 +8,7 @@
 
 #import "DIOVideoAd.h"
 #import "DIOFeedInterstitialVideoPlayer.h"
+#import "DIOFeedInterstitialView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

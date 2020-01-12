@@ -76,7 +76,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 - (UIView*)view;
 
 - (UIViewController*)viewController;
-- (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSString *message))errorHandler noFillHandler:(void (^)(void))noFillHandler;
+- (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSError*))errorHandler noFillHandler:(void (^)(void))noFillHandler;
 
 @end
 

@@ -57,7 +57,7 @@ extern NSString* const AD_REQUEST_MALE;
  @param adReceivedHandler A block object to be executed when the ad has been received. This block takes one argument: the ad provider.
  @param noAdHandler A block object to be executed when there is no ad.
  */
-- (void)requestAdWithAdReceivedHandler:(void (^)(DIOAdProvider*))adReceivedHandler noAdHandler:(void (^)(void))noAdHandler;
+- (void)requestAdWithAdReceivedHandler:(void (^)(DIOAdProvider*))adReceivedHandler noAdHandler:(void (^)(NSError*))noAdHandler;
 
 - (instancetype)initWithPlacementId:(NSString*)placementId;
 - (NSString*)ID;

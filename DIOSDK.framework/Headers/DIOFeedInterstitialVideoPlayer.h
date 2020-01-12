@@ -8,15 +8,14 @@
 
 #import "DIOVideoPlayer.h"
 #import "DIOPlayerView.h"
-#import "DIOFeedInterstitialView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOFeedInterstitialVideoPlayer : DIOVideoPlayer
 
-@property (nonatomic, strong) DIOFeedInterstitialView *feedInterstitialView;
+@property (nonatomic, strong) UIView *view;
 
-- (instancetype)initWithURL:(NSURL*)url params:(id)params viewParams:(id)viewParams;
+- (instancetype)initWithURL:(NSURL*)url params:(id)params;
 
 - (void)activate;
 - (void)deactivate;

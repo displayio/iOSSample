@@ -7,10 +7,11 @@
 //
 
 #import "DIOHtmlAd.h"
+#import "DIOFeedInterstitialView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOFeedInterstitialHtml : DIOHtmlAd
+@interface DIOFeedInterstitialHtml : DIOHtmlAd <DIOFeedInterstitialViewDelegate>
 
 @property (nonatomic) BOOL closed;
 

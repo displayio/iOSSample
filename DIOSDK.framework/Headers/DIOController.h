@@ -15,6 +15,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, DIOErrorCode) {
+    kDIOErrorMisc = 0,
+    kDIOErrorNoDataSectionInResponse = 1,
+    kDIOErrorNoPlacementsSectionInResponse = 2,
+    kDIOErrorUnknownPlacementType = 3,
+    kDIOErrorLoadingProviderMoreThanOnce = 4,
+    kDIOErrorNoFill = 5,
+    kDIOErrorNoAds = 6,
+    kDIOErrorNoAd = 7,
+    kDIOErrorAdUnavailable = 8,
+    kDIOErrorParsing = 9
+};
+
 typedef NS_ENUM(NSInteger, DIOCompliance) {
     DIOComplianceUnknown = -1,
     DIOComplianceNo = 0,
@@ -49,9 +62,9 @@ typedef NS_ENUM(NSInteger, DIOMediationPlatform) {
  
  @param appId The application id as defined in the Display.io control panel.
  @param completionHandler A block object to be executed when the task finishes successfully.
- @param errorHandler A block object to be executed when something is going wrong. This block takes one argument: the error message.
+ @param errorHandler A block object to be executed when something is going wrong. This block takes one argument: the error.
  */
-- (void)initializeWithAppId:(NSString*)appId completionHandler:(void (^)(void))completionHandler errorHandler:(void (^)(NSString*))errorHandler;
+- (void)initializeWithAppId:(NSString*)appId completionHandler:(void (^)(void))completionHandler errorHandler:(void (^)(NSError*))errorHandler;
 
 /**
  @param placementId The placement id as defined in the Display.io control panel.

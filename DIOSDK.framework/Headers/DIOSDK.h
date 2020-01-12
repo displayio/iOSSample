@@ -60,6 +60,7 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOFeedInterstitialVast.h>
 #import <DIOSDK/DIOFeedInterstitialView.h>
 #import <DIOSDK/DIOFeedInterstitialVideoPlayer.h>
+#import <DIOSDK/DIOFeedInterstitialContainer.h>
 #import <DIOSDK/DIOBanner.h>
 #import <DIOSDK/DIOBannerHtml.h>
 #import <DIOSDK/DIOBannerView.h>
