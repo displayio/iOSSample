@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithParams:(id)params;
 
 - (void)setContainedView:(UIView*)view;
+- (void)cancel;
+- (void)skip;
 
 @end
 

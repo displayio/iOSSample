@@ -18,6 +18,7 @@ extern NSString* const AD_REQUEST_MALE;
 @interface DIOAdRequest : NSObject
 
 @property (nonatomic, strong) DIOAdProvider *adProvider;
+@property (nonatomic, strong) NSString *placementId;
 
 /**
  Sets the year of birth for this ad request.

@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOFeedInterstitialVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOFeedInterstitialViewDelegate>
 
 @property (nonatomic, strong) DIOFeedInterstitialVideoPlayer *player;
+@property (nonatomic, weak) DIOFeedInterstitialView *containerView;
 
 @end
 
