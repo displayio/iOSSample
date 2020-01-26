@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <DIOSDK/PublicHeader.h>
 
 #import <DIOSDK/DIOController.h>
+#import <DIOSDK/DIOInitProperties.h>
 #import <DIOSDK/DIOServiceClient.h>
 #import <DIOSDK/DIODeviceDataProvider.h>
 #import <DIOSDK/DIOPlacement.h>

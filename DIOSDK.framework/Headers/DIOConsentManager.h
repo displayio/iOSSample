@@ -27,12 +27,12 @@ typedef NS_ENUM(NSInteger, DIOConsentState) {
 - (NSString*)parsedVendorConsents;
 - (NSString*)parsedPurposeConsents;
 - (id)iabConsentProperties;
+- (void)clearIABConsentData;
 - (id)сonsentData;
 - (void)setConsentData:(DIOConsentState) consentState gdprState:(DIOConsentState) gdprState;
 - (NSString*) consentStateEnumToString:(DIOConsentState)state;
 - (DIOConsentState)consentState;
 - (DIOConsentState)gdprState;
-
 
 @end
 

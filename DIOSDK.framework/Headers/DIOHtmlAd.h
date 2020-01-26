@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)playVideoWithURL:(NSURL*)url;
 - (void)useCustomClose:(BOOL)b;
 - (void)fallback;
+- (void)openWithURLString:(NSString*)urlString;
 
 - (void)updateExpandPropertiesWithWidth:(int)width height:(int)height;
 - (void)updateMaxSizeWithWidth:(int)width height:(int)height;

@@ -12,8 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString* const AD_REQUEST_FEMALE;
-extern NSString* const AD_REQUEST_MALE;
+typedef NS_ENUM(NSInteger, DIOBannerPosition) {
+    DIOBannerPositionAboveTheFold = 1,
+    DIOBannerPositionBelowTheFold = 3
+};
 
 @interface DIOAdRequest : NSObject
 
@@ -21,34 +23,15 @@ extern NSString* const AD_REQUEST_MALE;
 @property (nonatomic, strong) NSString *placementId;
 
 /**
- Sets the year of birth for this ad request.
+ Sets the content keywords for this ad request.
  
- @param yearOfBirth Year of birth (4 digits.)
- */
-- (void)setYearOfBirth:(int)yearOfBirth;
-
-/**
- Sets the gender for this ad request.
- 
- @param gender either 'AD_REQUEST_FEMALE' or 'AD_REQUEST_MALE'.
- */
-- (void)setGender:(NSString*)gender;
-
-/**
- Sets the keywords for this ad request.
- 
- @param keywords A list of keywords.
- */
-- (void)setKeywords:(NSArray<NSString*>*)keywords;
-
-/**
- Sets the content keywords for this ad request. Not sensitive to GDPR.
- 
- @param contentKeywords A list of contentKeywords.
+ @param contentKeywords A list of content keywords.
  */
 - (void)setContentKeywords:(NSArray<NSString*>*)contentKeywords;
 
-- (void)setDetailsRequired:(BOOL)detailsRequired;
+/**
+ */
+- (void)setPosition:(DIOBannerPosition)position;
 
 /**
  Requests an ad from the server.

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOFeedInterstitialHtml : DIOHtmlAd <DIOFeedInterstitialViewDelegate>
 
 @property (nonatomic) BOOL closed;
+@property (nonatomic, weak) DIOFeedInterstitialView *containerView;
 
 @end
 
