@@ -28,7 +28,11 @@
                 @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Html
                 @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeFeedInterstitial]}]; // Html
 
-    [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
+    DIOInitProperties *properties = [[DIOInitProperties alloc] init];
+    [properties setGender:GENDER_MALE];
+    [properties setYearOfBirth:1980];
+    
+    [[DIOController sharedInstance] initializeWithProperties:properties appId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");
         
         PlacementViewController *placementViewController = [PlacementViewController new];
