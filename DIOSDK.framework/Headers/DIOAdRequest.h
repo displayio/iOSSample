@@ -30,6 +30,13 @@ typedef NS_ENUM(NSInteger, DIOBannerPosition) {
 - (void)setContentKeywords:(NSArray<NSString*>*)contentKeywords;
 
 /**
+ Sets the A/B testing labels for this ad request.
+ 
+ @param labels A list of labels.
+ */
+- (void)setLabels:(NSArray<NSString*>*)labels;
+
+/**
  */
 - (void)setPosition:(DIOBannerPosition)position;
 

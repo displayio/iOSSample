@@ -11,6 +11,7 @@
 
 #import "DIOPlacement.h"
 #import "DIOServiceClient.h"
+#import "DIOMockAdapter.h"
 #import "DIOConsentManager.h"
 #import "DIOInitProperties.h"
 
@@ -46,6 +47,7 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
 @property (nonatomic, strong) NSMutableDictionary *placements;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 @property (nonatomic) DIOMediationPlatform mediationPlatform;
+@property (nonatomic, getter=isMocking) BOOL mocking;
 
 /**
  @return The DIOController singleton.
@@ -85,8 +87,9 @@ Stops all ads and releases the resources associated with each of them
 
 - (NSString*)appId;
 - (DIOInitProperties*)initializationProperties;
-- (DIOServiceClient*)serviceClient;
 - (NSString*)userSession;
+- (DIOServiceClient*)serviceClient;
+- (DIOMockAdapter*)mockAdapter;
 
 - (id)iabConsentData;
 - (void)clearIABConsentData;

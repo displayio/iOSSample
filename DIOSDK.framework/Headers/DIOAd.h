@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL isRewardedVideo;
 @property (nonatomic) BOOL isInFeed;
 @property (nonatomic) BOOL isEndCard;
-@property (nonatomic) BOOL isFeedInterstitial;
+@property (nonatomic) BOOL isInterscroller;
 @property (nonatomic) BOOL isBanner;
 @property (nonatomic) BOOL isMediumRectangle;
 @property (nonatomic, strong) NSString *advertiserName;
