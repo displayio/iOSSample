@@ -1,5 +1,5 @@
 //
-//  FeedInterstitialViewController.h
+//  InterscrollerViewController.h
 //  iOSSample
 //
 //  Created by Ariel Malka on 1/12/20.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FeedInterstitialViewController : UITableViewController
+@interface InterscrollerViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *placementId;
 

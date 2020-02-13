@@ -9,7 +9,7 @@
 #import "PlacementViewController.h"
 #import "PlacementType.h"
 #import "AdViewController.h"
-#import "FeedInterstitialViewController.h"
+#import "InterscrollerViewController.h"
 
 @implementation PlacementViewController
 
@@ -35,8 +35,8 @@
             cell.textLabel.text = @"In-feed";
             break;
             
-        case PlacementTypeFeedInterstitial:
-            cell.textLabel.text = @"Feed Interstital";
+        case PlacementTypeInterscroller:
+            cell.textLabel.text = @"Interscroller";
             break;
             
         case PlacementTypeBanner:
@@ -57,8 +57,8 @@
     NSString *placementId = self.data[indexPath.row][@"id"];
     PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
-    if (placementType == PlacementTypeFeedInterstitial) {
-        FeedInterstitialViewController *viewController = [FeedInterstitialViewController new];
+    if (placementType == PlacementTypeInterscroller) {
+        InterscrollerViewController *viewController = [InterscrollerViewController new];
         viewController.placementId = placementId;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];

@@ -1,25 +1,25 @@
 //
-//  FeedInterstitialViewController.m
+//  InterscrollerViewController.m
 //  iOSSample
 //
 //  Created by Ariel Malka on 1/12/20.
 //  Copyright © 2020 Display.io. All rights reserved.
 //
 
-#import "FeedInterstitialViewController.h"
+#import "InterscrollerViewController.h"
 
 #import <DIOSDK/DIOController.h>
-#import <DIOSDK/DIOFeedInterstitialContainer.h>
+#import <DIOSDK/DIOInterscrollerContainer.h>
 
-@interface FeedInterstitialViewController ()
+@interface InterscrollerViewController ()
 
-@property (nonatomic, strong) DIOFeedInterstitialContainer *container;
+@property (nonatomic, strong) DIOInterscrollerContainer *container;
 
 @property (nonatomic, strong) DIOAd *ad;
 
 @end
 
-@implementation FeedInterstitialViewController
+@implementation InterscrollerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +36,7 @@
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
     DIOAdRequest *request = [placement newAdRequest];
     
-    self.container = [[DIOFeedInterstitialContainer alloc] init];
+    self.container = [[DIOInterscrollerContainer alloc] init];
     
     [self.container loadWithAdRequest:request completionHandler:^(DIOAd *ad){
         self.ad = ad;

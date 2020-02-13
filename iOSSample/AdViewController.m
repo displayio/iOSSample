@@ -64,7 +64,7 @@
 - (IBAction)showPressed:(id)sender {
     self.showButton.enabled = NO;
     
-    if (self.placementType == PlacementTypeInFeed || self.placementType == PlacementTypeFeedInterstitial) {
+    if (self.placementType == PlacementTypeInFeed || self.placementType == PlacementTypeInterscroller) {
         FeedViewController *viewController = [FeedViewController new];
         viewController.ad = self.ad;
 
