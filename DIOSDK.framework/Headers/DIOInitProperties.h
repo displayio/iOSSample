@@ -46,13 +46,22 @@ typedef NS_ENUM(NSInteger, DIOCompliance) {
 
 /**
  */
-- (void)setChildCompliance:(DIOCompliance)compliance;
+- (void)setDetailsRequired:(BOOL)detailsRequired;
 
 /**
  */
-- (void)setDetailsRequired:(BOOL)detailsRequired;
+- (void)setChildCompliance:(DIOCompliance)compliance;
 
 - (DIOCompliance)childCompliance;
+
+/**
+ Defines if uncaught exceptions should be handled by the SDK
+ 
+ @param b A boolean equal to YES in order to disable crash reporting
+ */
+- (void)setCrashReportsDisabled:(BOOL)b;
+
+- (BOOL)crashReportsDisabled;
 
 @end
 
