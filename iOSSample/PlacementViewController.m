@@ -10,6 +10,7 @@
 #import "PlacementType.h"
 #import "AdViewController.h"
 #import "InterscrollerViewController.h"
+#import "OutstreamVideoViewController.h"
 
 @implementation PlacementViewController
 
@@ -46,7 +47,10 @@
         case PlacementTypeMediumRectangle:
             cell.textLabel.text = @"Medium Rectangle";
             break;
-    }
+            
+        case PlacementTypeOutstreamVideo:
+            cell.textLabel.text = @"Outstream Video";
+            break;    }
     
     return cell;
 }
@@ -59,6 +63,14 @@
     
     if (placementType == PlacementTypeInterscroller) {
         InterscrollerViewController *viewController = [InterscrollerViewController new];
+        viewController.placementId = placementId;
+
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:navigationController animated:YES completion:nil];
+    } else if (placementType == PlacementTypeOutstreamVideo) {
+        OutstreamVideoViewController *viewController = [OutstreamVideoViewController new];
         viewController.placementId = placementId;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];

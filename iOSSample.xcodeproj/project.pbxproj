@@ -15,6 +15,7 @@
 		A866C06A225B881F00A42940 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A866C069225B881F00A42940 /* main.m */; };
 		A866C073225B8A8500A42940 /* DIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A866C071225B8A6C00A42940 /* DIOSDK.framework */; };
 		A866C074225B8A8500A42940 /* DIOSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A866C071225B8A6C00A42940 /* DIOSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A869E774243353BE001EB16E /* OutstreamVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A869E773243353BE001EB16E /* OutstreamVideoViewController.m */; };
 		A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAC227F245E00F7F906 /* PlacementViewController.m */; };
 		A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAF227F388600F7F906 /* AdViewController.m */; };
 		A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB1228024D500F7F906 /* CustomCell2.m */; };
@@ -50,6 +51,8 @@
 		A866C068225B881F00A42940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A866C069225B881F00A42940 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A866C071225B8A6C00A42940 /* DIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIOSDK.framework; sourceTree = "<group>"; };
+		A869E772243353BE001EB16E /* OutstreamVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutstreamVideoViewController.h; sourceTree = "<group>"; };
+		A869E773243353BE001EB16E /* OutstreamVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutstreamVideoViewController.m; sourceTree = "<group>"; };
 		A871DC5223154343008AF567 /* PlacementType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementType.h; sourceTree = "<group>"; };
 		A87C4BAB227F245E00F7F906 /* PlacementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementViewController.h; sourceTree = "<group>"; };
 		A87C4BAC227F245E00F7F906 /* PlacementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacementViewController.m; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				A89B4912231552B200405FBA /* BannerViewController.m */,
 				A8E91F4523CB637E00ADCC93 /* InterscrollerViewController.h */,
 				A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */,
+				A869E772243353BE001EB16E /* OutstreamVideoViewController.h */,
+				A869E773243353BE001EB16E /* OutstreamVideoViewController.m */,
 				A87C4BB3228024D500F7F906 /* CustomCell1.h */,
 				A87C4BB2228024D500F7F906 /* CustomCell1.m */,
 				A87C4BB6228024D600F7F906 /* CustomCell2.h */,
@@ -206,6 +211,7 @@
 				A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */,
 				A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */,
 				A866C05C225B881E00A42940 /* AppDelegate.m in Sources */,
+				A869E774243353BE001EB16E /* OutstreamVideoViewController.m in Sources */,
 				A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */,
 				A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */,
 				A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */,
