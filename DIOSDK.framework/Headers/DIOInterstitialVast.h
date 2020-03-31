@@ -6,11 +6,12 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOVastAd.h"
+#import "DIOVideoAd.h"
+#import "DIOInterstitialVideoPlayer.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterstitialVast : DIOVastAd <DIOVideoPlayerDelegate>
+@interface DIOInterstitialVast : DIOVideoAd <DIOVideoPlayerDelegate>
 
 @end
 

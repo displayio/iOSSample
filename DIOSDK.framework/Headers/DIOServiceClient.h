@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)placementForAppId:(NSString*)appId placementId:(NSString*)placementId data:(id)data completionHandler:(void (^)(id, NSError*))completionHandler;
 - (void)reportErrorForAppId:(NSString*)appId messageLog:(NSString*)messageLog error:(NSString*)error trace:(NSString*)trace data:(id)data level:(NSString*)level;
 - (void)addWithKey:(NSString*)key value:(NSString*)value;
+- (void)removeWithKey:(NSString*)key;
 - (void)callBeaconWithURLString:(NSString*)urlString;
 
 @end

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL framed;
 @property (nonatomic) BOOL detailed;
 
-- (instancetype)initWithURL:(NSURL*)url params:(id)params;
+- (instancetype)initWithParams:(id)params;
 
 - (void)activate;
 - (void)deactivate;

@@ -27,8 +27,10 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInterscrollerPlacement.h>
 #import <DIOSDK/DIOBannerPlacement.h>
 #import <DIOSDK/DIOMediumRectanglePlacement.h>
+#import <DIOSDK/DIOOutstreamVideoPlacement.h>
 #import <DIOSDK/DIOOMController.h>
 #import <DIOSDK/DIOVideoPlayer.h>
+#import <DIOSDK/DIOVideoPreloader.h>
 #import <DIOSDK/DIOInterstitialVideoPlayer.h>
 #import <DIOSDK/DIOPlayerView.h>
 #import <DIOSDK/DIOAdRequest.h>
@@ -39,7 +41,6 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInterstitialHtml.h>
 #import <DIOSDK/DIOHtmlAd.h>
 #import <DIOSDK/DIOInterstitialVast.h>
-#import <DIOSDK/DIOVastAd.h>
 #import <DIOSDK/DIOVideoAd.h>
 #import <DIOSDK/DIOInterstitialViewController.h>
 #import <DIOSDK/DIOConsentManager.h>
@@ -68,6 +69,10 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOMediumRectangle.h>
 #import <DIOSDK/DIOMediumRectangleHtml.h>
 #import <DIOSDK/DIOMediumRectangleView.h>
+#import <DIOSDK/DIOOutstreamVideo.h>
+#import <DIOSDK/DIOOutstreamVideoView.h>
+#import <DIOSDK/DIOOutstreamVideoVideoPlayer.h>
+#import <DIOSDK/DIOOutstreamVideoContainer.h>
 #import <DIOSDK/DIOMockAdapter.h>
 #import <DIOSDK/DIOMockPlacement.h>
 #import <DIOSDK/DIOInterscrollerMockPlacement.h>
