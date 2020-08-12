@@ -10,6 +10,7 @@
 
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOInterscrollerContainer.h>
+#import <DIOSDK/DIOInterscrollerPlacement.h>
 
 @interface InterscrollerViewController ()
 
@@ -34,6 +35,8 @@
     //
     
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
+//    ((DIOInterscrollerPlacement*)placement).interscrollerSize = 700;
+
     DIOAdRequest *request = [placement newAdRequest];
     
     self.container = [[DIOInterscrollerContainer alloc] init];
@@ -86,6 +89,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 20) {
         return self.tableView.frame.size.height;
+//        return 700;
     }
     
     return UITableViewAutomaticDimension;
