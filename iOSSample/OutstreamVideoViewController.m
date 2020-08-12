@@ -11,6 +11,8 @@
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOOutstreamVideoContainer.h>
 #import <DIOSDK/DIOOutstreamVideoView.h>
+#import <DIOSDK/DIOOutstreamVideoPlacement.h>
+
 
 @interface OutstreamVideoViewController ()
 
@@ -35,6 +37,7 @@
     //
     
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
+//    ((DIOOutstreamVideoPlacement*)placement).backgroundColorSnap = UIColor.redColor;
     DIOAdRequest *request = [placement newAdRequest];
     
     self.container = [[DIOOutstreamVideoContainer alloc] init];

@@ -10,10 +10,20 @@
 #import "OMIDAdSessionConfiguration.h"
 #import "OMIDFriendlyObstructionType.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ * List of supported error types.
+ */
 typedef NS_ENUM(NSUInteger, OMIDErrorType) {
-    OMIDErrorGeneric = 1, // will translate into "GENERIC" when published to the OMID JS service.
-    OMIDErrorMedia = 2, // will translate into "VIDEO" when published to the OMID JS service.
-    OMIDErrorVideo = 2 // Note: Planned to be deprecated  in OM SDK 1.3.2.
+    /**
+     * The integration is publishing a "generic" error to verification scripts.
+     */
+    OMIDErrorGeneric = 1,
+    /**
+     * The integration is publishing a "video" error to verification scripts.
+     */
+    OMIDErrorMedia = 2
 };
 
 /**
@@ -25,7 +35,7 @@ typedef NS_ENUM(NSUInteger, OMIDErrorType) {
 /**
  *  The AdSession configuration is used for check owners.
  */
-@property(nonatomic, readonly, nonnull) OMIDDisplayioAdSessionConfiguration *configuration;
+@property(nonatomic, readonly) OMIDDisplayioAdSessionConfiguration *configuration;
 /**
  *  The native view which is used for viewability tracking.
  */
@@ -40,16 +50,15 @@ typedef NS_ENUM(NSUInteger, OMIDErrorType) {
  *
  * To prevent this, the implementation must wait until the webview finishes loading OM SDK
  * JavaScript before creating the OMIDAdSession.  The easiest way is to create the OMIDAdSession
- * in a webview delegate callback (-[WKNavigationDelegate webView:didFinishNavigation:] or
- * -[UIWebViewDelegate webViewDidFinishLoad:]).  Alternatively, if an implementation can receive an
- * HTML5 DOMContentLoaded event from the webview, it can create the OMIDAdSession in a message
- * handler for that event.
+ * in a webview delegate callback (-[WKNavigationDelegate webView:didFinishNavigation:].  Alternatively,
+ * if an implementation can receive an HTML5 DOMContentLoaded event from the webview, it can create
+ * the OMIDAdSession in a message handler for that event.
  *
  * @param context The context that provides the required information for initialising the ad session.
  * @return A new OMIDAdSession instance, or nil if the supplied context is nil.
  */
-- (nullable instancetype)initWithConfiguration:(nonnull OMIDDisplayioAdSessionConfiguration *)configuration
-                              adSessionContext:(nonnull OMIDDisplayioAdSessionContext *)context
+- (nullable instancetype)initWithConfiguration:(OMIDDisplayioAdSessionConfiguration *)configuration
+                              adSessionContext:(OMIDDisplayioAdSessionContext *)context
                                          error:(NSError *_Nullable *_Nullable)error;
 
 
@@ -74,19 +83,6 @@ typedef NS_ENUM(NSUInteger, OMIDErrorType) {
 
 /**
  *  Adds friendly obstruction which should then be excluded from all ad session viewability calculations.
- *
- *  This method will have no affect if called after the ad session has finished.
- *
- * @param friendlyObstruction The view to be excluded from all ad session viewability calculations.
- *
- * @note This will just call -[OMIDAdSession addFriendlyObstruction:purpose:detailedReason:error:] with the
- * additional arguments OMIDFriendlyObstructionOther, nil, and nil respectfully. This will be deprecated in future
- * versions.
- */
-- (void)addFriendlyObstruction:(nonnull UIView *)friendlyObstruction;
-
-/**
- *  Adds friendly obstruction which should then be excluded from all ad session viewability calculations.
  * It also provides a purpose and detailed reason string to pass forward to the measurement vendors.
  *
  *  This method will have no affect if called after the ad session has finished.
@@ -101,7 +97,7 @@ typedef NS_ENUM(NSUInteger, OMIDErrorType) {
  * error object. However, if one or more arguments are against requirements, it will return NO with an error
  * object assigned.
  */
-- (BOOL)addFriendlyObstruction:(nonnull UIView *)friendlyObstruction
+- (BOOL)addFriendlyObstruction:(UIView *)friendlyObstruction
                        purpose:(OMIDFriendlyObstructionType)purpose
                 detailedReason:(nullable NSString *)detailedReason
                          error:(NSError *_Nullable *_Nullable)error;
@@ -113,7 +109,7 @@ typedef NS_ENUM(NSUInteger, OMIDErrorType) {
  *
  * @param friendlyObstruction The view to be removed from the list of registered friendly obstructions.
  */
-- (void)removeFriendlyObstruction:(nonnull UIView *)friendlyObstruction;
+- (void)removeFriendlyObstruction:(UIView *)friendlyObstruction;
 
 /**
  *  Utility method to remove all registered friendly obstructions.
@@ -130,8 +126,9 @@ typedef NS_ENUM(NSUInteger, OMIDErrorType) {
  * @param errorType The type of error.
  * @param message The message containing details of the error.
  */
-- (void)logErrorWithType:(OMIDErrorType)errorType message:(nonnull NSString *)message
+- (void)logErrorWithType:(OMIDErrorType)errorType message:(NSString *)message
 NS_SWIFT_NAME(logError(withType:message:));
 
 @end
 
+NS_ASSUME_NONNULL_END

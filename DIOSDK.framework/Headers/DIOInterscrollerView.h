@@ -16,12 +16,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)exposureDidChange:(int)exposure y:(int)y height:(int)height;
 - (void)didActivate;
 - (void)didDeactivate;
+- (void)trackImpression;
+
 
 @end
 
 @interface DIOInterscrollerView : UIView
 
 @property (nonatomic, weak) id<DIOInterscrollerViewDelegate> delegate;
+@property (nonatomic, strong) UIView *footerView;
+
 
 - (instancetype)initWithParams:(id)params;
 

@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOAdUnit : DIOAd
 
 @property (nonatomic, strong) OMIDDisplayioAdSession *omAdSession;
+@property (nonatomic, strong) OMIDDisplayioAdEvents *omAdEvents;
+
 @property (nonatomic) BOOL watermarked;
 
 @property (nonatomic, copy) void (^loadedHandler)(void);

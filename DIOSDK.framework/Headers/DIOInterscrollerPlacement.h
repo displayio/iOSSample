@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *headerColor;
 @property (nonatomic, strong) UIColor *footerBackgrounColor;
 @property (nonatomic, strong) UIColor *footerColor;
-
+@property int interscrollerSize;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
 @interface DIOVideoPlayer : NSObject
 
 @property (nonatomic, strong) id<DIOVideoPlayerDelegate> delegate;
-@property (nonatomic, strong) OMIDDisplayioVideoEvents *omVideoEvents;
+@property (nonatomic, strong) OMIDDisplayioMediaEvents *omVideoEvents;
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) NSArray *progressEvents;
 @property (nonatomic, strong) id eventBeacons;

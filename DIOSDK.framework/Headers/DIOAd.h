@@ -48,6 +48,9 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic, strong) NSString *advertiserClickURL;
 @property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
 
+@property (nonatomic, strong) void (^adEventHandler)(DIOAdEvent);
+
+
 /**
  Shows an interstitial ad.
  
@@ -56,6 +59,12 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
  @see DIOAdEvent enum
  */
 - (void)showAdFromViewController:(UIViewController*)controller eventHandler:(void (^)(DIOAdEvent event))eventHandler;
+
+/**
+Use to track events for InFeed, Banner, Medium Rectangle, Interscroller and OutStream Video. NOTE: do not use for Interstitial or Rewarded Video ads, the proper method to track its events is using showAdFromViewController 
+@method showAdFromViewController
+*/
+- (void)setEventHandler:(void (^)(DIOAdEvent event))eventHandler;
 
 /**
  Leaves ad's current screen (for in-feed video ads only)

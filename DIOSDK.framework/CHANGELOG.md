@@ -1,12 +1,79 @@
 # Changelog for Open Measurement SDK on iOS
 
+## 1.3.9 - 2020-07-31
+### Update
+- Add Javascript ad session to reference app
+- Increase WebView size to show complete HTML content
+
+## 1.3.8 - 2020-07-16
+### Update
+- Enforce calling addFriendlyObstruction:purpose:detailedReason:error: on the main thread via returning an error
+
+## 1.3.7 - 2020-06-30
+### Update
+- Reference app now uses HTML creatives from hosted links
+
+## 1.3.6 - 2020-06-04
+### Fixed
+- Fix obstruction reporting on iPadOS when multitasking
+
+## 1.3.5 - 2020-05-07
+### Fixed
+- Foreground/background state detection on iPadOS when multitasking
+
+## 1.3.4 - 2020-04-23
+### Removed
+- `UIWebView` internal support has been removed. 
+- `OMIDAdSessionContext` initializers are now constrained to `WKWebView`.
+
+The following features changed their API from OM SDK 1.2 to 1.3.  The old 1.2 APIs have been removed from this release.
+
+- Method `-[OMIDSDK activateWithOMIDAPIVersion:error:]` replaced by `-[OMIDSDK activate]`.
+- Method `-[OMIDSDK isCompatibleWithOMIDAPIVersion:]` is no longer needed.
+- Method `-[OMIDAdSessionContext initWithPartner:script:resources:customReferenceIdentifier:error:]` replaced by `-[OMIDAdSessionContext initWithPartner:script:resources:contentUrl:customReferenceIdentifier:error:]`.
+- Method `-[OMIDAdSessionContext initWithPartner:webView:customReferenceIdentifier:error:]` replaced by `-[OMIDAdSessionContext initWithPartner:webView:contentUrl:customReferenceIdentifier:error:`.
+- Methods `-[OMIDAdSessionConfiguration initWithImpressionOwner:videoEventsOwner:isolateVerificationScripts:error:]` and `-[OMIDAdSessionConfiguration initWithImpressionOwner:videoEventsOwner:error:]` replaced by `-[OMIDAdSessionConfiguration initWithCreativeType:impressionType:impressionOwner:mediaEventsOwner:isolateVerificationScripts:]`.
+- Method `-[OMIDAdSession addFriendlyObstruction:]` replaced by `-[OMIDAdSession addFriendlyObstruction:purpose:detailedReason:error:]`.
+- Methods `[OMIDMediaEvents loadedWithVastProperties:error:]` and `[OMIDVideoEvents loadedWithVastProperties:error:]` replaced by `[OMIDAdEvents loadedWithVastProperties:error:]`.
+- Class `OMIDVideoEvents` replaced by `OMIDMediaEvents`.
+
+## 1.3.3 - 2020-04-15
+### Fixed
+- Prevent crash with JS timers in native ad session by ensuring all JS operations occur on a single GCD queue.
+
+## 1.3.2 - 2020-04-02
+### Deprecated
+The following features changed their API from OM SDK 1.2 to 1.3.  The old 1.2 APIs are still functional but are deprecated in this release; they will be removed in 1.3.4.
+
+- Method `-[OMIDSDK activateWithOMIDAPIVersion:error:]` replaced by `-[OMIDSDK activate]`.
+- Method `-[OMIDSDK isCompatibleWithOMIDAPIVersion:]` is no longer needed.
+- Method `-[OMIDAdSessionContext initWithPartner:script:resources:customReferenceIdentifier:error:]` replaced by `-[OMIDAdSessionContext initWithPartner:script:resources:contentUrl:customReferenceIdentifier:error:]`.
+- Method `-[OMIDAdSessionContext initWithPartner:webView:customReferenceIdentifier:error:]` replaced by `-[OMIDAdSessionContext initWithPartner:webView:contentUrl:customReferenceIdentifier:error:`.
+- Method `-[OMIDAdSessionConfiguration initWithImpressionOwner:videoEventsOwner:isolateVerificationScripts:error:]` replaced by `-[OMIDAdSessionConfiguration initWithCreativeType:impressionType:impressionOwner:mediaEventsOwner:isolateVerificationScripts:]`.
+- Method `-[OMIDAdSession addFriendlyObstruction:]` replaced by `-[OMIDAdSession addFriendlyObstruction:purpose:detailedReason:error:]`.
+- Methods `[OMIDMediaEvents loadedWithVastProperties:error:]` and `[OMIDVideoEvents loadedWithVastProperties:error:]` replaced by `[OMIDAdEvents loadedWithVastProperties:error:]`.
+- Class `OMIDVideoEvents` replaced by `OMIDMediaEvents`.
+
+### Obsolete
+- Passing UIWebView to OMIDAdSessionContext initializers is obsolete but still functional.
+   All support for UIWebView will removed in version 1.3.4.
+
+### iOS Reference App
+- The iOS reference app sample code is now included in the SDK distribution archive (see README for details).
+- New "HTML Video" example for webview video player integration.
+- The Open Measurement iOS Reference App github repo will no longer be updated.
+
+## 1.3.1 - 2020-01-09
+### Changed
+- Remove static references to deprecated UIWebView class.
+
 ## 1.3.0 - 2019-12-17
 OM SDK 1.3 is a signficant update.  It adds support for some key new use cases for OMID 1.3 while allowing scripts using OMID 1.2 to run correctly.  Integrations (apps and SDKs) using OM SDK will need to make code changes.  See the [Migration Guide](docs/migration.md) for details.
 
 ### Changed
 The following features changed their API from OM SDK 1.2 to 1.3.  The old 1.2 APIs are still functional but obsolete in this release; they will be deprecated in OM SDK 1.3.2 and removed in 1.3.4.
 
-- Method `-[OMSDK activateWithOMIDAPIVersion:error:]` replaced by `-[OMIDSDK activate]`
+- Method `-[OMIDSDK activateWithOMIDAPIVersion:error:]` replaced by `-[OMIDSDK activate]`
 - Method `-[OMIDAdSessionContext initWithPartner:script:resources:customReferenceIdentifier:error:]` replaced by `-[OMIDAdSessionContext initWithPartner:script:resources:contentUrl:customReferenceIdentifier:error:]`
 - Method `-[OMIDAdSessionContext initWithPartner:webView:customReferenceIdentifier:error:]` replaced by `-[OMIDAdSessionContext initWithPartner:webView:contentUrl:customReferenceIdentifier:error:`
 - Method `-[OMIDAdSessionConfiguration initWithImpressionOwner:videoEventsOwner:isolateVerificationScripts:error:]` replaced by `-[OMIDAdSessionConfiguration initWithCreativeType:impressionType:impressionOwner:mediaEventsOwner:isolateVerificationScripts:]`
@@ -21,8 +88,7 @@ The following features changed their API from OM SDK 1.2 to 1.3.  The old 1.2 AP
 ### Obsolete
 The following feature is still present but obsolete in OM SDK 1.3.0.  It will be deprecated in OM SDK 1.3.2 and removed in 1.3.4.
 
-- Method `-[OMSDK isCompatibleWithOMIDAPIVersion:]`
-
+- Method `-[OMIDSDK isCompatibleWithOMIDAPIVersion:]`
 
 ## 1.2.22 - 2019-12-01 
 - Native changes for JS fix to handle resource level access mode properly

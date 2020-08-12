@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "OMIDImports.h"
-
 #import "DIOVideoPlayer.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -21,11 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (DIOOMController*)sharedInstance;
 
 - (void)initialize;
-- (OMIDDisplayioAdSession*)createHtmlAdSessionWithWebView:(UIView*)webView closeButtonView:(UIView*)closeButtonView;
+- (OMIDDisplayioAdSession*)createHtmlAdSessionWithWebView:(UIView*)webView friendlyView:(UIView*)closeButtonView;
 - (NSString*)injectScriptContentIntoHtmlWithMarkUp:(NSString*)markup;
-- (void)callVideoEvent:(OMIDDisplayioVideoEvents*)videoEvents event:(DIOVideoPlayerEvent)event player:(DIOVideoPlayer*)player;
+- (void)callVideoEvent:(OMIDDisplayioMediaEvents*)videoEvents event:(DIOVideoPlayerEvent)event player:(DIOVideoPlayer*)player;
 - (OMIDDisplayioAdSession*)createVideoAdSessionWithVideoView:(UIView*)videoView verifications:(NSArray*)verifications;
-- (void)impressionOccuredWithAdSession:(OMIDDisplayioAdSession*)adSession;
+- (void)impressionOccuredWithAdSession:(OMIDDisplayioAdSession*)adSession adEvents:(OMIDDisplayioAdEvents*) adEvents;
 
 @end
 
