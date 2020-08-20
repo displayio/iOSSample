@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loadWithAdRequest:(DIOAdRequest*)request completionHandler:(void (^)(DIOAd*))completionHandler errorHandler:(void (^)(NSError*))errorHandler;
 - (UIView*)view;
+- (int)containerHeight;
+- (void)setConstraintForIndexPath :(NSIndexPath*) index;
 
 @end
 

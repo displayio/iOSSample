@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setContainedView:(UIView*)view;
 - (void)cancel;
 - (void)skip;
+- (int)containerHeight;
+- (void)setConstraintForIndexPath :(NSIndexPath*) index;
 
 @end
 

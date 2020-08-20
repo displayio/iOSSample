@@ -35,7 +35,7 @@
     //
     
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
-//    ((DIOInterscrollerPlacement*)placement).interscrollerSize = 700;
+    ((DIOInterscrollerPlacement*)placement).interscrollerSize = 700;
 
     DIOAdRequest *request = [placement newAdRequest];
     
@@ -88,7 +88,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 20) {
-        return self.tableView.frame.size.height;
+//        return self.tableView.frame.size.height;
 //        return 700;
     }
     
