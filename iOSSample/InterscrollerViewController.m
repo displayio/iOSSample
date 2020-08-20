@@ -35,7 +35,7 @@
     //
     
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
-    ((DIOInterscrollerPlacement*)placement).interscrollerSize = 700;
+//    ((DIOInterscrollerPlacement*)placement).interscrollerSize = 700;
 
     DIOAdRequest *request = [placement newAdRequest];
     
@@ -69,12 +69,13 @@
         
         if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
         [cell.contentView addSubview:view];
+        [self.container setConstraintForIndexPath:indexPath];
         
-        view.translatesAutoresizingMaskIntoConstraints = NO;
-        [cell.contentView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
-        [cell.contentView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
-        [cell.contentView.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
-        [cell.contentView.bottomAnchor constraintEqualToAnchor:view.bottomAnchor].active = YES;
+//        view.translatesAutoresizingMaskIntoConstraints = NO;
+//        [cell.contentView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
+//        [cell.contentView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
+//        [cell.contentView.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
+//        [cell.contentView.bottomAnchor constraintEqualToAnchor:view.bottomAnchor].active = YES;
         
         return cell;
     }
