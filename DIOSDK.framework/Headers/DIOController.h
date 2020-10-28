@@ -48,6 +48,8 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 @property (nonatomic) DIOMediationPlatform mediationPlatform;
 @property (nonatomic, getter=isMocking) BOOL mocking;
+@property (nonatomic) int impTrackingPercent;
+@property (nonatomic) int impTrackingDelay;
 
 /**
  @return The DIOController singleton.

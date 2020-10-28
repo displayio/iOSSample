@@ -21,11 +21,6 @@ typedef NS_ENUM(NSInteger, DIOConsentState) {
 
 @interface DIOConsentManager : NSObject
 
-- (NSString*)consentString;
-- (SubjectToGDPR)subjectToGDPR;
-- (BOOL)cmpPresent;
-- (NSString*)parsedVendorConsents;
-- (NSString*)parsedPurposeConsents;
 - (id)iabConsentProperties;
 - (void)clearIABConsentData;
 - (id)сonsentData;

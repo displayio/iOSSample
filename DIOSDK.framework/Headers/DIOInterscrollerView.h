@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)skip;
 - (int)containerHeight;
 - (void)setConstraintForIndexPath :(NSIndexPath*) index;
+- (void)updateDwellOptionsForAdvertiser:(BOOL)sticky holdPeriod:(NSInteger) holdPeriod;
 
 @end
 
