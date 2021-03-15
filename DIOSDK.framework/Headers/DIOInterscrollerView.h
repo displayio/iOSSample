@@ -30,10 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithParams:(id)params;
 
 - (void)setContainedView:(UIView*)view;
+- (void)setScaleWebviewToAd:(BOOL)scale;
+- (void)clearBackGround;
 - (void)cancel;
 - (void)skip;
 - (int)containerHeight;
 - (void)setConstraintForIndexPath :(NSIndexPath*) index;
+-(void) setConstraintForScrollView;
 - (void)updateDwellOptionsForAdvertiser:(BOOL)sticky holdPeriod:(NSInteger) holdPeriod;
 
 @end

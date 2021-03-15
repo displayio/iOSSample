@@ -31,6 +31,6 @@
  */
 - (CGFloat)height;
 
-- (void)setContainedView:(UIView*)view ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth;
+- (void)setContainedView:(UIView*)view ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth isVideo:(BOOL)isVideo;
 
 @end

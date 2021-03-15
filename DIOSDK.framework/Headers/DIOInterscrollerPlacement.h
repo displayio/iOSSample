@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInterscrollerPlacement : DIOPlacement
 
+@property (nonatomic, strong) UIColor *mainBackgrounColor;
 @property (nonatomic, strong) UIColor *headerBackgrounColor;
 @property (nonatomic, strong) UIColor *headerColor;
 @property (nonatomic, strong) UIColor *footerBackgrounColor;

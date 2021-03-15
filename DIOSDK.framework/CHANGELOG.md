@@ -1,5 +1,27 @@
 # Changelog for Open Measurement SDK on iOS
 
+## 1.3.16 - 2021-02-04
+- Fix missing support for i386 & armv7 architectures
+
+## 1.3.15 - 2020-12-18
+- Add xcframework integration option to distribution archive
+- Utilize new xcframework integration option in OM-Demo
+- Include omsdk-v1.js by default in OM-Demo
+
+## 1.3.13 - 2020-11-04
+- Update version to match JS and Android SDKs; no changes from 1.3.12
+
+## 1.3.12 - 2020-10-06
+- Update version to match JS and Android SDKs; no changes from 1.3.11
+
+
+## 1.3.11 - 2020-09-24
+- Update version to match JS and Android SDKs; no changes from 1.3.10
+
+
+## 1.3.10 - 2020-08-12
+- Update version to match JS and Android SDKs; no changes from 1.3.9
+
 ## 1.3.9 - 2020-07-31
 ### Update
 - Add Javascript ad session to reference app

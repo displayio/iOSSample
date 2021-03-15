@@ -32,10 +32,11 @@
     
     self.navigationController.navigationBar.translucent = NO;
     
-    //
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
-//    ((DIOInterscrollerPlacement*)placement).interscrollerSize = 700;
+    ((DIOInterscrollerPlacement*)placement).interscrollerSize = self.tableView.frame.size.height;
 
     DIOAdRequest *request = [placement newAdRequest];
     

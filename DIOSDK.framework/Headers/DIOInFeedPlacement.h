@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL fullWidth;
 @property (nonatomic) BOOL framed;
+@property (nonatomic) BOOL showTimer;
 
 @end
 

@@ -50,6 +50,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 
 @property (nonatomic, strong) void (^adEventHandler)(DIOAdEvent);
 
+@property (nonatomic) BOOL scaleWebviewToAd;
 @property (nonatomic) BOOL isSticky;
 @property (nonatomic) NSInteger holdPeriod;
 
