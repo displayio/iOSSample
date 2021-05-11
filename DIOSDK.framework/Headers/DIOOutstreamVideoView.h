@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didStartResizing;
 - (void)didEndResizing;
 - (void)didMoveAway;
+- (void)measuredImpressionOccured;
 
 @end
 
@@ -32,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (CGFloat)height;
 
 - (void)setContainedView:(UIView*)view;
+- (void)isVideo:(BOOL)isVideo;
 - (void)cancel;
 - (void)moveAway;
 

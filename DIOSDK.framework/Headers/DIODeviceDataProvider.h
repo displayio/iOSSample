@@ -16,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (id)deviceAdId;
 + (BOOL)isAdvertisingTrackingEnabled;
 
++ (NSNumber*)appTrackingTransparencyFrameworkStatus;
++ (NSArray*)skAdNetworkItems;
++ (NSString*)identifierForVendor;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

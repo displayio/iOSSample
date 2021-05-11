@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) OMIDDisplayioAdEvents *omAdEvents;
 
 @property (nonatomic) BOOL watermarked;
+@property (nonatomic) BOOL wasMeasuredImpressionAttempt;
 
 @property (nonatomic, copy) void (^loadedHandler)(void);
 @property (nonatomic, copy) void (^noFillHandler)(void);
@@ -35,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)broadcastLoaded;
 - (void)broadcastNoFill;
 - (void)broadcastError:(NSError*)error;
+- (void)registerMRCImpression:(int) delay;
 
 @end
 

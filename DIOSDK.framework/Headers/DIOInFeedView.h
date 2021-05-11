@@ -17,6 +17,7 @@
 - (void)deviceOrientationDidChange;
 - (void)didActivate;
 - (void)didDeactivate;
+- (void)measuredImpressionOccured;
 
 @end
 

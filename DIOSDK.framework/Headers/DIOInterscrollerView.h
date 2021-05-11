@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didActivate;
 - (void)didDeactivate;
 - (void)trackImpression;
+- (void)measuredImpressionOccured;
 
 
 @end
@@ -31,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setContainedView:(UIView*)view;
 - (void)setScaleWebviewToAd:(BOOL)scale;
+- (void)isVideo:(BOOL)isVideo;
 - (void)clearBackGround;
 - (void)cancel;
 - (void)skip;
