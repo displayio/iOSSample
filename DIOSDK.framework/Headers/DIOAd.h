@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic) BOOL isInterscroller;
 @property (nonatomic) BOOL isBanner;
 @property (nonatomic) BOOL isMediumRectangle;
-@property (nonatomic) BOOL isOutstreamVideo;
+@property (nonatomic) BOOL isHeadlineVideo;
 @property (nonatomic, strong) NSString *advertiserName;
 @property (nonatomic, strong) NSString *advertiserClickURL;
 @property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;

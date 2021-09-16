@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)deactivate;
 - (void)leave;
 - (void)reenter;
+- (void)play; 
 
 @end
 

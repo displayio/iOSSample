@@ -9,14 +9,14 @@
 #import "OutstreamVideoViewController.h"
 
 #import <DIOSDK/DIOController.h>
-#import <DIOSDK/DIOOutstreamVideoContainer.h>
-#import <DIOSDK/DIOOutstreamVideoView.h>
-#import <DIOSDK/DIOOutstreamVideoPlacement.h>
+#import <DIOSDK/DIOHeadlineVideoContainer.h>
+#import <DIOSDK/DIOHeadlineVideoView.h>
+#import <DIOSDK/DIOHeadlineVideoPlacement.h>
 
 
 @interface OutstreamVideoViewController ()
 
-@property (nonatomic, strong) DIOOutstreamVideoContainer *container;
+@property (nonatomic, strong) DIOHeadlineVideoContainer *container;
 
 @property (nonatomic, strong) DIOAd *ad;
 
@@ -40,7 +40,7 @@
 //    ((DIOOutstreamVideoPlacement*)placement).backgroundColorSnap = UIColor.redColor;
     DIOAdRequest *request = [placement newAdRequest];
     
-    self.container = [[DIOOutstreamVideoContainer alloc] init];
+    self.container = [[DIOHeadlineVideoContainer alloc] init];
     
     [self.container loadWithAdRequest:request completionHandler:^(DIOAd *ad){
         self.ad = ad;
@@ -66,7 +66,7 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AD" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
-        DIOOutstreamVideoView *view = (DIOOutstreamVideoView*)[self.container view];
+        DIOHeadlineVideoView *view = (DIOHeadlineVideoView*)[self.container view];
         if (!view.detached) {
         if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
             [cell.contentView addSubview:view];
@@ -90,7 +90,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 20) {
-        return [(DIOOutstreamVideoView*)[self.container view] height];
+        return [(DIOHeadlineVideoView*)[self.container view] height];
     }
     
     return UITableViewAutomaticDimension;
