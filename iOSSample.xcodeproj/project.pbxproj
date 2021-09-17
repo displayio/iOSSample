@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,6 @@
 		A866C064225B881F00A42940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A866C063225B881F00A42940 /* Assets.xcassets */; };
 		A866C067225B881F00A42940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A866C065225B881F00A42940 /* LaunchScreen.storyboard */; };
 		A866C06A225B881F00A42940 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A866C069225B881F00A42940 /* main.m */; };
-		A866C073225B8A8500A42940 /* DIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A866C071225B8A6C00A42940 /* DIOSDK.framework */; };
-		A866C074225B8A8500A42940 /* DIOSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A866C071225B8A6C00A42940 /* DIOSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A869E774243353BE001EB16E /* OutstreamVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A869E773243353BE001EB16E /* OutstreamVideoViewController.m */; };
 		A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAC227F245E00F7F906 /* PlacementViewController.m */; };
 		A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAF227F388600F7F906 /* AdViewController.m */; };
@@ -23,6 +21,9 @@
 		A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* FeedViewController.m */; };
 		A89B4913231552B200405FBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B4912231552B200405FBA /* BannerViewController.m */; };
 		A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */; };
+		CE2B4BF626F4ADFE00C3531F /* OMSDK-Static_Displayio.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B4BF526F4ADFE00C3531F /* OMSDK-Static_Displayio.xcframework */; };
+		CE2B4BF926F4B19C00C3531F /* DIOSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */; };
+		CE2B4BFA26F4B19C00C3531F /* DIOSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A866C074225B8A8500A42940 /* DIOSDK.framework in Embed Frameworks */,
+				CE2B4BFA26F4B19C00C3531F /* DIOSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +51,6 @@
 		A866C066225B881F00A42940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A866C068225B881F00A42940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A866C069225B881F00A42940 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A866C071225B8A6C00A42940 /* DIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIOSDK.framework; sourceTree = "<group>"; };
 		A869E772243353BE001EB16E /* OutstreamVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutstreamVideoViewController.h; sourceTree = "<group>"; };
 		A869E773243353BE001EB16E /* OutstreamVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutstreamVideoViewController.m; sourceTree = "<group>"; };
 		A871DC5223154343008AF567 /* PlacementType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementType.h; sourceTree = "<group>"; };
@@ -68,6 +68,8 @@
 		A89B4912231552B200405FBA /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		A8E91F4523CB637E00ADCC93 /* InterscrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterscrollerViewController.h; sourceTree = "<group>"; };
 		A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterscrollerViewController.m; sourceTree = "<group>"; };
+		CE2B4BF526F4ADFE00C3531F /* OMSDK-Static_Displayio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "OMSDK-Static_Displayio.xcframework"; sourceTree = "<group>"; };
+		CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DIOSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A866C073225B8A8500A42940 /* DIOSDK.framework in Frameworks */,
+				CE2B4BF626F4ADFE00C3531F /* OMSDK-Static_Displayio.xcframework in Frameworks */,
+				CE2B4BF926F4B19C00C3531F /* DIOSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +88,9 @@
 		A866C04E225B881E00A42940 = {
 			isa = PBXGroup;
 			children = (
-				A866C071225B8A6C00A42940 /* DIOSDK.framework */,
 				A866C059225B881E00A42940 /* iOSSample */,
 				A866C058225B881E00A42940 /* Products */,
+				CE2B4BF426F4ADFE00C3531F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +133,15 @@
 				A866C069225B881F00A42940 /* main.m */,
 			);
 			path = iOSSample;
+			sourceTree = "<group>";
+		};
+		CE2B4BF426F4ADFE00C3531F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */,
+				CE2B4BF526F4ADFE00C3531F /* OMSDK-Static_Displayio.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 648K5S3J6U;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -363,7 +376,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = brandio.iOSSample;
 				PRODUCT_NAME = iOSSampleBrandio;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 648K5S3J6U;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,7 +399,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = brandio.iOSSample;
 				PRODUCT_NAME = iOSSampleBrandio;
 				TARGETED_DEVICE_FAMILY = "1,2";
