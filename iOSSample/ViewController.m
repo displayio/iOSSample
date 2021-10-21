@@ -27,7 +27,7 @@
                 @{@"id": @"5427", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Html
                 @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Html
                 @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscroller]}, // Html
-                @{@"id": @"6588", @"type": [NSNumber numberWithInt:PlacementTypeOutstreamVideo]}];
+                @{@"id": @"6588", @"type": [NSNumber numberWithInt:PlacementTypeHeadlineVideo]}];
 
     DIOInitProperties *properties = [[DIOInitProperties alloc] init];
     [properties setGender:GENDER_MALE];

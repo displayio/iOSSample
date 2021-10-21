@@ -10,7 +10,7 @@
 #import "PlacementType.h"
 #import "AdViewController.h"
 #import "InterscrollerViewController.h"
-#import "OutstreamVideoViewController.h"
+#import "HeadlineVideoViewController.h"
 
 @implementation PlacementViewController
 
@@ -48,8 +48,8 @@
             cell.textLabel.text = @"Medium Rectangle";
             break;
             
-        case PlacementTypeOutstreamVideo:
-            cell.textLabel.text = @"Outstream Video";
+        case PlacementTypeHeadlineVideo:
+            cell.textLabel.text = @"Headline Video";
             break;    }
     
     return cell;
@@ -69,8 +69,8 @@
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
-    } else if (placementType == PlacementTypeOutstreamVideo) {
-        OutstreamVideoViewController *viewController = [OutstreamVideoViewController new];
+    } else if (placementType == PlacementTypeHeadlineVideo) {
+        HeadlineVideoViewController *viewController = [HeadlineVideoViewController new];
         viewController.placementId = placementId;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
