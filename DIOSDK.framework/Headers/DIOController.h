@@ -45,6 +45,7 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
 
 @property (nonatomic) BOOL initialized;
 @property (nonatomic, strong) NSMutableDictionary *placements;
+@property (nonatomic, strong) NSString *mraidJsScript;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 @property (nonatomic) DIOMediationPlatform mediationPlatform;
 @property (nonatomic, getter=isMocking) BOOL mocking;

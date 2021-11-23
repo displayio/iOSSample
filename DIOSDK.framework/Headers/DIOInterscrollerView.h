@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol DIOInterscrollerViewDelegate <NSObject>
 
 - (void)didMoveToWindow;
+- (void)didMoveToSuperview;
 - (void)exposureDidChange:(int)exposure y:(int)y height:(int)height;
 - (void)didActivate;
 - (void)didDeactivate;
