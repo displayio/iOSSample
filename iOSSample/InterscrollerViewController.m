@@ -32,11 +32,8 @@
     
     self.navigationController.navigationBar.translucent = NO;
     
-}
-
-- (void)viewDidAppear:(BOOL)animated {
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
-    ((DIOInterscrollerPlacement*)placement).interscrollerSize = self.tableView.frame.size.height;
+//    ((DIOInterscrollerPlacement*)placement).interscrollerSize = self.tableView.frame.size.height;
 
     DIOAdRequest *request = [placement newAdRequest];
     
@@ -47,6 +44,10 @@
     } errorHandler:^(NSError *error) {
         NSLog(@"%@", error);
     }];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+   
 }
 
 - (void)close:(id)sender {

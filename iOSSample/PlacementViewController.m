@@ -10,7 +10,7 @@
 #import "PlacementType.h"
 #import "AdViewController.h"
 #import "InterscrollerViewController.h"
-#import "HeadlineVideoViewController.h"
+#import "HeadlineViewController.h"
 
 @implementation PlacementViewController
 
@@ -70,7 +70,7 @@
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
     } else if (placementType == PlacementTypeHeadlineVideo) {
-        HeadlineVideoViewController *viewController = [HeadlineVideoViewController new];
+        HeadlineViewController *viewController = [HeadlineViewController new];
         viewController.placementId = placementId;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
