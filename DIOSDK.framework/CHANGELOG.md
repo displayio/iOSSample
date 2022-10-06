@@ -1,5 +1,49 @@
 # Changelog for Open Measurement SDK on iOS
 
+## 1.3.30 - 2022-02-18
+- Fix potential crash when loading JavaScript resources in native display and video sessions.
+
+## 1.3.29 - 2022-01-24
+- Update version to match JS and Android SDKs; no changes from 1.3.28
+
+## 1.3.28 - 2021-12-14
+- Update version to match Android SDK; no changes from 1.3.27
+
+## 1.3.27 - 2021-11-17
+- Update version to match JS Service; no changes from 1.3.26
+
+## 1.3.26 - 2021-10-22
+- Update version to match JS Service; no changes from 1.3.25
+
+## 1.3.25 - 2021-09-24
+- Update version to match JS Service; no changes from 1.3.24
+
+## 1.3.24 - 2021-09-16
+- Update version to match JS and Android SDKs; no changes from 1.3.23
+
+## 1.3.23 - 2021-08-18
+- Fixed crash with invalid script.
+
+## 1.3.22 - 2021-07-23
+- Update validation doc.
+
+## 1.3.21 - 2021-06-24
+- Refine caching policies in OMIDLoadTask
+
+## 1.3.20 - 2021-05-25
+- Update version to match JS Service; no changes from 1.3.19
+
+## 1.3.19 - 2021-05-07
+### Update
+- Update Simulator to iPhone 11 and iOS 14.2
+
+## 1.3.18 - 2021-04-14 
+### Fixed
+- Fix Dynamic Framework's CFBundleIdentifier to be namespaced
+
+## 1.3.17 - 2021-03-10 
+- Add static XCFramework integration option
+
 ## 1.3.16 - 2021-02-04
 - Fix missing support for i386 & armv7 architectures
 
