@@ -109,6 +109,12 @@
                     NSLog(@"AdEventOnAdCompleted");
                     self.ad = nil;
                     break;
+                case DIOAdEventOnSwipedOut:
+                    NSLog(@"DIOAdEventOnSwipedOut");
+                    break;
+                case DIOAdEventOnSnapped:
+                    NSLog(@"DIOAdEventOnSnapped");
+                    break;
             }
         }];
     }
