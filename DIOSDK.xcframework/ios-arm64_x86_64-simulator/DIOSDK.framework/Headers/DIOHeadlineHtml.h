@@ -1,0 +1,21 @@
+//
+//  DIOHeadlineHtml.h
+//  DIOSDK
+//
+//  Created by Sergei Morozov on 25.01.22.
+//  Copyright © 2022 Display.io. All rights reserved.
+//
+
+#import "DIOHtmlAd.h"
+#import "DIOHeadlineView.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface DIOHeadlineHtml : DIOHtmlAd <DIOHeadlineViewDelegate>
+
+@property (nonatomic) BOOL closed;
+@property (nonatomic, weak) DIOHeadlineView *containerView;
+
+@end
+
+NS_ASSUME_NONNULL_END

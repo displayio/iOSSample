@@ -1,6 +1,0 @@
-framework module DIOSDK {
-  umbrella header "DIOSDK.h"
-
-  export *
-  module * { export * }
-}
