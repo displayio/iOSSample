@@ -36,7 +36,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
-    ((DIOInterscrollerPlacement*)placement).interscrollerSize = self.tableView.frame.size.height;
+//    ((DIOInterscrollerPlacement*)placement).interscrollerSize = self.tableView.frame.size.height;
 
     DIOAdRequest *request = [placement newAdRequest];
     
@@ -65,18 +65,13 @@
     if (indexPath.row == 20) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AD" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
+        
         UIView *view = [self.container view];
         
         if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
         [cell.contentView addSubview:view];
         [self.container setConstraintForIndexPath:indexPath];
-        
-//        view.translatesAutoresizingMaskIntoConstraints = NO;
-//        [cell.contentView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
-//        [cell.contentView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
-//        [cell.contentView.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
-//        [cell.contentView.bottomAnchor constraintEqualToAnchor:view.bottomAnchor].active = YES;
+        view.translatesAutoresizingMaskIntoConstraints = NO;
         
         return cell;
     }

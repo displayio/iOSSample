@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,9 +21,7 @@
 		A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* FeedViewController.m */; };
 		A89B4913231552B200405FBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B4912231552B200405FBA /* BannerViewController.m */; };
 		A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */; };
-		CE2B4BF926F4B19C00C3531F /* DIOSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */; };
-		CE2B4BFA26F4B19C00C3531F /* DIOSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE61E71D26FA2C3A00C6DD7C /* OMSDK-Static_Displayio.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE61E71C26FA2C3900C6DD7C /* OMSDK-Static_Displayio.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E02DFA8578C45CCC829205DC /* Pods_iOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA3D4E994D3F614381AECAA /* Pods_iOSSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,8 +31,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE2B4BFA26F4B19C00C3531F /* DIOSDK.xcframework in Embed Frameworks */,
-				CE61E71D26FA2C3A00C6DD7C /* OMSDK-Static_Displayio.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +38,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4FAFCF261EC8B33D5E38C44C /* Pods-iOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.release.xcconfig"; path = "Target Support Files/Pods-iOSSample/Pods-iOSSample.release.xcconfig"; sourceTree = "<group>"; };
+		8BA3D4E994D3F614381AECAA /* Pods_iOSSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1BB81E548E569E89806A16 /* Pods-iOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.debug.xcconfig"; path = "Target Support Files/Pods-iOSSample/Pods-iOSSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A866C057225B881E00A42940 /* iOSSampleBrandio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSampleBrandio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A866C05A225B881E00A42940 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A866C05B225B881E00A42940 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,8 +68,6 @@
 		A89B4912231552B200405FBA /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		A8E91F4523CB637E00ADCC93 /* InterscrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterscrollerViewController.h; sourceTree = "<group>"; };
 		A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterscrollerViewController.m; sourceTree = "<group>"; };
-		CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DIOSDK.xcframework; sourceTree = "<group>"; };
-		CE61E71C26FA2C3900C6DD7C /* OMSDK-Static_Displayio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "OMSDK-Static_Displayio.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,20 +75,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2B4BF926F4B19C00C3531F /* DIOSDK.xcframework in Frameworks */,
+				E02DFA8578C45CCC829205DC /* Pods_iOSSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61C8AFF3F412962979F3460B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C1BB81E548E569E89806A16 /* Pods-iOSSample.debug.xcconfig */,
+				4FAFCF261EC8B33D5E38C44C /* Pods-iOSSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C2D2636D1BBE08152297421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3D4E994D3F614381AECAA /* Pods_iOSSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A866C04E225B881E00A42940 = {
 			isa = PBXGroup;
 			children = (
-				CE61E71C26FA2C3900C6DD7C /* OMSDK-Static_Displayio.xcframework */,
 				A866C059225B881E00A42940 /* iOSSample */,
 				A866C058225B881E00A42940 /* Products */,
-				CE2B4BF426F4ADFE00C3531F /* Frameworks */,
+				61C8AFF3F412962979F3460B /* Pods */,
+				7C2D2636D1BBE08152297421 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,14 +151,6 @@
 			path = iOSSample;
 			sourceTree = "<group>";
 		};
-		CE2B4BF426F4ADFE00C3531F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE2B4BF826F4B19C00C3531F /* DIOSDK.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,10 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A866C06D225B881F00A42940 /* Build configuration list for PBXNativeTarget "iOSSample" */;
 			buildPhases = (
+				67591C640FDC3426EEE062B0 /* [CP] Check Pods Manifest.lock */,
 				A866C053225B881E00A42940 /* Sources */,
 				A866C054225B881E00A42940 /* Frameworks */,
 				A866C055225B881E00A42940 /* Resources */,
 				A866C075225B8A8500A42940 /* Embed Frameworks */,
+				594351358213F0C80EDA2514 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +219,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		594351358213F0C80EDA2514 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOSDK/DIOSDK.framework/DIOSDK",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DIOSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67591C640FDC3426EEE062B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A866C053225B881E00A42940 /* Sources */ = {
@@ -366,6 +418,7 @@
 		};
 		A866C06E225B881F00A42940 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1BB81E548E569E89806A16 /* Pods-iOSSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -376,10 +429,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brandio.iOSSample;
 				PRODUCT_NAME = iOSSampleBrandio;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,6 +439,7 @@
 		};
 		A866C06F225B881F00A42940 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FAFCF261EC8B33D5E38C44C /* Pods-iOSSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -399,10 +450,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brandio.iOSSample;
 				PRODUCT_NAME = iOSSampleBrandio;
 				TARGETED_DEVICE_FAMILY = "1,2";
