@@ -10,7 +10,7 @@
 #import "PlacementType.h"
 #import "AdViewController.h"
 #import "InterscrollerViewController.h"
-#import "OutstreamVideoViewController.h"
+#import "HeadlineViewController.h"
 
 @implementation PlacementViewController
 
@@ -36,8 +36,12 @@
             cell.textLabel.text = @"In-feed";
             break;
             
-        case PlacementTypeInterscroller:
-            cell.textLabel.text = @"Interscroller";
+        case PlacementTypeInterscrollerVideo:
+            cell.textLabel.text = @"Interscroller Video";
+            break;
+            
+        case PlacementTypeInterscrollerHtml:
+            cell.textLabel.text = @"Interscroller Display";
             break;
             
         case PlacementTypeBanner:
@@ -48,8 +52,8 @@
             cell.textLabel.text = @"Medium Rectangle";
             break;
             
-        case PlacementTypeOutstreamVideo:
-            cell.textLabel.text = @"Outstream Video";
+        case PlacementTypeHeadline:
+            cell.textLabel.text = @"Headline";
             break;    }
     
     return cell;
@@ -61,7 +65,7 @@
     NSString *placementId = self.data[indexPath.row][@"id"];
     PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
-    if (placementType == PlacementTypeInterscroller) {
+    if (placementType == PlacementTypeInterscrollerVideo || placementType == PlacementTypeInterscrollerHtml) {
         InterscrollerViewController *viewController = [InterscrollerViewController new];
         viewController.placementId = placementId;
 
@@ -69,8 +73,8 @@
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
-    } else if (placementType == PlacementTypeOutstreamVideo) {
-        OutstreamVideoViewController *viewController = [OutstreamVideoViewController new];
+    } else if (placementType == PlacementTypeHeadline) {
+        HeadlineViewController *viewController = [HeadlineViewController new];
         viewController.placementId = placementId;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
