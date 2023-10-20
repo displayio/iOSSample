@@ -18,8 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIView*)view;
 - (int)containerHeight;
-- (void)setConstraintForIndexPath :(NSIndexPath*) index;
-- (void)setConstraintForScrollView;
 
 @end
 

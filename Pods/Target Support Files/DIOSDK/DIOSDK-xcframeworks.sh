@@ -23,12 +23,6 @@ variant_for_slice()
   "DIOSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "OMSDK-Static_Displayio.xcframework/ios-arm64_armv7")
-    echo ""
-    ;;
-  "OMSDK-Static_Displayio.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
   esac
 }
 
@@ -40,12 +34,6 @@ archs_for_slice()
     ;;
   "DIOSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
-    ;;
-  "OMSDK-Static_Displayio.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
-    ;;
-  "OMSDK-Static_Displayio.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
     ;;
   esac
 }
@@ -130,5 +118,4 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/DIOSDK/DIOSDK.xcframework" "DIOSDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/DIOSDK/OMSDK-Static_Displayio.xcframework" "DIOSDK" "library" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 

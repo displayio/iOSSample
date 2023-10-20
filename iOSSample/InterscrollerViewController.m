@@ -70,8 +70,6 @@
         
         if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
         [cell.contentView addSubview:view];
-        [self.container setConstraintForIndexPath:indexPath];
-        view.translatesAutoresizingMaskIntoConstraints = NO;
         
         return cell;
     }

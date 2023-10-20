@@ -38,8 +38,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)cancel;
 - (void)skip;
 - (int)containerHeight;
-- (void)setConstraintForIndexPath :(NSIndexPath*) index;
--(void) setConstraintForScrollView;
 
 @end
 

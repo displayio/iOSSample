@@ -5,6 +5,6 @@ target 'iOSSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-     pod 'DIOSDK', '3.7.9'
+     pod 'DIOSDK', '3.8.1'
 
 end
