@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import "DIOPlacement.h"
-#import "DIOServiceClient.h"
-#import "DIOMockAdapter.h"
-#import "DIOConsentManager.h"
-#import "DIOInitProperties.h"
+#import <DIOSDK/DIOPlacement.h>
+#import <DIOSDK/DIOServiceClient.h>
+#import <DIOSDK/DIOMockAdapter.h>
+#import <DIOSDK/DIOConsentManager.h>
+#import <DIOSDK/DIOInitProperties.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

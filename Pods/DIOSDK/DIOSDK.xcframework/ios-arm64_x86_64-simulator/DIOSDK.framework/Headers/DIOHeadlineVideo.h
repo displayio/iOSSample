@@ -6,10 +6,10 @@
 //  Copyright © 2022 Display.io. All rights reserved.
 //
 
-#import "DIOVideoAd.h"
-#import "DIOHeadlineVideoPlayer.h"
-#import "DIOHeadlineView.h"
-#import "DIOVideoPreloader.h"
+#import <DIOSDK/DIOVideoAd.h>
+#import <DIOSDK/DIOHeadlineVideoPlayer.h>
+#import <DIOSDK/DIOHeadlineView.h>
+#import <DIOSDK/DIOVideoPreloader.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

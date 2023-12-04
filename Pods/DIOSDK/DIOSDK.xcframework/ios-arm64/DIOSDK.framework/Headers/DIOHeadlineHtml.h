@@ -6,8 +6,8 @@
 //  Copyright © 2022 Display.io. All rights reserved.
 //
 
-#import "DIOHtmlAd.h"
-#import "DIOHeadlineView.h"
+#import <DIOSDK/DIOHtmlAd.h>
+#import <DIOSDK/DIOHeadlineView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

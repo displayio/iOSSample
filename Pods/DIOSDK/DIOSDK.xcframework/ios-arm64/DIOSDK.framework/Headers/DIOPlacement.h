@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DIOORTBRequest.h"
+#import <DIOSDK/DIOORTBRequest.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

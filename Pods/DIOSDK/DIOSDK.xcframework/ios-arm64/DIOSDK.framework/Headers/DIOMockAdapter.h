@@ -6,7 +6,7 @@
 //  Copyright © 2020 Display.io. All rights reserved.
 //
 
-#import "DIOMockPlacement.h"
+#import <DIOSDK/DIOMockPlacement.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

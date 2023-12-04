@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DIOAd.h"
-#import "DIOOMAdSession.h"
+#import <DIOSDK/DIOAd.h>
+#import <DIOSDK/DIOOMAdSession.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

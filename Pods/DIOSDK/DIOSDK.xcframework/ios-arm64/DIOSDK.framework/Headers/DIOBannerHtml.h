@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOHtmlAd.h"
+#import <DIOSDK/DIOHtmlAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

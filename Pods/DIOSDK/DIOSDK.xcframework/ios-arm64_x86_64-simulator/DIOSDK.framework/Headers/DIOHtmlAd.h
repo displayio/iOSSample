@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DIOAdUnit.h"
-#import "DIOCustomWebView.h"
-#import "DIOMRAIDView.h"
-#import "DIOMRAIDVideoPlayer.h"
+#import <DIOSDK/DIOAdUnit.h>
+#import <DIOSDK/DIOCustomWebView.h>
+#import <DIOSDK/DIOMRAIDView.h>
+#import <DIOSDK/DIOMRAIDVideoPlayer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

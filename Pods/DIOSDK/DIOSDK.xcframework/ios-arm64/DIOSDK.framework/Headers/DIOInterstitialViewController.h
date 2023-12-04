@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DIOAdUnit.h"
+#import <DIOSDK/DIOAdUnit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

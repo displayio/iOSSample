@@ -6,8 +6,8 @@
 //  Copyright © 2020 Display.io. All rights reserved.
 //
 
-#import "DIOPlacement.h"
-#import "DIOHeadlineContainer.h"
+#import <DIOSDK/DIOPlacement.h>
+#import <DIOSDK/DIOHeadlineContainer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

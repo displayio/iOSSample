@@ -6,7 +6,7 @@
 //  Copyright © 2020 Display.io. All rights reserved.
 //
 
-#import "DIOInterscrollerMockPlacement.h"
+#import <DIOSDK/DIOInterscrollerMockPlacement.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

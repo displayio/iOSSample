@@ -6,8 +6,8 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOPlacement.h"
-#import "DIOInterscrollerContainer.h"
+#import <DIOSDK/DIOPlacement.h>
+#import <DIOSDK/DIOInterscrollerContainer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

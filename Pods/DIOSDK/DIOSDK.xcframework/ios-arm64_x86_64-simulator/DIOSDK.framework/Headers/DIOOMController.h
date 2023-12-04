@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DIOVideoPlayer.h"
+#import <DIOSDK/DIOVideoPlayer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

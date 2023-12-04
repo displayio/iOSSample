@@ -6,9 +6,9 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOVideoPlayer.h"
-#import "DIOPlayerView.h"
-#import "DIOInFeedView.h"
+#import <DIOSDK/DIOVideoPlayer.h>
+#import <DIOSDK/DIOPlayerView.h>
+#import <DIOSDK/DIOInFeedView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

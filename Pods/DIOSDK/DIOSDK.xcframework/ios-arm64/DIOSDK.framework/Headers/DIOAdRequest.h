@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DIOAdProvider.h"
+#import <DIOSDK/DIOAdProvider.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

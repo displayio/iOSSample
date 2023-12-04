@@ -6,7 +6,7 @@
 //  Copyright © 2020 Display.io. All rights reserved.
 //
 
-#import "DIOORTBRequest.h"
+#import <DIOSDK/DIOORTBRequest.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

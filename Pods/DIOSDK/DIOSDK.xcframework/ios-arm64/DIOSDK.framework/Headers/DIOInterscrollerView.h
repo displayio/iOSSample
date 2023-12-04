@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DIOInterscrollerPlacement.h"
+#import <DIOSDK/DIOInterscrollerPlacement.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didDeactivate;
 - (void)trackImpression;
 - (void)measuredImpressionOccured;
-
+- (void)deviceOrientationDidChange;
 
 @end
 
@@ -32,11 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPlacement:(DIOInterscrollerPlacement*)placement;
 
 - (void)setContainedView:(UIView*)view;
-- (void)setScaleWebviewToAd:(BOOL)scale;
+- (void)scaleWebviewToAd:(BOOL)scale;
 - (void)isVideo:(BOOL)isVideo;
 - (void)clearBackGround;
 - (void)cancel;
-- (void)skip;
 - (int)containerHeight;
 
 @end

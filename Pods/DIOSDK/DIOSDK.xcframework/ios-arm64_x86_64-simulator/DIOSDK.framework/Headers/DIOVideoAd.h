@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DIOAdUnit.h"
-#import "DIOVideoPlayer.h"
+#import <DIOSDK/DIOAdUnit.h>
+#import <DIOSDK/DIOVideoPlayer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

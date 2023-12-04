@@ -6,7 +6,7 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOPlacement.h"
+#import <DIOSDK/DIOPlacement.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

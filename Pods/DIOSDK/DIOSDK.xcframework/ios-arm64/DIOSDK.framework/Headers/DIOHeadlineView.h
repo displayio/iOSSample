@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DIOAd.h"
-#import "DIOHeadlinePlacement.h"
+#import <DIOSDK/DIOAd.h>
+#import <DIOSDK/DIOHeadlinePlacement.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

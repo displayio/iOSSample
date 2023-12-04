@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "CMPDataStorageUserDefaults.h"
+#import <DIOSDK/CMPDataStorageUserDefaults.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

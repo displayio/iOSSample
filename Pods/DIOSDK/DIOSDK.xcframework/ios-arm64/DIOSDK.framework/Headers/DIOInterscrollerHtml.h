@@ -6,8 +6,8 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import "DIOHtmlAd.h"
-#import "DIOInterscrollerView.h"
+#import <DIOSDK/DIOHtmlAd.h>
+#import <DIOSDK/DIOInterscrollerView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
