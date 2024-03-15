@@ -70,6 +70,7 @@ typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
 
 @property (nonatomic) double durationInSeconds;
 @property (nonatomic) BOOL muted;
+@property (nonatomic) BOOL loopVideo;
 
 - (float)volumeLevel;
 - (double)duration;

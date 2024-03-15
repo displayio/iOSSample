@@ -38,24 +38,16 @@
     DIOAdRequest *adRequest = [placement newAdRequest];
     
     if ([placement isKindOfClass:[DIOInFeedPlacement class]]) {
-        ((DIOInFeedPlacement*)placement).fullWidth = YES;
+        ((DIOInFeedPlacement*)placement).fullWidth = YES;  //enable fullWidth appearence for infeed ad unit (optional)
     }
-    
-    [adRequest setContentKeywords:@[@"house of cards", @"lamborghini"]];
-    
-    [adRequest requestAdWithAdReceivedHandler:^(DIOAdProvider *adProvider) {
-        NSLog(@"AD RECEIVED");
         
-        [adProvider loadAdWithLoadedHandler:^(DIOAd *ad) {
-            NSLog(@"AD LOADED");
-            
-            self.ad = ad;
-            
-            self.loadButton.enabled = NO;
-            self.showButton.enabled = YES;
-        } failedHandler:^(NSError *error){
-            NSLog(@"AD FAILED TO LOAD: %@", error.localizedDescription);
-        }];
+    [adRequest requestAdWithAdReceivedHandler:^(DIOAd *ad) {
+        NSLog(@"AD LOADED");
+        
+        self.ad = ad;
+        self.loadButton.enabled = NO;
+        self.showButton.enabled = YES;
+
     } noAdHandler:^(NSError *error){
         NSLog(@"NO AD: %@", error.localizedDescription);
     }];

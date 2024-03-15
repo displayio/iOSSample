@@ -29,11 +29,8 @@
                 @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerHtml]}, // Html
                 @{@"id": @"6588", @"type": [NSNumber numberWithInt:PlacementTypeHeadline]}];
 
-    DIOInitProperties *properties = [[DIOInitProperties alloc] init];
-    [properties setGender:GENDER_MALE];
-    [properties setYearOfBirth:1980];
     
-    [[DIOController sharedInstance] initializeWithProperties:properties appId:appId completionHandler:^{
+    [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");
         
         PlacementViewController *placementViewController = [PlacementViewController new];

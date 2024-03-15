@@ -29,8 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *swipeOffLineColor;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *buttonText;
-@property (nonatomic) BOOL headlineMode;
-@property (nonatomic) BOOL allowSwipeOff;
 @property (nonatomic) BOOL showAdvertiser;
 @property (nonatomic) NSInteger headlineModeDuration;
 

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOORTBRequest : DIOAdRequest
 - (void)requestAdForORTB: (id)ortbResp
-                     adReceivedHandler:(void (^)(DIOAdProvider*))adReceivedHandler
+                     adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler
                            noAdHandler:(void (^)(NSError*))noAdHandler;
 @end
 

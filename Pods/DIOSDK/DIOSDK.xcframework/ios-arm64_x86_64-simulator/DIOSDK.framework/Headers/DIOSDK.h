@@ -17,7 +17,6 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <DIOSDK/PublicHeader.h>
 
 #import <DIOSDK/DIOController.h>
-#import <DIOSDK/DIOInitProperties.h>
 #import <DIOSDK/DIOServiceClient.h>
 #import <DIOSDK/DIODeviceDataProvider.h>
 #import <DIOSDK/DIOPlacement.h>
@@ -34,7 +33,6 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInterstitialVideoPlayer.h>
 #import <DIOSDK/DIOPlayerView.h>
 #import <DIOSDK/DIOAdRequest.h>
-#import <DIOSDK/DIOAdProvider.h>
 #import <DIOSDK/DIOAd.h>
 #import <DIOSDK/DIOAdUnit.h>
 #import <DIOSDK/DIOInterstitial.h>
@@ -55,7 +53,6 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOMRAIDView.h>
 #import <DIOSDK/DIOMRAIDVideoPlayer.h>
 #import <DIOSDK/DIOInFeedView.h>
-#import <DIOSDK/DIOEndCard.h>
 #import <DIOSDK/DIORewardedVideo.h>
 #import <DIOSDK/DIOInterscroller.h>
 #import <DIOSDK/DIOInterscrollerHtml.h>

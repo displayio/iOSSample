@@ -13,7 +13,6 @@
 #import <DIOSDK/DIOServiceClient.h>
 #import <DIOSDK/DIOMockAdapter.h>
 #import <DIOSDK/DIOConsentManager.h>
-#import <DIOSDK/DIOInitProperties.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,12 +30,6 @@ typedef NS_ENUM(NSInteger, DIOErrorCode) {
     kDIOErrorLoadingMedia = 10
 };
 
-typedef NS_ENUM(NSInteger, DIOMediationPlatform) {
-    DIOMediationPlatformNone = 0,
-    DIOMediationPlatformMopub = 1,
-    DIOMediationPlatformAdmob = 2
-};
-
 extern NSString* const ERROR_LEVEL_WARN;
 extern NSString* const ERROR_LEVEL_FATAL;
 extern NSString* const ERROR_LEVEL_ERROR;
@@ -47,11 +40,10 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
 @property (nonatomic) BOOL initialized;
 @property (nonatomic, strong) NSMutableDictionary *placements;
 @property (nonatomic, strong) NSString *mraidJsScript;
+@property (nonatomic, strong) NSString *userSession;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
-@property (nonatomic) DIOMediationPlatform mediationPlatform;
+@property (nonatomic, strong) CLPlacemark *lastKnownPlacemark;
 @property (nonatomic, getter=isMocking) BOOL mocking;
-@property (nonatomic) int impTrackingPercent;
-@property (nonatomic) int impTrackingDelay;
 
 /**
  @return The DIOController singleton.
@@ -63,12 +55,11 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
  
  This operation is asynchronous.
  
- @param properties A DIOInitProperties object containing predefined properties. Can be nil.
  @param appId The application id as defined in the Display.io control panel.
  @param completionHandler A block object to be executed when the task finishes successfully.
  @param errorHandler A block object to be executed when something is going wrong. This block takes one argument: the error.
  */
-- (void)initializeWithProperties:(nullable DIOInitProperties*)properties appId:(NSString*)appId completionHandler:(void (^)(void))completionHandler errorHandler:(void (^)(NSError*))errorHandler;
+- (void)initializeWithAppId:(NSString*)appId completionHandler:(void (^)(void))completionHandler errorHandler:(void (^)(NSError*))errorHandler;
 
 /**
  @param placementId The placement id as defined in the Display.io control panel.
@@ -94,19 +85,13 @@ Stops all ads and releases the resources associated with each of them
  @param enabled Whether to enable or not.
  */
 - (void)setOpenMeasurementEnabled:(BOOL)enabled;
+- (void)setCrashReportEnabled:(BOOL)enabled;
 - (BOOL)openMeasurementEnabled;
 
 
 - (NSString*)appId;
-- (DIOInitProperties*)initializationProperties;
-- (NSString*)userSession;
 - (DIOServiceClient*)serviceClient;
 - (DIOMockAdapter*)mockAdapter;
-
-- (id)iabConsentData;
-- (void)clearIABConsentData;
-- (id)consentData;
-- (void)setConsentData:(DIOConsentState) consentState gdprState:(DIOConsentState) gdprState;
 
 - (void)logWithMessage:(NSString*)message;
 - (void)logWithError:(NSString*)error trace:(NSArray<NSString*>*)trace data:(id)data level:(NSString*)level;
@@ -117,6 +102,7 @@ Stops all ads and releases the resources associated with each of them
 - (void)handleUncaughtException:(NSException*)exception;
 - (void)crash;
 - (NSString*)getSDKVersion;
+- (NSString*)getSDKName;
 
 @end
 

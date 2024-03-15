@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOPlacement : NSObject
 
 @property (nonatomic, strong) NSString *ID;
-@property (nonatomic, strong) id data;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSMutableArray<DIOAdRequest*> *adRequests;
-@property (nonatomic) BOOL defaultMute;
 @property (nonatomic) BOOL showSoundControl;
 
 
@@ -25,15 +25,17 @@ NS_ASSUME_NONNULL_BEGIN
  @return A new ad request for this placement.
  */
 - (DIOAdRequest*)newAdRequest;
+/**
+ Add a custom ad request to this placement.
+ */
+- (void)addAdRequest:(DIOAdRequest*)request;
+
 
 - (void)loadAdFromORTB:(id)ortbResp
      adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler
            noAdHandler:(void (^)(NSError*))noAdHandler;
 
-- (instancetype)initWithId:(NSString*)ID;
-- (void)setup:(id)data;
-- (BOOL)isOperative;
-- (NSString*)name;
+- (instancetype)initWithData:(id)data;
 - (BOOL)hasPendingAdRequests;
 - (DIOAdRequest*)lastAdRequest;
 - (DIOAdRequest*)adRequestById:(NSString*)requestId;

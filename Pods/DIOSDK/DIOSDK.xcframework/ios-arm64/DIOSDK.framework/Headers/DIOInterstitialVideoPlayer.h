@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithHostView:(UIView*)hostView params:(id)params;
 - (void)startWithURL:(NSURL*)url;
+- (void)resume;
 - (void)didTransitionToSize:(CGSize)size;
 
 @end

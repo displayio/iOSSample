@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)trackImpression;
 - (void)measuredImpressionOccured;
 - (void)deviceOrientationDidChange;
+- (void)showSKOverlay;
+- (void)dismissSKOverlay;
 
 @end
 
@@ -34,7 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setContainedView:(UIView*)view;
 - (void)scaleWebviewToAd:(BOOL)scale;
 - (void)isVideo:(BOOL)isVideo;
-- (void)clearBackGround;
+- (void)applyDwellWithHoldPeriod:(int) holdPeriod;
+- (void)setImressionTrackingPercent:(int) percent;
 - (void)cancel;
 - (int)containerHeight;
 

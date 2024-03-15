@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInterstitial : NSObject
 
-+ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype requestId:(NSString*)requestId data:(id)data offering:(id)offering;
++ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
 
 @end
 

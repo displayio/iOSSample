@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString*)rewardType;
 - (int)rewardAmount;
-+ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype requestId:(NSString*)requestId data:(id)data offering:(id)offering;
++ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
 
 @end
 

@@ -21,10 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didStartResizing;
 - (void)didEndResizing;
 - (void)didMoveAway;
-- (void)trackImpression;
+- (void)markImpressed;
 - (void)measuredImpressionOccured;
 - (void) didSwipedOut;
 - (void) didSnapped;
+- (void)showSKOverlay;
+- (void)dismissSKOverlay;
 
 @end
 

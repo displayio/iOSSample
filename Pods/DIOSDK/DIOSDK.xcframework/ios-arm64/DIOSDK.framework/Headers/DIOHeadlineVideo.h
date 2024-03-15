@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) DIOHeadlineVideoPlayer *player;
 @property (nonatomic, weak) DIOHeadlineView *containerView;
+@property (nonatomic) BOOL headlineMode;
+@property (nonatomic) BOOL allowSwipeOff;
 
 @end
 

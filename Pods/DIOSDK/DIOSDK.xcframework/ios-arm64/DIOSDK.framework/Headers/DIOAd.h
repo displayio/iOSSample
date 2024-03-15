@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DIOAdUnitType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,34 +37,22 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic, strong) NSString *requestId;
 @property (nonatomic, strong) NSString *format;
 @property (nonatomic, strong) id data;
-@property (nonatomic, strong) id offering;
-@property (nonatomic, strong) NSString *ID;
 @property (nonatomic) BOOL loaded;
 @property (nonatomic) BOOL impressed;
-@property (nonatomic) BOOL isInterstitial;
-@property (nonatomic) BOOL isRewardedVideo;
-@property (nonatomic) BOOL isInFeed;
-@property (nonatomic) BOOL isEndCard;
-@property (nonatomic) BOOL isInterscroller;
-@property (nonatomic) BOOL isBanner;
-@property (nonatomic) BOOL isMediumRectangle;
-@property (nonatomic) BOOL isHeadline;
-@property (nonatomic, strong) NSString *advertiserName;
-@property (nonatomic, strong) NSString *advertiserClickURL;
+@property (nonatomic, strong) NSString *adUnitType;
 @property (nonatomic) NSNumber  *ecpm;
 @property (nonatomic, strong) NSString *crid;
 @property (nonatomic, strong) NSString *cid;
 @property (nonatomic, strong)  NSArray<NSString*> *adomain;
 @property (nonatomic, strong) NSString *auctionId;
-@property (nonatomic, strong) NSString *msessId;
+@property (nonatomic) int impTrackingPercent;
 
 @property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
 
 @property (nonatomic, strong) void (^adEventHandler)(DIOAdEvent);
 
 @property (nonatomic) BOOL scaleWebviewToAd;
-@property (nonatomic) BOOL isSticky;
-@property (nonatomic) NSInteger holdPeriod;
+@property (nonatomic) int dwellTime;
 
 /**
  Shows an interstitial ad.
@@ -103,9 +92,12 @@ Use to track events for InFeed, Banner, Medium Rectangle, Interscroller and OutS
  */
 - (UIView*)view;
 
+- (BOOL)isInlineType;
+
 - (UIViewController*)viewController;
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSError*))errorHandler noFillHandler:(void (^)(void))noFillHandler;
-
+- (NSString*) advertiserName;
+- (NSString*) advertiserClickURL;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *headerBackgrounColor;
 @property (nonatomic, strong) UIColor *headerColor;
 @property (nonatomic, strong) NSString *headerText;
+@property (nonatomic, strong) UIColor *footerBackgrounColor;
+@property (nonatomic, strong) UIColor *footerColor;
+@property (nonatomic, strong) UIView *topOverlappingView;
 @property int interscrollerSize;
 @property int interscrollerOffset;
 @property (nonatomic) BOOL dynamicHeader;

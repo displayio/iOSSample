@@ -18,6 +18,9 @@
 - (void)didActivate;
 - (void)didDeactivate;
 - (void)measuredImpressionOccured;
+- (void)markImpressed;
+- (void)showSKOverlay;
+- (void)dismissSKOverlay;
 
 @end
 
@@ -33,5 +36,6 @@
 - (CGFloat)height;
 
 - (void)setContainedView:(UIView*)view ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth isVideo:(BOOL)isVideo;
+- (void)setImressionTrackingPercent:(int) percent;
 
 @end

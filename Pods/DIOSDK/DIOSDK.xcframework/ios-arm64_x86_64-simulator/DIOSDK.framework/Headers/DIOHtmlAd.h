@@ -24,8 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL fallbackTriggered;
 
 - (void)executeJavascript:(NSString*)javascript, ...;
-- (void)callClickTracking;
-- (void)callMetricTracking:(NSString*)metric;
 
 - (void)close2;
 - (void)unload;

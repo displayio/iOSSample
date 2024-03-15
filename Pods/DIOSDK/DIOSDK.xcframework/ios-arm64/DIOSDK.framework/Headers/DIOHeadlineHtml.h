@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) BOOL closed;
 @property (nonatomic, weak) DIOHeadlineView *containerView;
-
+@property (nonatomic) BOOL headlineMode;
+@property (nonatomic) BOOL allowSwipeOff;
 @end
 
 NS_ASSUME_NONNULL_END
