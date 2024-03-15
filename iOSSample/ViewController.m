@@ -29,7 +29,7 @@
                 @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerHtml]}, // Html
                 @{@"id": @"6588", @"type": [NSNumber numberWithInt:PlacementTypeHeadline]}];
 
-    
+//    [[DIOController sharedInstance] setLocationBasedTargeting:false];
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");
         
