@@ -31,8 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) id videoData;
 @property (nonatomic, strong) id videoParams;
 @property (nonatomic, strong) NSString *url;
+@property (nonatomic) BOOL isStreaming;
 @property (nonatomic, strong) NSString *clickURL;
+@property (nonatomic) BOOL defaultMute;
 @property (nonatomic, strong, nullable) DIOEndCard *endCard;
+@property (nonatomic, strong) NSString* ctaText;
 
 - (void)parseMediaFile;
 - (void)triggerOmLoadedEvent;

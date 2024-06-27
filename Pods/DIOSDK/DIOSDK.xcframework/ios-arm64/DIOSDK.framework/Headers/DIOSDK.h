@@ -18,7 +18,6 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOServiceClient.h>
-#import <DIOSDK/DIODeviceDataProvider.h>
 #import <DIOSDK/DIOPlacement.h>
 #import <DIOSDK/DIOInFeedPlacement.h>
 #import <DIOSDK/DIOInterstitialPlacement.h>
@@ -77,3 +76,4 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInterscrollerMockPlacement.h>
 #import <DIOSDK/DIOInterscrollerVastMockPlacement.h>
 #import <DIOSDK/DIOInterscrollerHtmlMockPlacement.h>
+#import <DIOSDK/DIODeviceData.h>

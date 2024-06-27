@@ -31,7 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *buttonText;
 @property (nonatomic) BOOL showAdvertiser;
 @property (nonatomic) NSInteger headlineModeDuration;
-
+@property (nonatomic, strong) UIFont* ctaButtonTextFont;
+@property (nonatomic, strong) UIFont* titleTextFont;
+@property (nonatomic, strong) UIFont* advertiserNameTextFont;
 
 - (void)loadHeadlineFromORTB:(id)ortbResp
          adReceivedHandler:(void (^)(DIOAd*, DIOHeadlineContainer*))adReceivedHandler

@@ -67,7 +67,6 @@ typedef NS_ENUM(NSInteger, DIOGender) {O, M, F};
 - (void)setStoreUrl:(NSString*)storeUrl;
 - (void)setDomain:(NSString*)domain;
 - (void)setPublisherCats:(NSArray<NSString*>*)publisherCats;
-- (void)setCur:(NSString*)cur;
 - (void)setUserId:(NSString*)userId;
 - (void)setBuyerId:(NSString*)buyerId;
 - (void)setYob:(NSNumber*)yob;

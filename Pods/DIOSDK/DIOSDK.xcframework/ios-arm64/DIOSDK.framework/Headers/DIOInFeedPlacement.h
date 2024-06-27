@@ -13,8 +13,20 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOInFeedPlacement : DIOPlacement
 
 @property (nonatomic) BOOL fullWidth;
-@property (nonatomic) BOOL framed;
 @property (nonatomic) BOOL showTimer;
+@property (nonatomic, strong) UIColor *frameBackgroundInfeedColor;
+@property (nonatomic, strong) UIColor *frameBackgroundHeadlineColor;
+@property (nonatomic, strong) UIColor *ctaButtonInfeedColor;
+@property (nonatomic, strong) UIColor *ctaButtonHeadlineColor;
+@property (nonatomic, strong) UIColor *ctaButtonContourInfeedColor;
+@property (nonatomic, strong) UIColor *ctaButtonContourHeadlineColor;
+@property (nonatomic, strong) UIColor *ctaButtonTextInfeedColor;
+@property (nonatomic, strong) UIColor *ctaButtonTextHeadlineColor;
+@property (nonatomic, strong) UIColor *adLabelTextInfeedColor;
+@property (nonatomic, strong) UIColor *adLabelTextHeadlineColor;
+@property (nonatomic, strong) UIColor *bottomLineColor;
+@property (nonatomic, strong) UIFont* ctaButtonTextFont;
+@property (nonatomic, strong) UIFont* adLabelTextFont;
 
 - (void)loadInfeedFromORTB:(id)ortbResp
          adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler

@@ -13,6 +13,7 @@
 #import <DIOSDK/DIOServiceClient.h>
 #import <DIOSDK/DIOMockAdapter.h>
 #import <DIOSDK/DIOConsentManager.h>
+#import <DIOSDK/DIODeviceData.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,7 +28,8 @@ typedef NS_ENUM(NSInteger, DIOErrorCode) {
     kDIOErrorNoAd = 7,
     kDIOErrorAdUnavailable = 8,
     kDIOErrorParsing = 9,
-    kDIOErrorLoadingMedia = 10
+    kDIOErrorLoadingMedia = 10,
+    kDIOErrorUnsupportedPlatform = 11
 };
 
 extern NSString* const ERROR_LEVEL_WARN;
@@ -41,6 +43,7 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
 @property (nonatomic, strong) NSMutableDictionary *placements;
 @property (nonatomic, strong) NSString *mraidJsScript;
 @property (nonatomic, strong) NSString *userSession;
+@property (nonatomic, strong) DIODeviceData *deviceData;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 @property (nonatomic, strong) CLPlacemark *lastKnownPlacemark;
 @property (nonatomic, getter=isMocking) BOOL mocking;

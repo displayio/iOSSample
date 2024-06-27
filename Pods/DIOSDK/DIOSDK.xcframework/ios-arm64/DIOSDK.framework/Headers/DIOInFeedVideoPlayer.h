@@ -15,16 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOInFeedVideoPlayer : DIOVideoPlayer
 
 @property (nonatomic, strong) DIOInFeedView *inFeedView;
-@property (nonatomic) BOOL framed;
-@property (nonatomic) BOOL detailed;
 
-- (instancetype)initWithParams:(id)params;
+- (instancetype)initWithAd:(id) ad;
 
 - (void)activate;
 - (void)deactivate;
 - (void)leave;
 - (void)reenter;
 - (void)play;
+- (void)showProgress;
 - (void)toggleSound:(BOOL) isEnabled;
 
 @end

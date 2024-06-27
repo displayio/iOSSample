@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/DIOAd.h</key>
 		<data>
-		EuP8mFDxVRb7tkJDvA5i20j4Kv0=
+		QhLvB5ByDqK23AlRIBVzFoTtlL4=
 		</data>
 		<key>Headers/DIOAdRequest.h</key>
 		<data>
-		M+upRXZOTZruQesrD6dBnJVkuK8=
+		gKZ8jWu2ymJszkA7NXc1fz64iAk=
 		</data>
 		<key>Headers/DIOAdUnit.h</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Headers/DIOController.h</key>
 		<data>
-		qQD5u+0cXC2w7ouPdFSRFb+yWxk=
+		uTOY4IfiaVbnVTkABkr507qKQTU=
 		</data>
 		<key>Headers/DIOCustomWebView.h</key>
 		<data>
 		cBuaf5NKx5z99IM5rm98DYa5eJw=
 		</data>
-		<key>Headers/DIODeviceDataProvider.h</key>
+		<key>Headers/DIODeviceData.h</key>
 		<data>
-		7MW5V7p/RA+wP5yLI5lo6q9Dm00=
+		nHKatA4AUDhSfpmTplTmRb2rY24=
 		</data>
 		<key>Headers/DIOHeadline.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/DIOHeadlinePlacement.h</key>
 		<data>
-		+qrKkFYSOWC/nSFH8b6YHKzWWkQ=
+		i6u1lBOVT99w3UnUERmo4pMReR4=
 		</data>
 		<key>Headers/DIOHeadlineVideo.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/DIOHtmlAd.h</key>
 		<data>
-		P8wQQSORtiBsRZdvgwit6Paijno=
+		tpzCEFpg6aRlDN8kGt93A4Z9ATg=
 		</data>
 		<key>Headers/DIOInFeed.h</key>
 		<data>
@@ -106,19 +106,19 @@
 		</data>
 		<key>Headers/DIOInFeedPlacement.h</key>
 		<data>
-		zwLRIPGNo9YEIyMlX++drtUNCWs=
+		B+8a+bvPaZ72eUU3lSiGlN4cyhY=
 		</data>
 		<key>Headers/DIOInFeedVast.h</key>
 		<data>
-		VUAhK9yeTmmkIKdGjmxudvHr3lY=
+		9pn7GEFKafHHq/8P7o0J/B0IN7k=
 		</data>
 		<key>Headers/DIOInFeedVideoPlayer.h</key>
 		<data>
-		4Hg22RALb+7i7yNMhbjXh38i98o=
+		9fAnO/3gq5nbNQlcLk5oEw4immk=
 		</data>
 		<key>Headers/DIOInFeedView.h</key>
 		<data>
-		CfQWQIr54m8WX/O8aO2s3zBMAVQ=
+		y5VHoGUfEP37yb2f+kfkhcnKisg=
 		</data>
 		<key>Headers/DIOInterscroller.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/DIOInterscrollerPlacement.h</key>
 		<data>
-		XrrjQ8lLFQrekSLSk+0vdACsPXU=
+		opNo4EmJr7pgYYAZuoqBm5VmoE0=
 		</data>
 		<key>Headers/DIOInterscrollerVast.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Headers/DIOSDK.h</key>
 		<data>
-		kVtYuMdIXEPlClany/2oqAcE4+4=
+		rNR4vjTh6ijxXODG1nw0LxmjEsY=
 		</data>
 		<key>Headers/DIOServiceClient.h</key>
 		<data>
@@ -262,11 +262,11 @@
 		</data>
 		<key>Headers/DIOVideoAd.h</key>
 		<data>
-		7MjVAwcAy+PaXtFDlJ29PmDevDg=
+		bszg868zjv73SWR1dCrxUJd5aqQ=
 		</data>
 		<key>Headers/DIOVideoPlayer.h</key>
 		<data>
-		YR26jntyr6SfdBh/naLsylhbf6U=
+		27kUyXkXWhNog0Tkr2ZL7tECozM=
 		</data>
 		<key>Headers/DIOVideoPreloader.h</key>
 		<data>
@@ -274,11 +274,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O7/l+g3+mwocZsFwTfvheohEZ0s=
+		IQgPkY1nhJPVMCkYdZN0+5Z5Enw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		IreLp8IfVPClfZ+MWX4/7UtNF5g=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ONd9jlsjq4Ky/Qjw2r6CoMuEjsc=
 		</data>
 		<key>gradient@2x.png</key>
 		<data>
@@ -322,14 +326,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pxrAw78Stz4kxKwLdh6Yl2OEyvNMoWy1WiV4AeMvcgM=
+			6xkaqWRPPe8gMXqGPe0iWcs+R/OeFh/DVt0eTtDfkaE=
 			</data>
 		</dict>
 		<key>Headers/DIOAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GCczqY43F4vO0ElJiDpKJb28uH35vRQz3Dn/C6N8r60=
+			hTE+AAxL4ldT1bdPehq4JowVrxB6mXyLJsoixTy+6SI=
 			</data>
 		</dict>
 		<key>Headers/DIOAdUnit.h</key>
@@ -399,7 +403,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1P94T4QcE6SC/egIuMU2uTkXBr/+1n0wdtZu5NimtdE=
+			NfNF154X5QMVY1SDS7dP4yF1VxhH/rGp1V2yo8ICL3A=
 			</data>
 		</dict>
 		<key>Headers/DIOCustomWebView.h</key>
@@ -409,11 +413,11 @@
 			M3fVj75LTo/6Jmnw0hVfwbuFZ/kITfy5d6niQR6teL0=
 			</data>
 		</dict>
-		<key>Headers/DIODeviceDataProvider.h</key>
+		<key>Headers/DIODeviceData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z13KSrl5B+vdyoK/b9hYxzp08tMkWT+/0s1FWWWX3wA=
+			4hOQQwKXlUrWco2rgKBPuNkQTo/11JxKo1XTZd3S4UE=
 			</data>
 		</dict>
 		<key>Headers/DIOHeadline.h</key>
@@ -441,7 +445,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D2ATM1pQyg98LsXDOzJtnSOezsm/UjU6lFQsIhqt+qU=
+			axOZ/RMf9jPhEzrLBDmSm5nApD342m60GOznlesuRFk=
 			</data>
 		</dict>
 		<key>Headers/DIOHeadlineVideo.h</key>
@@ -469,7 +473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yc4wOh9lpuwTwYSl9S2w9GvFRXqswbOXpC+KsOgy4fM=
+			RYyHDklRlBpejXoqufosGabp6KHlI2fEks4YzvzuWQE=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeed.h</key>
@@ -490,28 +494,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u5A8GS/Tq09lFb79lIf7H0bKtoa0iqDy40mV2tit8fs=
+			qUai6scHDt3+iQX784ej2K/ylYDUmdJ9bNPHoL2ejNI=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeedVast.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a71AxF2AqWoTRHpIR5h1amxWM/PaDyqZIiNEEfMxFmY=
+			q+C7K/at+AnNqkbivyX5RcDWIsPIMM0xCpJEB2GqPsA=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeedVideoPlayer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y/Sdc0b6D7OXnq3Ls8MHUeynhrV9g0v4N5cNChAq5so=
+			6t08QCCh/KQtIbEvPqB/E/dQfygvci6qMoli8dzrlIQ=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeedView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lhJnZtraC0rakVp7de/9lwOll2OW806ZTxM7RgDxIY4=
+			bD5gDYckeLd5pLQS3Ljwn0zYWiUjxnzVGW322drJw50=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscroller.h</key>
@@ -553,7 +557,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tDtJ94OPjrxSSg10QYdfKTuKcnLrI1ZqPsGMvmmPyyo=
+			aQfFinWOQee1o4yMQIdZLdN9/CyC10VCz7aYe0nu3lM=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscrollerVast.h</key>
@@ -749,7 +753,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bta50BgxfVGaWpjRG8/063Jr/AvO1bN9KpSl/5BeIhE=
+			GG4HvbvTw6DxwajkdoezYwApoB2Fcw9fyVmP+NsuYp8=
 			</data>
 		</dict>
 		<key>Headers/DIOServiceClient.h</key>
@@ -763,14 +767,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HYLpqtQChU0L4VYej7XDRwRbqtpH+8E6YCQuw4g1KJE=
+			nM+4YI5oMXI45YZ9+G3PQrFBOy+4BQERPQmGgK1N524=
 			</data>
 		</dict>
 		<key>Headers/DIOVideoPlayer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Il4FPdbNLtA5KwhYsMwTOil9YcKTIM6Eym9y8DOmSZU=
+			/qdB1qdwTmmdpmnQgGb3rF0UlVy+cMCK44FD0ztJQWY=
 			</data>
 		</dict>
 		<key>Headers/DIOVideoPreloader.h</key>
@@ -785,6 +789,13 @@
 			<key>hash2</key>
 			<data>
 			+EZvZNJ+gkKeeRXhPgcaE6a1r5o+K5ymjqBWPQ+g6CI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			keGHlMUWZyBRijDfhqw+RijSlquTFxP/o33Hr55yssQ=
 			</data>
 		</dict>
 		<key>gradient@2x.png</key>

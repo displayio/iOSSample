@@ -21,21 +21,22 @@
 - (void)markImpressed;
 - (void)showSKOverlay;
 - (void)dismissSKOverlay;
+- (void)didMoveAway;
+- (void)didClick;
+- (void)didGoToHeadlineMode;
 
 @end
 
 @interface DIOInFeedView : UIView
 
 @property (nonatomic, weak) id<DIOInFeedViewDelegate> delegate;
-@property (nonatomic) double ratio;
-@property (nonatomic) double heightComplement;
 
 /**
  @return The height of the view when it fills the top view-controller's width
  */
 - (CGFloat)height;
-
-- (void)setContainedView:(UIView*)view ratio:(double)ratio heightComplement:(double)heightComplement fullWidth:(BOOL)fullWidth isVideo:(BOOL)isVideo;
-- (void)setImressionTrackingPercent:(int) percent;
+- (void)moveAway;
+- (void)setUseHeadlineMode:(BOOL) isHeadlineMode;
+- (void)setContainedView:(UIView*)view withAd:(id)ad;
 
 @end

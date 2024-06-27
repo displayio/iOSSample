@@ -15,7 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOInFeedVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOVideoPreloaderDelegate, DIOInFeedViewDelegate>
 
 @property (nonatomic, strong) DIOInFeedVideoPlayer *player;
-
+@property (nonatomic) bool headlineMode;
+@property (nonatomic) bool adLabelHide;
+@property (nonatomic) bool ctaHide;
+@property (nonatomic, strong) NSString* adLabelText;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) DIOMRAIDVideoPlayer *videoPlayer;
 
 @property (nonatomic) BOOL fallbackTriggered;
+@property (nonatomic) BOOL scaleWebviewToAd;
 
 - (void)executeJavascript:(NSString*)javascript, ...;
 
