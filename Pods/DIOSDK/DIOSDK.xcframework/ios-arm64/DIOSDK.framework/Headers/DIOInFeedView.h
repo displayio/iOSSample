@@ -38,5 +38,6 @@
 - (void)moveAway;
 - (void)setUseHeadlineMode:(BOOL) isHeadlineMode;
 - (void)setContainedView:(UIView*)view withAd:(id)ad;
+- (void)updateCTAButtonText:(NSString*) text;
 
 @end

@@ -99,6 +99,9 @@ Use to track events for InFeed, Banner, Medium Rectangle, Interscroller and OutS
 - (void)preloadWithLoadedHandler:(void (^)(void))loadedHandler errorHandler:(void (^)(NSError*))errorHandler noFillHandler:(void (^)(void))noFillHandler;
 - (NSString*) advertiserName;
 - (NSString*) advertiserClickURL;
+- (void)updateCTAButtonText:(NSString*) text;
+- (void)reportUserClick;
+- (long)adTimeToLive;
 @end
 
 NS_ASSUME_NONNULL_END

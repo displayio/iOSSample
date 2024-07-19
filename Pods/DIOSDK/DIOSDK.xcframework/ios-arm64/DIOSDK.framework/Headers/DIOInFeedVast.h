@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) bool headlineMode;
 @property (nonatomic) bool adLabelHide;
 @property (nonatomic) bool ctaHide;
+@property (nonatomic) bool advertiserHide;
 @property (nonatomic, strong) NSString* adLabelText;
 @end
 

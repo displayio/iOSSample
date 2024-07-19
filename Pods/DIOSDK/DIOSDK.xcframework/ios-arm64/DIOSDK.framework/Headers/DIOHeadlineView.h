@@ -36,15 +36,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL detached;
 
 - (instancetype)initWithPlacement:(DIOHeadlinePlacement*)placement;
-- (void) updateWithAd :(DIOAd*)ad;
+- (void)updateWithAd:(DIOAd*)ad;
 
 - (CGFloat)height;
 
 - (void)setContainedView:(UIView*)view;
 - (void)cancel;
 - (void)moveAway;
-- (void)setConstraintForIndexPath :(NSIndexPath*) index;
+- (void)setConstraintForIndexPath:(NSIndexPath*) index;
 - (void)setConstraintForScrollView;
+- (void)updateCTAButtonText:(NSString*) text;
 
 @end
 

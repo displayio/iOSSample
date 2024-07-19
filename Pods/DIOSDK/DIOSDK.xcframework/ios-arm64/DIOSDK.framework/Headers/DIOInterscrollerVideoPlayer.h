@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)play;
 - (void)pause;
 - (void)toggleSound:(BOOL) isEnabled;
+- (void)updateCTAButtonText:(NSString*) text;
 
 @end
 
