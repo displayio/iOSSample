@@ -38,6 +38,10 @@
             
         case PlacementTypeInterscrollerVideo:
             cell.textLabel.text = @"Interscroller Video";
+            break;         
+            
+        case PlacementTypeInterscrollerVideoORTB:
+            cell.textLabel.text = @"Interscroller Video oRTB";
             break;
             
         case PlacementTypeInterscrollerHtml:
@@ -61,13 +65,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+    
     NSString *placementId = self.data[indexPath.row][@"id"];
     PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
-    if (placementType == PlacementTypeInterscrollerVideo || placementType == PlacementTypeInterscrollerHtml) {
+    if (placementType == PlacementTypeInterscrollerVideo
+        || placementType == PlacementTypeInterscrollerHtml
+        || placementType == PlacementTypeInterscrollerVideoORTB) {
         InterscrollerViewController *viewController = [InterscrollerViewController new];
         viewController.placementId = placementId;
+        viewController.isORTB = placementType == PlacementTypeInterscrollerVideoORTB;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
