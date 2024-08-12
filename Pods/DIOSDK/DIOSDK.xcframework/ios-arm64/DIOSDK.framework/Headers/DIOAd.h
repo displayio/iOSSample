@@ -100,7 +100,7 @@ Use to track events for InFeed, Banner, Medium Rectangle, Interscroller and OutS
 - (NSString*) advertiserName;
 - (NSString*) advertiserClickURL;
 - (void)updateCTAButtonText:(NSString*) text;
-- (void)reportUserClick;
+- (BOOL)reportUserClick;
 - (long)adTimeToLive;
 @end
 

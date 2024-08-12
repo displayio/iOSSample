@@ -14,7 +14,6 @@
 		A866C064225B881F00A42940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A866C063225B881F00A42940 /* Assets.xcassets */; };
 		A866C067225B881F00A42940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A866C065225B881F00A42940 /* LaunchScreen.storyboard */; };
 		A866C06A225B881F00A42940 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A866C069225B881F00A42940 /* main.m */; };
-		A869E774243353BE001EB16E /* HeadlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A869E773243353BE001EB16E /* HeadlineViewController.m */; };
 		A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAC227F245E00F7F906 /* PlacementViewController.m */; };
 		A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAF227F388600F7F906 /* AdViewController.m */; };
 		A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB1228024D500F7F906 /* CustomCell2.m */; };
@@ -22,6 +21,7 @@
 		A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* FeedViewController.m */; };
 		A89B4913231552B200405FBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B4912231552B200405FBA /* BannerViewController.m */; };
 		A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */; };
+		B50E0B892C64F64000EC40D3 /* ISCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,8 +50,6 @@
 		A866C066225B881F00A42940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A866C068225B881F00A42940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A866C069225B881F00A42940 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A869E772243353BE001EB16E /* HeadlineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadlineViewController.h; sourceTree = "<group>"; };
-		A869E773243353BE001EB16E /* HeadlineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadlineViewController.m; sourceTree = "<group>"; };
 		A871DC5223154343008AF567 /* PlacementType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementType.h; sourceTree = "<group>"; };
 		A87C4BAB227F245E00F7F906 /* PlacementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementViewController.h; sourceTree = "<group>"; };
 		A87C4BAC227F245E00F7F906 /* PlacementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacementViewController.m; sourceTree = "<group>"; };
@@ -67,6 +65,8 @@
 		A89B4912231552B200405FBA /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		A8E91F4523CB637E00ADCC93 /* InterscrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterscrollerViewController.h; sourceTree = "<group>"; };
 		A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterscrollerViewController.m; sourceTree = "<group>"; };
+		B50E0B872C64F64000EC40D3 /* ISCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISCollectionViewController.h; sourceTree = "<group>"; };
+		B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISCollectionViewController.m; sourceTree = "<group>"; };
 		D6F6021E52818753FD34A665 /* Pods-iOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.debug.xcconfig"; path = "Target Support Files/Pods-iOSSample/Pods-iOSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +135,8 @@
 				A89B4912231552B200405FBA /* BannerViewController.m */,
 				A8E91F4523CB637E00ADCC93 /* InterscrollerViewController.h */,
 				A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */,
-				A869E772243353BE001EB16E /* HeadlineViewController.h */,
-				A869E773243353BE001EB16E /* HeadlineViewController.m */,
+				B50E0B872C64F64000EC40D3 /* ISCollectionViewController.h */,
+				B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */,
 				A87C4BB3228024D500F7F906 /* CustomCell1.h */,
 				A87C4BB2228024D500F7F906 /* CustomCell1.m */,
 				A87C4BB6228024D600F7F906 /* CustomCell2.h */,
@@ -162,7 +162,7 @@
 				A866C054225B881E00A42940 /* Frameworks */,
 				A866C055225B881E00A42940 /* Resources */,
 				A866C075225B8A8500A42940 /* Embed Frameworks */,
-				A9A7A642B92D41348F26A767 /* [CP] Embed Pods Frameworks */,
+				C82A3FCF6C4220A48AC92AFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,7 +242,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9A7A642B92D41348F26A767 /* [CP] Embed Pods Frameworks */ = {
+		C82A3FCF6C4220A48AC92AFC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,9 +274,9 @@
 				A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */,
 				A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */,
 				A866C05C225B881E00A42940 /* AppDelegate.m in Sources */,
-				A869E774243353BE001EB16E /* HeadlineViewController.m in Sources */,
 				A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */,
 				A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */,
+				B50E0B892C64F64000EC40D3 /* ISCollectionViewController.m in Sources */,
 				A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

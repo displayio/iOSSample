@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/DIOAd.h</key>
 		<data>
-		DCXIe0M06IgYY/XCROH7r3u7TuM=
+		EY6GpZlnAUtDVWCibGIhvWTNPzQ=
 		</data>
 		<key>Headers/DIOAdRequest.h</key>
 		<data>
-		gKZ8jWu2ymJszkA7NXc1fz64iAk=
+		drXhGOXZsOaBqEr5DKjA1oIIA34=
 		</data>
 		<key>Headers/DIOAdUnit.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/DIOAdUnitType.h</key>
 		<data>
-		EZi9TSikbnWq8nUaxScZdN13LFs=
+		nk9vi2P++Up7okjeJpN0Qcm6gnU=
 		</data>
 		<key>Headers/DIOAppData.h</key>
 		<data>
@@ -64,33 +64,9 @@
 		<data>
 		nHKatA4AUDhSfpmTplTmRb2rY24=
 		</data>
-		<key>Headers/DIOHeadline.h</key>
+		<key>Headers/DIOEndCard.h</key>
 		<data>
-		W5q+oMjBn165Kli3soK3DFp30bs=
-		</data>
-		<key>Headers/DIOHeadlineContainer.h</key>
-		<data>
-		Z26Kq3bLmpXNNjKDE15mCQjp8F0=
-		</data>
-		<key>Headers/DIOHeadlineHtml.h</key>
-		<data>
-		byGnZAzcvytVtYeGwknEVaBR66g=
-		</data>
-		<key>Headers/DIOHeadlinePlacement.h</key>
-		<data>
-		i6u1lBOVT99w3UnUERmo4pMReR4=
-		</data>
-		<key>Headers/DIOHeadlineVideo.h</key>
-		<data>
-		+HeJjpMvQkcZ8khdzbg5Cio+xz4=
-		</data>
-		<key>Headers/DIOHeadlineVideoPlayer.h</key>
-		<data>
-		gWAB6vv+0C94G4NlfexYvQdxHGw=
-		</data>
-		<key>Headers/DIOHeadlineView.h</key>
-		<data>
-		VatUPPQyV33gT3jkqZ4lyJQIICE=
+		eYI09RCCU4m/fmAQ6epxOCIcnsM=
 		</data>
 		<key>Headers/DIOHtmlAd.h</key>
 		<data>
@@ -254,7 +230,7 @@
 		</data>
 		<key>Headers/DIOSDK.h</key>
 		<data>
-		rNR4vjTh6ijxXODG1nw0LxmjEsY=
+		RiKq6sMt5LreoZ6f/WZ9NXQVA30=
 		</data>
 		<key>Headers/DIOServiceClient.h</key>
 		<data>
@@ -262,7 +238,7 @@
 		</data>
 		<key>Headers/DIOVideoAd.h</key>
 		<data>
-		bszg868zjv73SWR1dCrxUJd5aqQ=
+		6MMDXTMQNzzfAEmI2qxgHxcGufY=
 		</data>
 		<key>Headers/DIOVideoPlayer.h</key>
 		<data>
@@ -326,14 +302,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0PM4H/XpCW53tmn8LBnFd8Uf1ZQl5rrWyr7wncRqIUQ=
+			BOc6vG5cddTXvMHamvmZlglHyh8/MBg9/kiE5HfJdCs=
 			</data>
 		</dict>
 		<key>Headers/DIOAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hTE+AAxL4ldT1bdPehq4JowVrxB6mXyLJsoixTy+6SI=
+			NtVOs/2eSZxLBYT6wfYqo15/upkKEtdg/Z72NBTfa3I=
 			</data>
 		</dict>
 		<key>Headers/DIOAdUnit.h</key>
@@ -347,7 +323,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			40jfY3c36FR08UocMoAJVV/5UKpDfZL14zG3ujLqZYs=
+			sXFM4aO08LW7NySoalwe6tb5cZAQCVPzpxYpE204iBg=
 			</data>
 		</dict>
 		<key>Headers/DIOAppData.h</key>
@@ -420,53 +396,11 @@
 			4hOQQwKXlUrWco2rgKBPuNkQTo/11JxKo1XTZd3S4UE=
 			</data>
 		</dict>
-		<key>Headers/DIOHeadline.h</key>
+		<key>Headers/DIOEndCard.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nDrPX6k9Wkhv42m4A1Jb8zVbXsKws4sP8hECrrL7HNk=
-			</data>
-		</dict>
-		<key>Headers/DIOHeadlineContainer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ko7XypLUudgPPgrvfGTMNtOwMouInRv/SH5YROFqqY8=
-			</data>
-		</dict>
-		<key>Headers/DIOHeadlineHtml.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			d7Nul2DaNrxGoj5XGCVxTP9I98LnV9XSP0k0cTUByOY=
-			</data>
-		</dict>
-		<key>Headers/DIOHeadlinePlacement.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			axOZ/RMf9jPhEzrLBDmSm5nApD342m60GOznlesuRFk=
-			</data>
-		</dict>
-		<key>Headers/DIOHeadlineVideo.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sNx5Mri7zx2bS96/59LNEWNFq/c/KYYJBvz3nxo8wAU=
-			</data>
-		</dict>
-		<key>Headers/DIOHeadlineVideoPlayer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1hZ6WTVAeM3LX8vrQPoLBjNuruesl77fZre/zYeVoBw=
-			</data>
-		</dict>
-		<key>Headers/DIOHeadlineView.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0Z+bmd8UXlKgzrckE+eSBQDIoLCqdo6/zDVT+o/VH34=
+			3KMhX8aZsw9/7X45g5+Q/rKsNS5tSaGtjVdRzaGI/tk=
 			</data>
 		</dict>
 		<key>Headers/DIOHtmlAd.h</key>
@@ -753,7 +687,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GG4HvbvTw6DxwajkdoezYwApoB2Fcw9fyVmP+NsuYp8=
+			Ylkyhv3+L4UgaUkt7waRp62cQklmB1Ts5QaQcjaNUqM=
 			</data>
 		</dict>
 		<key>Headers/DIOServiceClient.h</key>
@@ -767,7 +701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nM+4YI5oMXI45YZ9+G3PQrFBOy+4BQERPQmGgK1N524=
+			TJu63JXTBGt/T8B4OFrmD0KfpRo3h1RfPkhD9433M+g=
 			</data>
 		</dict>
 		<key>Headers/DIOVideoPlayer.h</key>

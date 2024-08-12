@@ -55,6 +55,7 @@ typedef NS_ENUM(NSInteger, DIOGender) {O, M, F};
  Add ad request data to ad request. Must be set prior to call request ad.
  */
 
+- (void)setTagId:(NSString*)tagId;
 - (void)setBcat:(NSArray<NSString*>*)bcat;
 - (void)setBadv:(NSArray<NSString*>*)badv;
 - (void)setBapp:(NSArray<NSString*>*)bapp;

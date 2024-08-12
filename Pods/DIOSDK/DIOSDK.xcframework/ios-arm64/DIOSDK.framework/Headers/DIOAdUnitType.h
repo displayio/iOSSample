@@ -15,7 +15,6 @@ static NSString* const REWARDEDVIDEO = @"rewardedvideo";
 static NSString* const INTERSCROLLER = @"interscroller";
 static NSString* const BANNER = @"banner";
 static NSString* const MEDIUMRECTANGLE = @"mediumrectangle";
-static NSString* const HEADLINE = @"headline";
 
 static NSString* const SUB_TYPE_VIDEO = @"video";
 static NSString* const SUB_TYPE_HTML = @"html";

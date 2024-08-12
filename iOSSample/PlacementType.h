@@ -16,8 +16,7 @@ typedef NS_ENUM(NSInteger, PlacementType) {
     PlacementTypeInterscrollerVideoORTB,
     PlacementTypeInterscrollerHtml,
     PlacementTypeBanner,
-    PlacementTypeMediumRectangle,
-    PlacementTypeHeadline
+    PlacementTypeMediumRectangle
 };
 
 #endif /* PlacementType_h */

@@ -22,15 +22,13 @@
     id data = @[@{@"id": @"4788", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Video
                 @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Video
                 @{@"id": @"6340", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerVideo]}, // Video
-                @{@"id": @"6340", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerVideoORTB]}, // Video oRTB
+                @{@"id": @"6340", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerVideoORTB]}, // Video oRTB in CollectionView
                 @{@"id": @"6299", @"type": [NSNumber numberWithInt:PlacementTypeBanner]},
                 @{@"id": @"6372", @"type": [NSNumber numberWithInt:PlacementTypeMediumRectangle]},
                 @{@"id": @"5427", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Html
                 @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Html
-                @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerHtml]}, // Html
-                @{@"id": @"6588", @"type": [NSNumber numberWithInt:PlacementTypeHeadline]}];
+                @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerHtml]}]; // Html
 
-//    [[DIOController sharedInstance] setLocationBasedTargeting:false];
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");
         

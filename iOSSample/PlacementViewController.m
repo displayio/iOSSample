@@ -10,7 +10,7 @@
 #import "PlacementType.h"
 #import "AdViewController.h"
 #import "InterscrollerViewController.h"
-#import "HeadlineViewController.h"
+#import "ISCollectionViewController.h"
 
 @implementation PlacementViewController
 
@@ -41,7 +41,7 @@
             break;         
             
         case PlacementTypeInterscrollerVideoORTB:
-            cell.textLabel.text = @"Interscroller Video oRTB";
+            cell.textLabel.text = @"Interscroller Video CollectionView + oRTB";
             break;
             
         case PlacementTypeInterscrollerHtml:
@@ -55,10 +55,7 @@
         case PlacementTypeMediumRectangle:
             cell.textLabel.text = @"Medium Rectangle";
             break;
-            
-        case PlacementTypeHeadline:
-            cell.textLabel.text = @"Headline";
-            break;    }
+   }
     
     return cell;
 }
@@ -70,19 +67,18 @@
     PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
     if (placementType == PlacementTypeInterscrollerVideo
-        || placementType == PlacementTypeInterscrollerHtml
-        || placementType == PlacementTypeInterscrollerVideoORTB) {
+        || placementType == PlacementTypeInterscrollerHtml) {
         InterscrollerViewController *viewController = [InterscrollerViewController new];
         viewController.placementId = placementId;
-        viewController.isORTB = placementType == PlacementTypeInterscrollerVideoORTB;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
-    } else if (placementType == PlacementTypeHeadline) {
-        HeadlineViewController *viewController = [HeadlineViewController new];
+    } else if (placementType == PlacementTypeInterscrollerVideoORTB) { 
+        ISCollectionViewController *viewController = [ISCollectionViewController new];
         viewController.placementId = placementId;
+        viewController.isORTB = YES;
 
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;

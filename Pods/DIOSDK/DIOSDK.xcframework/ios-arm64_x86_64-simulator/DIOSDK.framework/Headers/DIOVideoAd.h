@@ -10,21 +10,9 @@
 
 #import <DIOSDK/DIOAdUnit.h>
 #import <DIOSDK/DIOVideoPlayer.h>
+#import <DIOSDK/DIOEndCard.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-@interface DIOEndCard: NSObject
-
-@property (nonatomic, strong) NSString *resource;
-@property (nonatomic, strong, nullable) NSString *clickUrl;
-@property (nonatomic, strong, nullable) NSString *endCardlickTracking;
-@property (nonatomic, strong, nullable) UIImage *image;
-
-- (instancetype)initWithData:(id)data;
-- (void)preloadWithCompletionHandler:(void (^)(void))completionHandler;
-
-@end
-
 
 @interface DIOVideoAd : DIOAdUnit
 
@@ -41,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)triggerOmLoadedEvent;
 - (void)createVideoAdSession:(DIOVideoPlayer*) videoPlayer;
 - (void)replaceVideoWithEndcard;
-- (UIView*)createEndcardView;
+- (BOOL)isEndcardAvailable;
 - (id)getVideoEvents;
 
 @end

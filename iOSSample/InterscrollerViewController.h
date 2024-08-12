@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface InterscrollerViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *placementId;
-@property (nonatomic) BOOL isORTB;
 
 @end
 
