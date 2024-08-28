@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOVideoAd : DIOAdUnit
 
 @property (nonatomic, strong) id videoData;
-@property (nonatomic, strong) id videoParams;
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic) BOOL isStreaming;
 @property (nonatomic, strong) NSString *clickURL;
@@ -28,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)parseMediaFile;
 - (void)triggerOmLoadedEvent;
 - (void)createVideoAdSession:(DIOVideoPlayer*) videoPlayer;
-- (void)replaceVideoWithEndcard;
+- (void)replaceVideoWithEndcard:(UIView*)view;
 - (BOOL)isEndcardAvailable;
 - (id)getVideoEvents;
 

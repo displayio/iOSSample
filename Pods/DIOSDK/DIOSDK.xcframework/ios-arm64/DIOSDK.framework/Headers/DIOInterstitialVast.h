@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInterstitialVast : DIOVideoAd <DIOVideoPlayerDelegate>
 
+@property (nonatomic) int skippableIn;
+
 @end
 
 NS_ASSUME_NONNULL_END

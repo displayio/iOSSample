@@ -8,12 +8,10 @@
 
 #import "ISCollectionViewController.h"
 #import <DIOSDK/DIOController.h>
-#import <DIOSDK/DIOInterscrollerContainer.h>
 #import <DIOSDK/DIOInterscrollerPlacement.h>
 
 @interface ISCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (nonatomic, strong) DIOInterscrollerContainer *interscrollerContainer;
 @property (nonatomic, strong) DIOAd *ad;
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) UICollectionViewCell *adCell;   //cell to test dynamic insertion
@@ -36,27 +34,23 @@ static const int TABLE_SIZE = 25;
 - (void)viewDidAppear:(BOOL)animated {
     DIOInterscrollerPlacement* interscrollerPlacement = (DIOInterscrollerPlacement*)[[DIOController sharedInstance] placementWithId:self.placementId];
     interscrollerPlacement.showHeader = NO;
-
+    
     if (self.isORTB) {
         [interscrollerPlacement loadInterscrollerFromORTB:[self getSampleOrtbResponse]
-                                                              adReceivedHandler:^(DIOAd *ad, DIOInterscrollerContainer *container) {
-            self.interscrollerContainer = container;
+                                        adReceivedHandler:^(DIOAd *ad) {
             self.ad = ad;
             [self initCollectionView];
         }
-                                                                    noAdHandler:^(NSError *error) {
+                                              noAdHandler:^(NSError *error) {
             NSLog(@"Error loading ad");
         }];
     } else {
-        
         DIOAdRequest *request = [interscrollerPlacement newAdRequest];
-        
-        self.interscrollerContainer = [[DIOInterscrollerContainer alloc] init];
-        
-        [self.interscrollerContainer loadWithAdRequest:request completionHandler:^(DIOAd *ad){
+        [request requestAdWithAdReceivedHandler:^(DIOAd * _Nonnull ad) {
             self.ad = ad;
-        } errorHandler:^(NSError *error) {
+        } noAdHandler:^(NSError * _Nonnull error) {
             NSLog(@"%@", error);
+            
         }];
     }
 }
@@ -105,7 +99,7 @@ static const int TABLE_SIZE = 25;
         case 1: {
              self.adCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AD" forIndexPath:indexPath];
             
-            UIView *view = [self.interscrollerContainer view];
+            UIView *view = [self.ad view];
             view.translatesAutoresizingMaskIntoConstraints = NO;
 
             if (self.adCell.contentView.subviews.count > 0) [self.adCell.contentView.subviews[0] removeFromSuperview];

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *view;
 
-- (instancetype)initWithParams:(id)params;
+- (instancetype)initWithAd:(id) ad;
 
 - (void)activate;
 - (void)deactivate;

@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOInterscrollerVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOVideoPreloaderDelegate, DIOInterscrollerViewDelegate>
 
 @property (nonatomic, strong) DIOInterscrollerVideoPlayer *player;
-@property (nonatomic, weak) DIOInterscrollerView *containerView;
 
 @end
 

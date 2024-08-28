@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/DIODeviceData.h</key>
 		<data>
-		nHKatA4AUDhSfpmTplTmRb2rY24=
+		GGaR84JIxKOBskB6K/gPinB9M/0=
 		</data>
 		<key>Headers/DIOEndCard.h</key>
 		<data>
@@ -100,13 +100,9 @@
 		<data>
 		GyMbLPb/Wq9ZfR2822ldMekSh+M=
 		</data>
-		<key>Headers/DIOInterscrollerContainer.h</key>
-		<data>
-		tCnmA+p6UALf+oHK9KfQ9M8funM=
-		</data>
 		<key>Headers/DIOInterscrollerHtml.h</key>
 		<data>
-		ICY4kcE5d+BBuHPb9xeE7XO5Vd0=
+		6X9tnSDO5I+VdskTeA0J8cxeAIM=
 		</data>
 		<key>Headers/DIOInterscrollerHtmlMockPlacement.h</key>
 		<data>
@@ -118,11 +114,11 @@
 		</data>
 		<key>Headers/DIOInterscrollerPlacement.h</key>
 		<data>
-		opNo4EmJr7pgYYAZuoqBm5VmoE0=
+		Zwa1P54hAtHgmIplW0M0ARAlTf4=
 		</data>
 		<key>Headers/DIOInterscrollerVast.h</key>
 		<data>
-		mCVA1Xds705ECZsHTwFtHM6aF+M=
+		uWDMTfj0iP5W9Nq1DpCCnjgKXII=
 		</data>
 		<key>Headers/DIOInterscrollerVastMockPlacement.h</key>
 		<data>
@@ -130,7 +126,7 @@
 		</data>
 		<key>Headers/DIOInterscrollerVideoPlayer.h</key>
 		<data>
-		mneGhmnheN5hw1JPi0EJaiz2kNM=
+		IxP+Aa+phxhSYB+65Y1zrQEVk/E=
 		</data>
 		<key>Headers/DIOInterscrollerView.h</key>
 		<data>
@@ -150,11 +146,11 @@
 		</data>
 		<key>Headers/DIOInterstitialVast.h</key>
 		<data>
-		rBAg5k/barFe6P5IVwbpsqnuiE0=
+		nQvIMfXasaSomOY9FcTcrIj9VM0=
 		</data>
 		<key>Headers/DIOInterstitialVideoPlayer.h</key>
 		<data>
-		WZ2IJw30Ywt5bu/NzbC2zmEwhW0=
+		6SeBnlcSHDaWf3A6C6EwiucbdCc=
 		</data>
 		<key>Headers/DIOInterstitialViewController.h</key>
 		<data>
@@ -230,7 +226,7 @@
 		</data>
 		<key>Headers/DIOSDK.h</key>
 		<data>
-		RiKq6sMt5LreoZ6f/WZ9NXQVA30=
+		96KdVqtN0hdLMIBaZEzYI5KMPdo=
 		</data>
 		<key>Headers/DIOServiceClient.h</key>
 		<data>
@@ -238,7 +234,7 @@
 		</data>
 		<key>Headers/DIOVideoAd.h</key>
 		<data>
-		6MMDXTMQNzzfAEmI2qxgHxcGufY=
+		CSh5ARnCscJCfHmuD/2zi0TJArg=
 		</data>
 		<key>Headers/DIOVideoPlayer.h</key>
 		<data>
@@ -250,7 +246,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IQgPkY1nhJPVMCkYdZN0+5Z5Enw=
+		G2OojQ7USIdi27MvkGUPup29pbs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -393,7 +389,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4hOQQwKXlUrWco2rgKBPuNkQTo/11JxKo1XTZd3S4UE=
+			TJKnAZ9LdXUZopbm17MgRYbcl3Xk6MUTbYQ5hJdcTOg=
 			</data>
 		</dict>
 		<key>Headers/DIOEndCard.h</key>
@@ -459,18 +455,11 @@
 			L8Odr3Jr99smmF5A52+f5lkQ7D+9U+acYJOtP4eUwYc=
 			</data>
 		</dict>
-		<key>Headers/DIOInterscrollerContainer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YyEsur1io5Cd0dmEtdjMDBqjW6ApcyMZo7GsNl9ajWg=
-			</data>
-		</dict>
 		<key>Headers/DIOInterscrollerHtml.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zvaQ7Jo80bQIN9r8A0iwHSx7CSJSaXiR1zNkjzkGLYE=
+			2hs7fGhXvUmb28Ri4Cxnd8++8iOUTvWZidjl2k+Za3o=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscrollerHtmlMockPlacement.h</key>
@@ -491,14 +480,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aQfFinWOQee1o4yMQIdZLdN9/CyC10VCz7aYe0nu3lM=
+			gYK7yMBCmQlPlSVRCuaL/93dMTxbP4p0OUtOtiwFCug=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscrollerVast.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EL2WU1p1MdWYblBzfRho1oGKaF65UahsdVd9rBZvvwk=
+			HLmEqgkVNdYOb9qA+nGgvCxaKeITjBCD3PLcyBkGh7Y=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscrollerVastMockPlacement.h</key>
@@ -512,7 +501,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c1sr032gpV82hzJHEdcnV7aO8y+GSeafRUhjSsNXKDk=
+			0KkkiDzzPlXD6kFzEvPx8UeO6WnLaLsH2Le6VfExTIw=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscrollerView.h</key>
@@ -547,14 +536,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cB/Aayaz68r7mKzKpwS94kU/T61csh00fY2yVS3M1tw=
+			asf0cWEv75fJ5idt9Q9vi0Ev0qjyvcTwZGxejPqVKwI=
 			</data>
 		</dict>
 		<key>Headers/DIOInterstitialVideoPlayer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PF63zIFEiCA5/J7TSfy7nvMJmCRFXVQ8EFqwbmLkFN8=
+			6wPSAX15tVMRrxZAWJTyYpUSZxe2aT2U8kSrUNmiV98=
 			</data>
 		</dict>
 		<key>Headers/DIOInterstitialViewController.h</key>
@@ -687,7 +676,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ylkyhv3+L4UgaUkt7waRp62cQklmB1Ts5QaQcjaNUqM=
+			sozztYgc2GTzfoDCS3ufZavpMAlvO1abvxIrhYKunxQ=
 			</data>
 		</dict>
 		<key>Headers/DIOServiceClient.h</key>
@@ -701,7 +690,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TJu63JXTBGt/T8B4OFrmD0KfpRo3h1RfPkhD9433M+g=
+			2AKgzV0ZYvI2gJS+3JX6OrWeolrRuN0evN0LCwUhdM8=
 			</data>
 		</dict>
 		<key>Headers/DIOVideoPlayer.h</key>

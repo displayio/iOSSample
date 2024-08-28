@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIODeviceData : NSObject
 - (NSMutableDictionary*)body;
 - (void)updateGeo;
+- (BOOL)isGeoSupported;
 @end
 
 NS_ASSUME_NONNULL_END

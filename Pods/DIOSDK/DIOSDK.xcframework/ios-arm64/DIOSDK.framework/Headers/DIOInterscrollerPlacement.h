@@ -7,7 +7,6 @@
 //
 
 #import <DIOSDK/DIOPlacement.h>
-#import <DIOSDK/DIOInterscrollerContainer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)loadInterscrollerFromORTB:(id)ortbResp
-         adReceivedHandler:(void (^)(DIOAd*, DIOInterscrollerContainer*))adReceivedHandler
+         adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler
                noAdHandler:(void (^)(NSError*))noAdHandler;
 @end
 

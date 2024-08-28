@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInterstitialVideoPlayer : DIOVideoPlayer
 
-- (instancetype)initWithHostView:(UIView*)hostView params:(id)params;
+- (instancetype)initWithHostView:(UIView*)hostView withAd:(id)ad;
 - (void)startWithURL:(NSURL*)url;
 - (void)resume;
 - (void)didTransitionToSize:(CGSize)size;

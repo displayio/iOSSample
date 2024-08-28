@@ -9,12 +9,9 @@
 #import "InterscrollerViewController.h"
 
 #import <DIOSDK/DIOController.h>
-#import <DIOSDK/DIOInterscrollerContainer.h>
 #import <DIOSDK/DIOInterscrollerPlacement.h>
 
 @interface InterscrollerViewController ()
-
-@property (nonatomic, strong) DIOInterscrollerContainer *container;
 
 @property (nonatomic, strong) DIOAd *ad;
 
@@ -37,13 +34,11 @@
 - (void)viewDidAppear:(BOOL)animated {
     DIOInterscrollerPlacement* interscrollerPlacement = (DIOInterscrollerPlacement*)[[DIOController sharedInstance] placementWithId:self.placementId];
     DIOAdRequest *request = [interscrollerPlacement newAdRequest];
-    
-    self.container = [[DIOInterscrollerContainer alloc] init];
-    
-    [self.container loadWithAdRequest:request completionHandler:^(DIOAd *ad){
+    [request requestAdWithAdReceivedHandler:^(DIOAd * _Nonnull ad) {
         self.ad = ad;
-    } errorHandler:^(NSError *error) {
+    } noAdHandler:^(NSError * _Nonnull error) {
         NSLog(@"%@", error);
+        
     }];
 }
 
@@ -64,7 +59,7 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AD" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        UIView *view = [self.container view];
+        UIView *view = [self.ad view];
         
         if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
         [cell.contentView addSubview:view];
