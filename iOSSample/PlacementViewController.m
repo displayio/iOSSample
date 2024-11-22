@@ -11,6 +11,7 @@
 #import "AdViewController.h"
 #import "InterscrollerViewController.h"
 #import "ISCollectionViewController.h"
+#import "iOSSampleBrandio-Swift.h"
 
 @implementation PlacementViewController
 
@@ -33,7 +34,7 @@
             break;
             
         case PlacementTypeInFeed:
-            cell.textLabel.text = @"In-feed";
+            cell.textLabel.text = @"Infeed";
             break;
             
         case PlacementTypeInterscrollerVideo:
@@ -54,6 +55,13 @@
             
         case PlacementTypeMediumRectangle:
             cell.textLabel.text = @"Medium Rectangle";
+            break;
+            
+        case PlacementTypeInFeedSwiftUI:
+            cell.textLabel.text = @"Infeed (SwiftUI)";
+            break;
+        case PlacementTypeInterscrollerSwiftUI:
+            cell.textLabel.text = @"Interscroller (SwiftUI)";
             break;
    }
     
@@ -84,6 +92,12 @@
         navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self presentViewController:navigationController animated:YES completion:nil];
+    }
+    else if (placementType == PlacementTypeInFeedSwiftUI || placementType == PlacementTypeInterscrollerSwiftUI) {
+        UIViewController *feedViewController = [SwiftUIViewProvider
+                                                createFeedViewControllerWithPlacementId:placementId
+                                                adUnitType:placementType == PlacementTypeInFeedSwiftUI ? @"IF" : @"IS"];
+        [self.navigationController pushViewController:feedViewController animated:YES];
     } else {
         AdViewController *adViewController = (AdViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AdViewController"];
         adViewController.placementId = placementId;

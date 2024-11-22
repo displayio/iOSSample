@@ -27,7 +27,10 @@
                 @{@"id": @"6372", @"type": [NSNumber numberWithInt:PlacementTypeMediumRectangle]},
                 @{@"id": @"5427", @"type": [NSNumber numberWithInt:PlacementTypeInterstitial]}, // Html
                 @{@"id": @"5362", @"type": [NSNumber numberWithInt:PlacementTypeInFeed]}, // Html
-                @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerHtml]}]; // Html
+                @{@"id": @"6339", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerHtml]},// Html
+                @{@"id": @"5426", @"type": [NSNumber numberWithInt:PlacementTypeInFeedSwiftUI]}, // Video
+                @{@"id": @"6340", @"type": [NSNumber numberWithInt:PlacementTypeInterscrollerSwiftUI]}, // Video
+];
 
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
         NSLog(@"CONTROLLER INITIALIZED");
