@@ -9,6 +9,7 @@
 #import "PlacementViewController.h"
 #import "PlacementType.h"
 #import "AdViewController.h"
+#import "FeedViewController.h"
 #import "InterscrollerViewController.h"
 #import "ISCollectionViewController.h"
 #import "iOSSampleBrandio-Swift.h"
@@ -74,7 +75,15 @@
     NSString *placementId = self.data[indexPath.row][@"id"];
     PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
-    if (placementType == PlacementTypeInterscrollerVideo
+    if (placementType == PlacementTypeInFeed) {
+        FeedViewController *viewController = [FeedViewController new];
+        viewController.placementId = placementId;
+
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:navigationController animated:YES completion:nil];
+    } else if (placementType == PlacementTypeInterscrollerVideo
         || placementType == PlacementTypeInterscrollerHtml) {
         InterscrollerViewController *viewController = [InterscrollerViewController new];
         viewController.placementId = placementId;
