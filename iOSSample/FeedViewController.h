@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FeedViewController : UITableViewController
 
-@property (nonatomic, strong) DIOAd *ad;
+@property (nonatomic, strong) NSString *placementId;
 
 @end
 

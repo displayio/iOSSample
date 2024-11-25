@@ -10,93 +10,99 @@
 #import "CustomCell1.h"
 #import "CustomCell2.h"
 
+#import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOInFeedView.h>
+#import <DIOSDK/DIOInFeedPlacement.h>
 
 @interface FeedViewController ()
 
-@property (nonatomic, strong) NSArray<NSNumber*> *ids;
+@property (nonatomic, strong) NSMutableArray<DIOAd*> *ads;
 
 @end
 
 @implementation FeedViewController
 
+static const int AD_POSITION = 20;
+
 - (void)viewDidLoad {
-    [ super viewDidLoad];
+    [super viewDidLoad];
     
-    [self.tableView registerClass:[CustomCell1 class] forCellReuseIdentifier:@"IDENTIFIER1"];
-    [self.tableView registerClass:[CustomCell2 class] forCellReuseIdentifier:@"IDENTIFIER2"];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"IDENTIFIER3"];
-    
-    self.ids = @[@1, @0, @1, @0, @1, @2, @0, @1, @0, @1, @0];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"IDENTIFIER"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"AD"];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
     
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.navigationController.navigationBar.translucent = NO;
+    self.ads = [NSMutableArray new];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    DIOInFeedPlacement* interscrollerPlacement = (DIOInFeedPlacement*)[[DIOController sharedInstance] placementWithId:self.placementId];
+    
+    for (int i = 0; i<10; i++) {
+        DIOAdRequest *request = [interscrollerPlacement newAdRequest];
+        [request requestAdWithAdReceivedHandler:^(DIOAd * _Nonnull ad) {
+            [self.ads addObject:ad];
+        } noAdHandler:^(NSError * _Nonnull error) {
+            NSLog(@"%@", error);
+            
+        }];
+    }
+    
 }
 
 - (void)close:(id)sender {
-    [self.ad finish];
+    for (DIOAd* ad in _ads) {
+        if (ad) {
+            [ad finish];
+        }
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.ids count];
+    return 400;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch ([self.ids[indexPath.row] intValue])
-    {
-        case 0:
-        {
-            return [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER1" forIndexPath:indexPath];
-        }
-            
-        case 1:
-        {
-            return [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER2" forIndexPath:indexPath];
-        }
-            
-        case 2:
-        {
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER3" forIndexPath:indexPath];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            
-            UIView *view = [self.ad view];
-            
-            if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
-            [cell.contentView addSubview:view];
-            
-            [cell.contentView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
-            [cell.contentView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
-            [cell.contentView.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
-            [cell.contentView.bottomAnchor constraintEqualToAnchor:view.bottomAnchor].active = YES;
-            
-            return cell;
-        }
+    int index = (int)indexPath.row / AD_POSITION;
+    bool isAdSlot = indexPath.row  != 0 && indexPath.row % AD_POSITION == 0 && index <= [self.ads count];
+    
+    if (isAdSlot) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AD" forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        UIView *view = [[self.ads objectAtIndex:index-1] view];
+        view.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        
+        if (cell.contentView.subviews.count > 0) [cell.contentView.subviews[0] removeFromSuperview];
+        [cell.contentView addSubview:view];
+        
+        [cell.contentView.leadingAnchor constraintEqualToAnchor:view.leadingAnchor].active = YES;
+        [cell.contentView.trailingAnchor constraintEqualToAnchor:view.trailingAnchor].active = YES;
+        [cell.contentView.topAnchor constraintEqualToAnchor:view.topAnchor].active = YES;
+        [cell.contentView.bottomAnchor constraintEqualToAnchor:view.bottomAnchor].active = YES;
+        
+        return cell;
     }
     
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IDENTIFIER" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
+    
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch ([self.ids[indexPath.row] intValue])
-    {
-        case 0:
-            return 150;
-            
-        case 1:
-            return 120;
-            
-        case 2:
-            return [(DIOInFeedView*)[self.ad view] height];
-    }
+    int index = (int)indexPath.row / AD_POSITION;
+    bool isAdSlot = indexPath.row  != 0 && indexPath.row % AD_POSITION == 0 && index <= [self.ads count];
     
-    return 0;
+    if (isAdSlot) {
+        UIView *view = [[self.ads objectAtIndex:index-1] view];
+        return [(DIOInFeedView*)view height];
+    }
+    return UITableViewAutomaticDimension;
 }
 
 @end

@@ -40,14 +40,14 @@
     if ([placement isKindOfClass:[DIOInFeedPlacement class]]) {
         ((DIOInFeedPlacement*)placement).fullWidth = YES;  //enable fullWidth appearence for infeed ad unit (optional)
     }
-        
+    
     [adRequest requestAdWithAdReceivedHandler:^(DIOAd *ad) {
         NSLog(@"AD LOADED");
         
         self.ad = ad;
         self.loadButton.enabled = NO;
         self.showButton.enabled = YES;
-
+        
     } noAdHandler:^(NSError *error){
         NSLog(@"NO AD: %@", error.localizedDescription);
     }];
@@ -56,17 +56,7 @@
 - (IBAction)showPressed:(id)sender {
     self.showButton.enabled = NO;
     
-    if (self.placementType == PlacementTypeInFeed || self.placementType == PlacementTypeInterscrollerVideo) {
-        FeedViewController *viewController = [FeedViewController new];
-        viewController.ad = self.ad;
-
-        self.ad = nil;
-
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
-        [self presentViewController:navigationController animated:YES completion:nil];
-    } else if (self.placementType == PlacementTypeBanner || self.placementType == PlacementTypeMediumRectangle) {
+    if (self.placementType == PlacementTypeBanner || self.placementType == PlacementTypeMediumRectangle) {
         BannerViewController *viewController = [BannerViewController new];
         viewController.ad = self.ad;
         
