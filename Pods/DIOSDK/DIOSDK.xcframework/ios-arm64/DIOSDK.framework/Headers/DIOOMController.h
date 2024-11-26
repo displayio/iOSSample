@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import <DIOSDK/DIOVideoPlayer.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOOMController : NSObject

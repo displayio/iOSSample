@@ -9,11 +9,11 @@
 #import <DIOSDK/DIOVideoAd.h>
 #import <DIOSDK/DIOInterscrollerVideoPlayer.h>
 #import <DIOSDK/DIOInterscrollerView.h>
-#import <DIOSDK/DIOVideoPreloader.h>
+#import <DIOSDK/DIOMediaPreloader.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterscrollerVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOVideoPreloaderDelegate, DIOInterscrollerViewDelegate>
+@interface DIOInterscrollerVast : DIOVideoAd <DIOMediaPlayerDelegate, DIOMediaPreloaderDelegate, DIOInterscrollerViewDelegate>
 
 @property (nonatomic, strong) DIOInterscrollerVideoPlayer *player;
 

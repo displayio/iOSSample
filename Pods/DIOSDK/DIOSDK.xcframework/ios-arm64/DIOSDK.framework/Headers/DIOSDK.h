@@ -26,8 +26,8 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOBannerPlacement.h>
 #import <DIOSDK/DIOMediumRectanglePlacement.h>
 #import <DIOSDK/DIOOMController.h>
-#import <DIOSDK/DIOVideoPlayer.h>
-#import <DIOSDK/DIOVideoPreloader.h>
+#import <DIOSDK/DIOMediaPlayer.h>
+#import <DIOSDK/DIOMediaPreloader.h>
 #import <DIOSDK/DIOInterstitialVideoPlayer.h>
 #import <DIOSDK/DIOPlayerView.h>
 #import <DIOSDK/DIOAdRequest.h>
@@ -70,3 +70,5 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInterscrollerVastMockPlacement.h>
 #import <DIOSDK/DIOInterscrollerHtmlMockPlacement.h>
 #import <DIOSDK/DIODeviceData.h>
+#import <DIOSDK/DIOInRingPlacement.h>
+#import <DIOSDK/DIOInlinePlacement.h>

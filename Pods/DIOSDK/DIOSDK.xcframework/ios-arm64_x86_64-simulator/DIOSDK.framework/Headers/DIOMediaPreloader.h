@@ -10,16 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DIOVideoPreloaderDelegate <NSObject>
+@protocol DIOMediaPreloaderDelegate <NSObject>
 
-- (void)videoPreloadDidSucceedWithURL:(NSURL*)url;
-- (void)videoPreloadDidFailWithError:(NSError*)error;
+- (void)mediaPreloadDidSucceedWithURL:(NSURL*)url;
+- (void)mediaPreloadDidFailWithError:(NSError*)error;
 
 @end
 
-@interface DIOVideoPreloader : NSObject
+@interface DIOMediaPreloader : NSObject
 
-@property (nonatomic, weak) id<DIOVideoPreloaderDelegate> delegate;
+@property (nonatomic, weak) id<DIOMediaPreloaderDelegate> delegate;
 
 - (void)preloadWithURL:(NSURL*)url;
 

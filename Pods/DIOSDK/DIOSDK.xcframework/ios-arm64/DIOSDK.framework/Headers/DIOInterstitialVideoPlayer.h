@@ -6,11 +6,11 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <DIOSDK/DIOVideoPlayer.h>
+#import <DIOSDK/DIOMediaPlayer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterstitialVideoPlayer : DIOVideoPlayer
+@interface DIOInterstitialVideoPlayer : DIOMediaPlayer
 
 - (instancetype)initWithHostView:(UIView*)hostView withAd:(id)ad;
 - (void)startWithURL:(NSURL*)url;

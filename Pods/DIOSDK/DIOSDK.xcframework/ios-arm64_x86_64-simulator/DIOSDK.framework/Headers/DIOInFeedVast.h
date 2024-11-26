@@ -8,11 +8,11 @@
 
 #import <DIOSDK/DIOVideoAd.h>
 #import <DIOSDK/DIOInFeedVideoPlayer.h>
-#import <DIOSDK/DIOVideoPreloader.h>
+#import <DIOSDK/DIOMediaPreloader.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInFeedVast : DIOVideoAd <DIOVideoPlayerDelegate, DIOVideoPreloaderDelegate, DIOInFeedViewDelegate>
+@interface DIOInFeedVast : DIOVideoAd <DIOMediaPlayerDelegate, DIOMediaPreloaderDelegate, DIOInFeedViewDelegate>
 
 @property (nonatomic, strong) DIOInFeedVideoPlayer *player;
 @property (nonatomic) bool headlineMode;

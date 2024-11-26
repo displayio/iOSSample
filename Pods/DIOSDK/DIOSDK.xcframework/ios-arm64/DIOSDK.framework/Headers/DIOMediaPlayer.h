@@ -24,36 +24,36 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
-    DIOVideoPlayerEventStart,
-    DIOVideoPlayerEventFirstQuartile,
-    DIOVideoPlayerEventMidpoint,
-    DIOVideoPlayerEventThirdQuartile,
-    DIOVideoPlayerEventComplete,
-    DIOVideoPlayerEventMute,
-    DIOVideoPlayerEventUnmute,
-    DIOVideoPlayerEventSkip,
-    DIOVideoPlayerEventClick,
-    DIOVideoPlayerEventClose,
-    DIOVideoPlayerEventResume,
-    DIOVideoPlayerEventPause,
-    DIOVideoPlayerEventImpression
+typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
+    DIOMediaPlayerEventStart,
+    DIOMediaPlayerEventFirstQuartile,
+    DIOMediaPlayerEventMidpoint,
+    DIOMediaPlayerEventThirdQuartile,
+    DIOMediaPlayerEventComplete,
+    DIOMediaPlayerEventMute,
+    DIOMediaPlayerEventUnmute,
+    DIOMediaPlayerEventSkip,
+    DIOMediaPlayerEventClick,
+    DIOMediaPlayerEventClose,
+    DIOMediaPlayerEventResume,
+    DIOMediaPlayerEventPause,
+    DIOMediaPlayerEventImpression
 };
 
-@class DIOVideoPlayer;
+@class DIOMediaPlayer;
 
-@protocol DIOVideoPlayerDelegate <NSObject>
+@protocol DIOMediaPlayerDelegate <NSObject>
 
-- (void)videoPlayerDidFailWithError:(NSError*)error;
-- (void)videoPlayerDidCancel;
-- (void)videoPlayerReadyToPlayWithDuration:(double)duration;
-- (void)videoPlayerEvent:(DIOVideoPlayerEvent)event;
+- (void)mediaPlayerDidFailWithError:(NSError*)error;
+- (void)mediaPlayerDidCancel;
+- (void)mediaPlayerReadyToPlayWithDuration:(double)duration;
+- (void)mediaPlayerEvent:(DIOMediaPlayerEvent)event;
 
 @end
 
-@interface DIOVideoPlayer : NSObject
+@interface DIOMediaPlayer : NSObject
 
-@property (nonatomic, strong) id<DIOVideoPlayerDelegate> delegate;
+@property (nonatomic, strong) id<DIOMediaPlayerDelegate> delegate;
 
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) id eventBeacons;
@@ -76,7 +76,7 @@ typedef NS_ENUM(NSInteger, DIOVideoPlayerEvent) {
 
 - (void)loadEvents:(id)events;
 - (void)setupTimeEventsWithDuration:(CMTime)duration;
-- (void)castEvent:(DIOVideoPlayerEvent)event;
+- (void)castEvent:(DIOMediaPlayerEvent)event;
 - (void)impression;
 - (void)startWithURL:(NSURL*)url;
 - (UIView*)view;

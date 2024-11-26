@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import <DIOSDK/DIOAdUnit.h>
-#import <DIOSDK/DIOVideoPlayer.h>
+#import <DIOSDK/DIOMediaPlayer.h>
 #import <DIOSDK/DIOEndCard.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)parseMediaFile;
 - (void)triggerOmLoadedEvent;
-- (void)createVideoAdSession:(DIOVideoPlayer*) videoPlayer;
+- (void)createVideoAdSession:(DIOMediaPlayer*) videoPlayer;
 - (void)replaceVideoWithEndcard:(UIView*)view;
 - (BOOL)isEndcardAvailable;
 - (id)getVideoEvents;

@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
     DIOAdEventOnFailedToShow,
     DIOAdEventOnClicked,
     DIOAdEventOnClosed,
+    DIOAdEventOnAdStarted,
     DIOAdEventOnAdCompleted,
     DIOAdEventOnSwipedOut,
     DIOAdEventOnSnapped,

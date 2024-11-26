@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, DIOMediationPlatform) {
     DIOMediationPlatformNone = 0,
     DIOMediationPlatformAppLovin = 1,
-    DIOMediationPlatformGAM = 2
+    DIOMediationPlatformGAM = 2,
+    DIOMediationPlatformIronSource = 3
 };
 
 typedef NS_ENUM(NSInteger, DIOComplianceState) {
@@ -112,6 +113,7 @@ typedef NS_ENUM(NSInteger, DIOGender) {O, M, F};
 - (void)setContentLanguage:(NSString*)language;
 - (void)setContentEmbeddable:(NSNumber*)embeddable;
 - (void)setContentData:(NSArray<DIOContentData*>*)contentData;
+- (void)addUserEid:(NSString*)eid source:(NSString*)source atype:(NSNumber*)atype;
 
 @end
 

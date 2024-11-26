@@ -6,12 +6,12 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <DIOSDK/DIOVideoPlayer.h>
+#import <DIOSDK/DIOMediaPlayer.h>
 #import <DIOSDK/DIOPlayerView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterscrollerVideoPlayer : DIOVideoPlayer
+@interface DIOInterscrollerVideoPlayer : DIOMediaPlayer
 
 @property (nonatomic, strong) UIView *view;
 
