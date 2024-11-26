@@ -105,7 +105,7 @@
     else if (placementType == PlacementTypeInFeedSwiftUI || placementType == PlacementTypeInterscrollerSwiftUI) {
         UIViewController *feedViewController = [SwiftUIViewProvider
                                                 createFeedViewControllerWithPlacementId:placementId
-                                                adUnitType:placementType == PlacementTypeInFeedSwiftUI ? @"IF" : @"IS"];
+                                                adUnitType:placementType == PlacementTypeInFeedSwiftUI ? @"infeed" : @"interscroller"];
         [self.navigationController pushViewController:feedViewController animated:YES];
     } else {
         AdViewController *adViewController = (AdViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AdViewController"];

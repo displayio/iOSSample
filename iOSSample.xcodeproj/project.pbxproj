@@ -22,7 +22,6 @@
 		A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */; };
 		B50E0B892C64F64000EC40D3 /* ISCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */; };
 		B5A7FE7D2CF09525001E96C4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7FE7C2CF09525001E96C4 /* FeedView.swift */; };
-		B5A7FE7F2CF0A4C2001E96C4 /* SwiftUIViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7FE7E2CF0A4C2001E96C4 /* SwiftUIViewProvider.swift */; };
 		FA38F01E2C4B1C9026E6163D /* Pods_iOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592E051CE91F538F587DEFC6 /* Pods_iOSSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISCollectionViewController.m; sourceTree = "<group>"; };
 		B5A7FE7B2CF09525001E96C4 /* iOSSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5A7FE7C2CF09525001E96C4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		B5A7FE7E2CF0A4C2001E96C4 /* SwiftUIViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewProvider.swift; sourceTree = "<group>"; };
 		B909FAEF2F266E3B6867E68F /* Pods-iOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.debug.xcconfig"; path = "Target Support Files/Pods-iOSSample/Pods-iOSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +141,6 @@
 				A866C065225B881F00A42940 /* LaunchScreen.storyboard */,
 				A866C068225B881F00A42940 /* Info.plist */,
 				A866C069225B881F00A42940 /* main.m */,
-				B5A7FE7E2CF0A4C2001E96C4 /* SwiftUIViewProvider.swift */,
 				B5A7FE7C2CF09525001E96C4 /* FeedView.swift */,
 				B5A7FE7B2CF09525001E96C4 /* iOSSample-Bridging-Header.h */,
 			);
@@ -279,7 +276,6 @@
 				A89B4913231552B200405FBA /* BannerViewController.m in Sources */,
 				A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */,
 				B5A7FE7D2CF09525001E96C4 /* FeedView.swift in Sources */,
-				B5A7FE7F2CF0A4C2001E96C4 /* SwiftUIViewProvider.swift in Sources */,
 				A866C05F225B881E00A42940 /* ViewController.m in Sources */,
 				A866C06A225B881F00A42940 /* main.m in Sources */,
 				A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */,
@@ -441,7 +437,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brandio.iOSSample;
 				PRODUCT_NAME = iOSSampleBrandio;
@@ -468,7 +464,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brandio.iOSSample;
 				PRODUCT_NAME = iOSSampleBrandio;
