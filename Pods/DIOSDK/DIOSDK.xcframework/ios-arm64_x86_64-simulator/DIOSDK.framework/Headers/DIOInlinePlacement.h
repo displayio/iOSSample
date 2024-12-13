@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInlinePlacement : DIOPlacement
 
-- (void)loadInlineFromORTB:(id)ortbResp //todo implement
+- (DIOPlacement*) getSubPlacement:(NSString*)adUnit;
+
+- (void)loadInlineFromORTB:(id)ortbResp 
          adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler
                noAdHandler:(void (^)(NSError*))noAdHandler;
 @end

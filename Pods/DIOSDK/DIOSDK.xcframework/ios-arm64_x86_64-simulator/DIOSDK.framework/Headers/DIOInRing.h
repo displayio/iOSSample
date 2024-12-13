@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
 
+-(void)play;
+-(void)pause;
+
 @end
 
 NS_ASSUME_NONNULL_END

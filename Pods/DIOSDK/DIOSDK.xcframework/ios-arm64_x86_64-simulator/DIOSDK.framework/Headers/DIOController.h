@@ -70,6 +70,10 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
  @return The corresponding placement object or nil if DIOController is not initialized or if no placement object is found.
 */
 - (DIOPlacement*)placementWithId:(NSString*)placementId;
+/**
+ @return The corresponding placement object or sub placement for Intline-type placement or nil if DIOController is not initialized or if no placement object is found.
+*/
+- (DIOPlacement*)subPlacementWithId:(NSString*)placementId adUnit:(NSString*)adUnit;
 
 /**
 Stops all ads and releases the resources associated with each of them

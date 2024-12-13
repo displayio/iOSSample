@@ -72,3 +72,5 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIODeviceData.h>
 #import <DIOSDK/DIOInRingPlacement.h>
 #import <DIOSDK/DIOInlinePlacement.h>
+#import <DIOSDK/DIOInRing.h>
+#import <DIOSDK/DIOInRingAudioPlayer.h>

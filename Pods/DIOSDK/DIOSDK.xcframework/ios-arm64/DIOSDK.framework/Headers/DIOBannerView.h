@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOBannerView : UIView
 
 @property (nonatomic, weak) id<DIOBannerViewDelegate> delegate;
-@property (nonatomic) double ratio;
 
 - (void)setContainedView:(UIView*)view width:(double)width height:(double)height;
 

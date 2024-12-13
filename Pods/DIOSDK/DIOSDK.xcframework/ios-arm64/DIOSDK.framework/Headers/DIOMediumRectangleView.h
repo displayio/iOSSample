@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOMediumRectangleView : UIView
 
 @property (nonatomic, weak) id<DIOMediumRectangleViewDelegate> delegate;
-@property (nonatomic) double ratio;
 
 - (void)setContainedView:(UIView*)view width:(double)width height:(double)height;
 
