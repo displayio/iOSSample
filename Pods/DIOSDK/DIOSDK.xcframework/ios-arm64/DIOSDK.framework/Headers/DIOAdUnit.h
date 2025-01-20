@@ -24,6 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) void (^errorHandler)(NSError*);
 @property (nonatomic, strong) NSString *dioImp;
 
+@property (nonatomic) int impTrackingPercent;
+@property (nonatomic) int dwellTime;
+@property (nonatomic) int rewarded;
+@property (nonatomic) int omidStart;
+@property (nonatomic) int omidImp;
 
 - (instancetype)initWithData:(id)data;
 + (DIOAdUnit*)factoryWithData:(id)data;

@@ -32,6 +32,12 @@ typedef NS_ENUM(NSInteger, DIOErrorCode) {
     kDIOErrorUnsupportedPlatform = 11
 };
 
+typedef NS_ENUM(NSInteger, DIOOMType) {
+    DIOOMTypeNone = 0,
+    DIOOMTypeNative = 1,
+    DIOOMTypeJS = 2
+};
+
 extern NSString* const ERROR_LEVEL_WARN;
 extern NSString* const ERROR_LEVEL_FATAL;
 extern NSString* const ERROR_LEVEL_ERROR;
@@ -81,19 +87,21 @@ Stops all ads and releases the resources associated with each of them
 - (void)finishAllAds;
 
 /**
- Allows to control if location based targeting should be used (enabled by default.)
- 
- @param enabled Whether to enable or not.
+ Allows controlling if location-based targeting should be used (enabled by default).
+
+ @deprecated This method is deprecated. SDK does not request user permission for collecting geo data.
+ @param enabled Whether to enable or disable location-based targeting.
  */
-- (void)setLocationBasedTargeting:(BOOL)enabled;
+- (void)setLocationBasedTargeting:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("This method is deprecated. Use `setTargetingOptions:` instead to configure targeting options.");
+
 /**
- Allows turn off OM SDK (enabled by default.)
+ Allowsto change OM SDK session type or  turn off OM SDK (enabled by default with type Native.)
  
- @param enabled Whether to enable or not.
+ @param type OM session type.
  */
-- (void)setOpenMeasurementEnabled:(BOOL)enabled;
+- (void)setOpenMeasurementType:(DIOOMType)type;
 - (void)setCrashReportEnabled:(BOOL)enabled;
-- (BOOL)openMeasurementEnabled;
+- (DIOOMType)openMeasurementType;
 
 
 - (NSString*)appId;

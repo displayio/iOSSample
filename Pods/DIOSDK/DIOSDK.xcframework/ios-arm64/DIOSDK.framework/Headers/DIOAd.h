@@ -48,13 +48,10 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic, strong) NSString *lurl;
 @property (nonatomic, strong)  NSArray<NSString*> *adomain;
 @property (nonatomic, strong) NSString *auctionId;
-@property (nonatomic) int impTrackingPercent;
 
 @property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
 
 @property (nonatomic, strong) void (^adEventHandler)(DIOAdEvent);
-@property (nonatomic) int dwellTime;
-@property (nonatomic) int rewarded;
 
 /**
  Shows an interstitial ad.

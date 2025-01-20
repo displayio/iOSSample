@@ -5,6 +5,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInRingAudioPlayer : DIOMediaPlayer
 
+- (instancetype)initWithPrimer:(BOOL)primerMessage;
+- (void)setUsePrimer:(BOOL)usePrimerMessage;
 - (void)close;
 - (void)pause;
 - (void)play;

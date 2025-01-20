@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOInRingPlacement : DIOPlacement
 
 @property (nonatomic) BOOL isAutoRequestEnabled;
+@property (nonatomic) BOOL primerMessage;
 
 - (void)loadInRingFromORTB:(id)ortbResp
          adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler

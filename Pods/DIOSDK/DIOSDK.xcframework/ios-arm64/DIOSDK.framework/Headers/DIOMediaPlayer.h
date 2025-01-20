@@ -46,7 +46,6 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 
 - (void)mediaPlayerDidFailWithError:(NSError*)error;
 - (void)mediaPlayerDidCancel;
-- (void)mediaPlayerReadyToPlayWithDuration:(double)duration;
 - (void)mediaPlayerEvent:(DIOMediaPlayerEvent)event;
 
 @end
