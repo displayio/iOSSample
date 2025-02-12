@@ -104,7 +104,7 @@
 	</array>
 	<key>NSPrivacyTrackingDomains</key>
 	<array>
-		<string>appsrv.display.io</string>
+		<string>usertracking.appsrv.display.io</string>
 	</array>
 	<key>NSPrivacyTracking</key>
 	<true/>

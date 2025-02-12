@@ -92,7 +92,7 @@ Stops all ads and releases the resources associated with each of them
  @deprecated This method is deprecated. SDK does not request user permission for collecting geo data.
  @param enabled Whether to enable or disable location-based targeting.
  */
-- (void)setLocationBasedTargeting:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("This method is deprecated. Use `setTargetingOptions:` instead to configure targeting options.");
+- (void)setLocationBasedTargeting:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("This method is deprecated.");
 
 /**
  Allowsto change OM SDK session type or  turn off OM SDK (enabled by default with type Native.)

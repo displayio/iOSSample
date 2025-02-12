@@ -1,5 +1,5 @@
 //
-//  DIOInFeedPlacement.h
+//  DIOInRingPlacement.h
 //  DIOSDK
 //
 //  Created by Ariel Malka on 2/14/19.
