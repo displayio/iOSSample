@@ -51,7 +51,7 @@ typedef NS_ENUM(NSInteger, DIOGender) {O, M, F};
 - (void)requestAdWithAdReceivedHandler:(void (^)(DIOAd*))adReceivedHandler noAdHandler:(void (^)(NSError*))noAdHandler;
 - (void)setPlacementId:(NSString *)placementId;
 - (NSMutableDictionary*)body;
-
++ (nullable NSArray<NSNumber *> *)getGppSid;
 /**
  Add ad request data to ad request. Must be set prior to call request ad.
  */
@@ -114,6 +114,7 @@ typedef NS_ENUM(NSInteger, DIOGender) {O, M, F};
 - (void)setContentEmbeddable:(NSNumber*)embeddable;
 - (void)setContentData:(NSArray<DIOContentData*>*)contentData;
 - (void)addUserEid:(NSString*)eid source:(NSString*)source atype:(NSNumber*)atype;
+- (void)setLabel:(NSArray<NSString*>*)label;
 
 @end
 

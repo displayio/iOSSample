@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/DIOAdRequest.h</key>
 		<data>
-		FSW0SjOAVpckliZHSlucPZJONUo=
+		wZ7G+M97TZhJnhq4bj0m8BuTLf0=
 		</data>
 		<key>Headers/DIOAdUnit.h</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		888dZIV7/A5E3aiNXsGLoHQK0Xg=
+		01x8+nrgpOlChXVP/I3hVfnj5q0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -271,10 +271,6 @@
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		PR2QZRJQm3BjKVB9FBZ2oRkSalw=
-		</data>
-		<key>gradient@2x.png</key>
-		<data>
-		6cu1JxkPSJUCUJNkpewn4z1507o=
 		</data>
 		<key>mask@2x.png</key>
 		<data>
@@ -325,7 +321,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DjLCm/GAJV+VysF1JkHXGtJ8BBgM6p8H+umvuisUdh8=
+			lDvpXO7CDlWEvBSzGwFV04ysDgT8U5GTaV82zOLO+S0=
 			</data>
 		</dict>
 		<key>Headers/DIOAdUnit.h</key>
@@ -767,13 +763,6 @@
 			<key>hash2</key>
 			<data>
 			Gq3VMwn9wVsTy9NU2D4jsCm3VuSQV97eaDLFO2t9IKQ=
-			</data>
-		</dict>
-		<key>gradient@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			T2taIMx/v58/3Nsf+p7O2nlTTHFQtj5L4nJMOQDEVnc=
 			</data>
 		</dict>
 		<key>mask@2x.png</key>
