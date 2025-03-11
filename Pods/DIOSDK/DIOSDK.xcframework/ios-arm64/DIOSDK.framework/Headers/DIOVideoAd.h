@@ -10,7 +10,6 @@
 
 #import <DIOSDK/DIOAdUnit.h>
 #import <DIOSDK/DIOMediaPlayer.h>
-#import <DIOSDK/DIOEndCard.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,14 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL isStreaming;
 @property (nonatomic, strong) NSString *clickURL;
 @property (nonatomic) BOOL defaultMute;
-@property (nonatomic, strong, nullable) DIOEndCard *endCard;
 @property (nonatomic, strong) NSString* ctaText;
 
 - (void)parseMediaFile;
 - (void)triggerOmLoadedEvent;
 - (void)createVideoAdSession:(DIOMediaPlayer*) videoPlayer;
 - (void)replaceVideoWithEndcard:(UIView*)view;
-- (BOOL)isEndcardAvailable;
 - (id)getVideoEvents;
 
 @end

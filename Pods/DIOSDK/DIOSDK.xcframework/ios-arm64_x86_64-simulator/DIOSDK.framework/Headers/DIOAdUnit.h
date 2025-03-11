@@ -10,12 +10,14 @@
 
 #import <DIOSDK/DIOAd.h>
 #import <DIOSDK/DIOOMAdSession.h>
+#import <DIOSDK/DIOEndCard.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOAdUnit : DIOAd
 
 @property (nonatomic, strong) DIOOMAdSession* omAdSession;
+@property (nonatomic, strong, nullable) DIOEndCard *endCard;
 
 @property (nonatomic) BOOL wasMeasuredImpressionAttempt;
 
@@ -47,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)dismissSKOverlay;
 - (void)prepareSKStoreProductViewController:(NSString*)urlString;
 -(NSString*)clickTrackingBeacon;
+- (BOOL)isEndcardAvailable;
 
 @end
 

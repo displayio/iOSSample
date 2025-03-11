@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOEndCard : NSObject <WKNavigationDelegate, WKUIDelegate>
 
+@property (nonatomic, readonly) int width;
+@property (nonatomic, readonly) int height;
 @property (nonatomic, weak) id<DIOEndCardDelegate> delegate;
 
 
