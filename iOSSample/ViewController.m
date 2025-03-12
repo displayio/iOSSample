@@ -33,7 +33,7 @@
 ];
 
     [[DIOController sharedInstance] initializeWithAppId:appId completionHandler:^{
-        NSLog(@"CONTROLLER INITIALIZED");
+        NSLog(@"CONTROLLER INITIALIZED, DIO SDK VER: %@", [[DIOController sharedInstance] getSDKVersion]);
         
         PlacementViewController *placementViewController = [PlacementViewController new];
         placementViewController.data = data;
