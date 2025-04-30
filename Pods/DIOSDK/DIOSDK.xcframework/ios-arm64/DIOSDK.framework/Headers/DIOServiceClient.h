@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)placementsForAppId:(NSString*)appId completionHandler:(void (^)(id, NSError*))completionHandler;
 - (void)getAdForPlacementId:(NSString*)placementId data:(id)data completionHandler:(void (^)(id, NSError*))completionHandler;
-- (void)reportErrorForAppId:(NSString*)appId messageLog:(NSString*)messageLog error:(NSString*)error trace:(NSString*)trace data:(id)data level:(NSString*)level;
+- (void)reportErrorForAppId:(NSString*)appId messageLog:(NSString*)messageLog error:(NSString*)error trace:(NSString*)trace data:(id)additionalData level:(NSString*)level;
 - (void)reportWithScreenCapture:(NSString*)reportUrl data:(id)data completionHandler:(void (^)(id, NSError*))completionHandler;
 - (void)addWithKey:(NSString*)key value:(NSString*)value;
 - (void)removeWithKey:(NSString*)key;

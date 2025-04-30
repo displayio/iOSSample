@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)leave;
 - (void)reenter;
 - (void)play;
+- (void)pause;
 - (void)showProgress;
 - (void)toggleSound:(BOOL) isEnabled;
 

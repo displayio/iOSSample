@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
 
+-(int)getMediaDuration;
 -(void)play;
 -(void)pause;
 
