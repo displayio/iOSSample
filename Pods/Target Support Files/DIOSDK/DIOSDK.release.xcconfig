@@ -1,7 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/DIOSDK
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/DIOSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOSDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/DIOFacebookAdapter" "${PODS_ROOT}/DIOSDK" "${PODS_ROOT}/FBAudienceNetwork/Static" "${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOFacebookAdapter" "${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAudienceNetwork"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "AppTrackingTransparency" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMedia" -framework "Foundation" -framework "Security" -framework "StoreKit" -framework "UIKit" -weak_framework "AdSupport" -weak_framework "CFNetwork" -weak_framework "CoreMotion" -weak_framework "CoreTelephony" -weak_framework "LocalAuthentication" -weak_framework "SafariServices" -weak_framework "SystemConfiguration" -weak_framework "VideoToolbox" -weak_framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_DEVELOPMENT_LANGUAGE = ${DEVELOPMENT_LANGUAGE}

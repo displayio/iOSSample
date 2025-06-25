@@ -4,6 +4,7 @@ build/
 DerivedData/
 xcuserdata/
 *.xcworkspace
+Pods/
 
 *.dSYM/
 *.app/

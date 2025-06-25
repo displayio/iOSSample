@@ -26,12 +26,6 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 
 @class DIOAd;
 
-@protocol DIOAdClickDelegate <NSObject>
-
-- (void)onAdClicked:(DIOAd*)ad;
-
-@end
-
 @interface DIOAd : NSObject
 
 @property (nonatomic, strong) NSString *placementId;
@@ -48,8 +42,6 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 @property (nonatomic, strong) NSString *lurl;
 @property (nonatomic, strong)  NSArray<NSString*> *adomain;
 @property (nonatomic, strong) NSString *auctionId;
-
-@property (nonatomic, weak) id<DIOAdClickDelegate> clickDelegate;
 
 @property (nonatomic, strong) void (^adEventHandler)(DIOAdEvent);
 

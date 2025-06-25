@@ -74,3 +74,14 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInlinePlacement.h>
 #import <DIOSDK/DIOInRing.h>
 #import <DIOSDK/DIOInRingAudioPlayer.h>
+#import <DIOSDK/DIOMediatedAdProvider.h>
+#import <DIOSDK/DIOMediatedInterstitialAdPresenter.h>
+#import <DIOSDK/DIOMediatedAdType.h>
+#import <DIOSDK/DIOMediatedAd.h>
+#import <DIOSDK/DIOMediatedInlineAd.h>
+#import <DIOSDK/DIOMediatedInterscroller.h>
+#import <DIOSDK/DIOMediatedInfeedVideo.h>
+#import <DIOSDK/DIOMediatedInfeedHtml.h>
+#import <DIOSDK/DIOInFeedVastProtocol.h>
+#import <DIOSDK/DIOMediatedBanner.h>
+#import <DIOSDK/DIOMediatedMrect.h>

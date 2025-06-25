@@ -5,6 +5,7 @@
 //  Created by Ariel Malka on 4/8/19.
 //  Copyright © 2019 Display.io. All rights reserved.
 //
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 #import "ViewController.h"
 #import "PlacementType.h"
@@ -16,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            NSLog(@"ATT STATUS = %ld", (long)status);
+        }];
+    });
     
     NSString *appId = @"7522";
     

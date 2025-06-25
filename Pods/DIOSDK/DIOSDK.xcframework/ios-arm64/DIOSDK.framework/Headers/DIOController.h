@@ -29,7 +29,8 @@ typedef NS_ENUM(NSInteger, DIOErrorCode) {
     kDIOErrorAdUnavailable = 8,
     kDIOErrorParsing = 9,
     kDIOErrorLoadingMedia = 10,
-    kDIOErrorUnsupportedPlatform = 11
+    kDIOErrorUnsupportedPlatform = 11,
+    kDIOErrorLoadingMediationAdProvider = 12
 };
 
 typedef NS_ENUM(NSInteger, DIOOMType) {

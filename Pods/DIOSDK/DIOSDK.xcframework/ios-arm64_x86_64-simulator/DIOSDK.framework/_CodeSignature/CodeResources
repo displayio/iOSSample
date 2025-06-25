@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/DIOAd.h</key>
 		<data>
-		+RS8AGUOmRH/XOQGGKrskPZq5dk=
+		HSdfxdAS5CN/SqBntFGAXAo+IrQ=
 		</data>
 		<key>Headers/DIOAdRequest.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/DIOController.h</key>
 		<data>
-		lrzsRdjqor1UhTPz5GwEII0pmlk=
+		tmUbs30WTtIEiyWDmW1BqGebA94=
 		</data>
 		<key>Headers/DIOCustomWebView.h</key>
 		<data>
@@ -86,7 +86,11 @@
 		</data>
 		<key>Headers/DIOInFeedVast.h</key>
 		<data>
-		IKIKY1p+w7ugnG5B0u8z/ZbRFtM=
+		NsQEAqS9+6JdEvi0bo87L1pCdMo=
+		</data>
+		<key>Headers/DIOInFeedVastProtocol.h</key>
+		<data>
+		Zehq3BJnZOxuLpijOfLnNlMDwtI=
 		</data>
 		<key>Headers/DIOInFeedVideoPlayer.h</key>
 		<data>
@@ -192,6 +196,46 @@
 		<data>
 		2jnQRl82anx0YgL9fIMRwirvzrM=
 		</data>
+		<key>Headers/DIOMediatedAd.h</key>
+		<data>
+		VLXO1VWQSDk6omlHS0Xqt5QZd68=
+		</data>
+		<key>Headers/DIOMediatedAdProvider.h</key>
+		<data>
+		F8IFvIBYb74LzCtm2DrQGSidOdc=
+		</data>
+		<key>Headers/DIOMediatedAdType.h</key>
+		<data>
+		o1SZPuSHLHgqoNSPYzFBHZ1q3NA=
+		</data>
+		<key>Headers/DIOMediatedBanner.h</key>
+		<data>
+		0gxzF4pGwpfXuEELQ57pkivnkd8=
+		</data>
+		<key>Headers/DIOMediatedInfeedHtml.h</key>
+		<data>
+		Q0jdu8mt4vcB5Y9Wm0pK7+PYukw=
+		</data>
+		<key>Headers/DIOMediatedInfeedVideo.h</key>
+		<data>
+		q8UJruRCKsHcikJpdKXk+Hi1ddM=
+		</data>
+		<key>Headers/DIOMediatedInlineAd.h</key>
+		<data>
+		kk/GEm5PnQM6s66Ytzeej4Kiluk=
+		</data>
+		<key>Headers/DIOMediatedInterscroller.h</key>
+		<data>
+		ksrl8DRFKc+ylGeC9c2d0xAFo9A=
+		</data>
+		<key>Headers/DIOMediatedInterstitialAdPresenter.h</key>
+		<data>
+		Ff3dDHX6Y5TZULYBCuaspnpK4gw=
+		</data>
+		<key>Headers/DIOMediatedMrect.h</key>
+		<data>
+		CIIF9bx88cfbahfj5VV/lP0kl9M=
+		</data>
 		<key>Headers/DIOMediumRectangle.h</key>
 		<data>
 		bld08yGCnbKHqND51/MeJqLdqao=
@@ -250,7 +294,7 @@
 		</data>
 		<key>Headers/DIOSDK.h</key>
 		<data>
-		PO68LCezGebZZuX5SZ/j6RNjyVE=
+		0QNz4/8Ex4DZ/cAaafgkjwG5aq8=
 		</data>
 		<key>Headers/DIOServiceClient.h</key>
 		<data>
@@ -262,7 +306,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xdgNLsTjRmO3mh7sFIOynduI5Ng=
+		j0CyTq8cmZCWCXx4YHfH9nzLOc0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,7 +358,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v+OqVrh9Hybvfw9blZTUtCwmgc4Xsb8qaSVVFSB8huU=
+			310VOb9z6NzuEMfUBrE/g6ltFXv+GWth127SO5t9O5s=
 			</data>
 		</dict>
 		<key>Headers/DIOAdRequest.h</key>
@@ -391,7 +435,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KEfhxpw2SYIB6O2RgdJbeJPwHMeB694PIBa1uiBMCOU=
+			DkXscNYjKIkR7UNUYZeSfDPqd1QogrQC/OWJOG5ehjw=
 			</data>
 		</dict>
 		<key>Headers/DIOCustomWebView.h</key>
@@ -447,7 +491,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7itDxwnIA9P5SEm3MKu3k2I5wYc5GNC/cNqm40jB1Xw=
+			a7na2DBeaWSr4u0ciLTxWTTgTv1Jv/6ylyDlauX3I9A=
+			</data>
+		</dict>
+		<key>Headers/DIOInFeedVastProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q8KAa4R6Np/+PFDeKS47/Qk/VuhSsw71K6y8ms92UJw=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeedVideoPlayer.h</key>
@@ -632,6 +683,76 @@
 			3u8B5r6WEj3lMMa3kvFb3hvBsRrch2nCnWrS9z1GSsM=
 			</data>
 		</dict>
+		<key>Headers/DIOMediatedAd.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W+/Ne0lJAkr0+U8Qd4Q7Qdei4gArZEeca1IWj/5bD1s=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedAdProvider.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fb1LFivN2HqcBDuwNl9E6fRlLuO+cHaGEXg0PtmoEj0=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedAdType.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e3olc1pIm9yUhOeIgxH3eIx2gAlDzQRymShL3gtE6qM=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedBanner.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fwAd9jR+x/LxaZSqftcRnnN6kK+E23RnMDzN2NMgfA8=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedInfeedHtml.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bgZMOjX7lBLoSUOLZ66JRLKEUl/cNAf58FZp4AVwrI4=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedInfeedVideo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bBCYD3rKJyUT1FeO6hxpDhOd0ujEP0VJ1GEniCUER9Y=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedInlineAd.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fCn3TtPFPCHERIyN79vWSEsdxtMMSNxLOHTCGu3Tcbs=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedInterscroller.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xNy/dM69e1GQlnTptSqDHGTQCy6QGzqKCFQ4h50SFI4=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedInterstitialAdPresenter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5aHya5jfqFfOI0tZ6F0WVWoaFYIC6lck0BpRPqMk6cg=
+			</data>
+		</dict>
+		<key>Headers/DIOMediatedMrect.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			22FiQ04afNbW3HYd2kKrJSP6/ECVLoSqCBN73nGmIwQ=
+			</data>
+		</dict>
 		<key>Headers/DIOMediumRectangle.h</key>
 		<dict>
 			<key>hash2</key>
@@ -734,7 +855,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3WRquCoWC45qc05LXsaLzZr5l5g2kYtmKNBPfeNIHPc=
+			kDEWKlKHLf9oGF/EjSVLUUaPY9P/w0Mq6f1mndT+N5s=
 			</data>
 		</dict>
 		<key>Headers/DIOServiceClient.h</key>
