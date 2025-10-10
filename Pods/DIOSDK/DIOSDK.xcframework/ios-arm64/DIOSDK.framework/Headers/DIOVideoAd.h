@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL isStreaming;
 @property (nonatomic, strong) NSString *clickURL;
 @property (nonatomic) BOOL defaultMute;
+@property (nonatomic) BOOL allowPlaybackWhenOutOfView;
 @property (nonatomic, strong) NSString* ctaText;
 
 - (void)parseMediaFile;

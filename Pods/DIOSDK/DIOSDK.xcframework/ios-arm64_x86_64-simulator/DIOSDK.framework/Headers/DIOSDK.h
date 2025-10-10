@@ -80,8 +80,8 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOMediatedAd.h>
 #import <DIOSDK/DIOMediatedInlineAd.h>
 #import <DIOSDK/DIOMediatedInterscroller.h>
-#import <DIOSDK/DIOMediatedInfeedVideo.h>
 #import <DIOSDK/DIOMediatedInfeedHtml.h>
 #import <DIOSDK/DIOInFeedVastProtocol.h>
 #import <DIOSDK/DIOMediatedBanner.h>
 #import <DIOSDK/DIOMediatedMrect.h>
+#import <DIOSDK/DIOViewabilityMeasurer.h>

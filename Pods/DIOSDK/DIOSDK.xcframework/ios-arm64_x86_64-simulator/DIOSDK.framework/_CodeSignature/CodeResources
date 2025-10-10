@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/DIOAdUnit.h</key>
 		<data>
-		vDEpEL+u67nHGQEqaWco7Pdbnp4=
+		FJR0ytrklWh+17/REFz8htQChqw=
 		</data>
 		<key>Headers/DIOAdUnitType.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/DIOHtmlAd.h</key>
 		<data>
-		tpzCEFpg6aRlDN8kGt93A4Z9ATg=
+		tlrbQWeqvX+CEUbBqJvtjxQ1aY8=
 		</data>
 		<key>Headers/DIOInFeed.h</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/DIOMediaPlayer.h</key>
 		<data>
-		GNHZYs/JEaiNobUD/ePMLORrDNs=
+		X/00GMlbQRDe4ollc4tETlDdR3s=
 		</data>
 		<key>Headers/DIOMediaPreloader.h</key>
 		<data>
@@ -215,10 +215,6 @@
 		<key>Headers/DIOMediatedInfeedHtml.h</key>
 		<data>
 		Q0jdu8mt4vcB5Y9Wm0pK7+PYukw=
-		</data>
-		<key>Headers/DIOMediatedInfeedVideo.h</key>
-		<data>
-		q8UJruRCKsHcikJpdKXk+Hi1ddM=
 		</data>
 		<key>Headers/DIOMediatedInlineAd.h</key>
 		<data>
@@ -294,7 +290,7 @@
 		</data>
 		<key>Headers/DIOSDK.h</key>
 		<data>
-		0QNz4/8Ex4DZ/cAaafgkjwG5aq8=
+		U1PSmJXUa4H7VPd6hjNbzv7L2eo=
 		</data>
 		<key>Headers/DIOServiceClient.h</key>
 		<data>
@@ -302,11 +298,15 @@
 		</data>
 		<key>Headers/DIOVideoAd.h</key>
 		<data>
-		mqrtsFt95M62KOpBu8+/Fslw/ho=
+		ujC0cqo3GPmqaQWoBs4xTP+VGck=
+		</data>
+		<key>Headers/DIOViewabilityMeasurer.h</key>
+		<data>
+		J0JGzX9VlF3sVXuGBo5elnE5lrA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j0CyTq8cmZCWCXx4YHfH9nzLOc0=
+		EPKqTX8ex5BEZdc/7AHIPEqpn4g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -326,7 +326,7 @@
 		</data>
 		<key>omsdk-v1.js</key>
 		<data>
-		HLTF5+1HU2hoYquUpf0GG8R+ndA=
+		u9/mPrmzbXwip3DbLBGayyL/ONw=
 		</data>
 		<key>placing_call.mp3</key>
 		<data>
@@ -372,7 +372,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NlkcpAsy2bVyBn9HewgXMAo6nfbSwvU2fwd1+ZfxYig=
+			E1IU7npe1N02gD2NqqYEJOThUf4yNQdcWNHmiyr/ePY=
 			</data>
 		</dict>
 		<key>Headers/DIOAdUnitType.h</key>
@@ -463,7 +463,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RYyHDklRlBpejXoqufosGabp6KHlI2fEks4YzvzuWQE=
+			WgTL90TrrJPp1H+KII05GJiV/3CG3/AVSJhn2q2jIs0=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeed.h</key>
@@ -673,7 +673,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2RycsY6TCaAUdOQNJ699/dgL49vUd8OpaqDOvRe7IQU=
+			VeQxobXbF4sVODSEAKj8XSzx07lzt3qMQ40Kkin5j/w=
 			</data>
 		</dict>
 		<key>Headers/DIOMediaPreloader.h</key>
@@ -716,13 +716,6 @@
 			<key>hash2</key>
 			<data>
 			bgZMOjX7lBLoSUOLZ66JRLKEUl/cNAf58FZp4AVwrI4=
-			</data>
-		</dict>
-		<key>Headers/DIOMediatedInfeedVideo.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bBCYD3rKJyUT1FeO6hxpDhOd0ujEP0VJ1GEniCUER9Y=
 			</data>
 		</dict>
 		<key>Headers/DIOMediatedInlineAd.h</key>
@@ -855,7 +848,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kDEWKlKHLf9oGF/EjSVLUUaPY9P/w0Mq6f1mndT+N5s=
+			UdryX6OnDQa8WsQK5eRGsgY43GN2s+04dxt7RjXsO+0=
 			</data>
 		</dict>
 		<key>Headers/DIOServiceClient.h</key>
@@ -869,7 +862,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ga4kn6SjSctUjCAkwifetV2+EpnPovhhh3+WLKrTFxQ=
+			60AheWveukj8moTfw9FWlDggK7qTQhZkkDvXP3rTldA=
+			</data>
+		</dict>
+		<key>Headers/DIOViewabilityMeasurer.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v7SMna+PCZ8k9OVKfpdEeqZBqlJQwa8p30LYYao0+t4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -904,7 +904,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			En6uGQJYYOILrfT3vX3mLczuXMX2T0ywCOAksbzBdO4=
+			hFBEs2p2A14mQ+YAqpD2sSrrqhKC5ZxTD7vD9SKRvEU=
 			</data>
 		</dict>
 		<key>placing_call.mp3</key>

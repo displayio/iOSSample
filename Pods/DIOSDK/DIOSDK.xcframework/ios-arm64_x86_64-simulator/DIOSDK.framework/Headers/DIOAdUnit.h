@@ -11,6 +11,7 @@
 #import <DIOSDK/DIOAd.h>
 #import <DIOSDK/DIOOMAdSession.h>
 #import <DIOSDK/DIOEndCard.h>
+#import <DIOSDK/DIOViewabilityMeasurer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) int rewarded;
 @property (nonatomic) int omidStart;
 @property (nonatomic) int omidImp;
+@property (nonatomic, strong) DIOViewabilityMeasurer *viewabilityMeasurer;
+
 
 - (instancetype)initWithData:(id)data;
 + (DIOAdUnit*)factoryWithData:(id)data;
@@ -50,6 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)prepareSKStoreProductViewController:(NSString*)urlString;
 -(NSString*)clickTrackingBeacon;
 - (BOOL)isEndcardAvailable;
+- (NSString *)description;
 
 @end
 

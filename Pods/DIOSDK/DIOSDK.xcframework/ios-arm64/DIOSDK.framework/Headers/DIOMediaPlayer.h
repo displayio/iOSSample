@@ -69,6 +69,7 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 @property (nonatomic) double durationInSeconds;
 @property (nonatomic) BOOL muted;
 @property (nonatomic) BOOL loopVideo;
+@property (nonatomic) BOOL allowPlaybackWhenOutOfView;
 
 - (float)volumeLevel;
 - (double)duration;
@@ -79,6 +80,7 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 - (void)impression;
 - (void)startWithURL:(NSURL*)url;
 - (UIView*)view;
+- (BOOL)isInView;
 
 @end
 

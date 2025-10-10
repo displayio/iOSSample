@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)triggerSizeChangeWithWidth:(int)width height:(int)height;
 - (void)triggerErrorWithMessage:(NSString*)message action:(NSString*)action;
 - (void)createHtmlAdSessionWithFriendlyView:(UIView*) friendlyView;
-
+- (NSString *)applyContentScale:(NSString *)markup;
 
 @end
 
