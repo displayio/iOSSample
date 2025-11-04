@@ -59,7 +59,7 @@ struct FeedView: View {
         for i in 1..<11 {
             let placement = DIOController.sharedInstance().placement(withId: placementId)
             if (adUnitType.elementsEqual("interscroller")) {
-                (placement as! DIOInterscrollerPlacement).interscrollerSize = Int32(interscrollerHeight)
+//                (placement as! DIOInterscrollerPlacement).interscrollerSize = Int32(interscrollerHeight) //customize IS height if need
                 (placement as! DIOInterscrollerPlacement).interscrollerOffset = Int32(interscrollerOffset)
             }
             let adRequest = placement.newAdRequest()
@@ -90,7 +90,7 @@ struct FeedView: View {
             .first(where: { $0.isKeyWindow }) {
             
             let bottomBarHeight = window.safeAreaInsets.bottom
-            interscrollerHeight = listHeight + bottomBarHeight
+            interscrollerHeight = listHeight + bottomBarHeight //required to decrease IS height if the app uses bottom nav elements
             interscrollerOffset = UIScreen.main.bounds.height - interscrollerHeight
         }
     }

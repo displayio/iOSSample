@@ -34,6 +34,7 @@
 }
 
 - (IBAction)loadPressed:(id)sender {
+    self.loadButton.enabled = NO;
     DIOPlacement *placement = [[DIOController sharedInstance] placementWithId:self.placementId];
     DIOAdRequest *adRequest = [placement newAdRequest];
     
@@ -49,13 +50,14 @@
         self.showButton.enabled = YES;
         
     } noAdHandler:^(NSError *error){
+        self.loadButton.enabled = YES;
         NSLog(@"NO AD: %@", error.localizedDescription);
     }];
 }
 
 - (IBAction)showPressed:(id)sender {
     self.showButton.enabled = NO;
-    
+    self.loadButton.enabled = YES;
     if (self.placementType == PlacementTypeBanner || self.placementType == PlacementTypeMediumRectangle) {
         BannerViewController *viewController = [BannerViewController new];
         viewController.ad = self.ad;

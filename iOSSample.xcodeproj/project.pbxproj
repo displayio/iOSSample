@@ -15,13 +15,12 @@
 		A866C06A225B881F00A42940 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A866C069225B881F00A42940 /* main.m */; };
 		A87C4BAD227F245E00F7F906 /* PlacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAC227F245E00F7F906 /* PlacementViewController.m */; };
 		A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BAF227F388600F7F906 /* AdViewController.m */; };
-		A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB1228024D500F7F906 /* CustomCell2.m */; };
-		A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB2228024D500F7F906 /* CustomCell1.m */; };
 		A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87C4BB5228024D500F7F906 /* FeedViewController.m */; };
 		A89B4913231552B200405FBA /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89B4912231552B200405FBA /* BannerViewController.m */; };
 		A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */; };
 		B50E0B892C64F64000EC40D3 /* ISCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */; };
 		B5A7FE7D2CF09525001E96C4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7FE7C2CF09525001E96C4 /* FeedView.swift */; };
+		B5FDE7552EBA132A0077ECB0 /* PlacementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FDE7542EBA132A0077ECB0 /* PlacementCell.m */; };
 		FA38F01E2C4B1C9026E6163D /* Pods_iOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592E051CE91F538F587DEFC6 /* Pods_iOSSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +55,8 @@
 		A87C4BAC227F245E00F7F906 /* PlacementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacementViewController.m; sourceTree = "<group>"; };
 		A87C4BAE227F388600F7F906 /* AdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		A87C4BAF227F388600F7F906 /* AdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
-		A87C4BB1228024D500F7F906 /* CustomCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell2.m; sourceTree = "<group>"; };
-		A87C4BB2228024D500F7F906 /* CustomCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell1.m; sourceTree = "<group>"; };
-		A87C4BB3228024D500F7F906 /* CustomCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell1.h; sourceTree = "<group>"; };
 		A87C4BB4228024D500F7F906 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		A87C4BB5228024D500F7F906 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
-		A87C4BB6228024D600F7F906 /* CustomCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell2.h; sourceTree = "<group>"; };
 		A89B4911231552B200405FBA /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		A89B4912231552B200405FBA /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		A8E91F4523CB637E00ADCC93 /* InterscrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterscrollerViewController.h; sourceTree = "<group>"; };
@@ -70,6 +65,8 @@
 		B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISCollectionViewController.m; sourceTree = "<group>"; };
 		B5A7FE7B2CF09525001E96C4 /* iOSSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5A7FE7C2CF09525001E96C4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		B5FDE7532EBA132A0077ECB0 /* PlacementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacementCell.h; sourceTree = "<group>"; };
+		B5FDE7542EBA132A0077ECB0 /* PlacementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacementCell.m; sourceTree = "<group>"; };
 		B909FAEF2F266E3B6867E68F /* Pods-iOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.debug.xcconfig"; path = "Target Support Files/Pods-iOSSample/Pods-iOSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,10 +129,8 @@
 				A8E91F4623CB637E00ADCC93 /* InterscrollerViewController.m */,
 				B50E0B872C64F64000EC40D3 /* ISCollectionViewController.h */,
 				B50E0B882C64F64000EC40D3 /* ISCollectionViewController.m */,
-				A87C4BB3228024D500F7F906 /* CustomCell1.h */,
-				A87C4BB2228024D500F7F906 /* CustomCell1.m */,
-				A87C4BB6228024D600F7F906 /* CustomCell2.h */,
-				A87C4BB1228024D500F7F906 /* CustomCell2.m */,
+				B5FDE7532EBA132A0077ECB0 /* PlacementCell.h */,
+				B5FDE7542EBA132A0077ECB0 /* PlacementCell.m */,
 				A866C060225B881E00A42940 /* Main.storyboard */,
 				A866C063225B881F00A42940 /* Assets.xcassets */,
 				A866C065225B881F00A42940 /* LaunchScreen.storyboard */,
@@ -298,9 +293,8 @@
 				A866C05F225B881E00A42940 /* ViewController.m in Sources */,
 				A866C06A225B881F00A42940 /* main.m in Sources */,
 				A87C4BB0227F388600F7F906 /* AdViewController.m in Sources */,
-				A87C4BB8228024D600F7F906 /* CustomCell1.m in Sources */,
+				B5FDE7552EBA132A0077ECB0 /* PlacementCell.m in Sources */,
 				A866C05C225B881E00A42940 /* AppDelegate.m in Sources */,
-				A87C4BB7228024D600F7F906 /* CustomCell2.m in Sources */,
 				A8E91F4723CB637E00ADCC93 /* InterscrollerViewController.m in Sources */,
 				B50E0B892C64F64000EC40D3 /* ISCollectionViewController.m in Sources */,
 				A87C4BB9228024D600F7F906 /* FeedViewController.m in Sources */,

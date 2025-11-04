@@ -7,8 +7,6 @@
 //
 
 #import "FeedViewController.h"
-#import "CustomCell1.h"
-#import "CustomCell2.h"
 
 #import <DIOSDK/DIOController.h>
 #import <DIOSDK/DIOInFeedView.h>
