@@ -110,7 +110,7 @@ Stops all ads and releases the resources associated with each of them
 - (DIOMockAdapter*)mockAdapter;
 
 - (void)logWithMessage:(NSString*)message;
-- (void)logWithError:(NSString*)error trace:(NSArray<NSString*>*)trace data:(id)data level:(NSString*)level;
+- (void)logWithError:(NSString*)error trace:(NSArray<NSString*>*)trace level:(NSString*)level;
 
 - (void)uninitialize;
 - (void)setCourseWithURLString:(NSString*)urlString;

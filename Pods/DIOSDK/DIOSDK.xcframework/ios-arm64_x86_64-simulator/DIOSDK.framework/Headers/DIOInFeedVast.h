@@ -10,12 +10,14 @@
 #import <DIOSDK/DIOInFeedVideoPlayer.h>
 #import <DIOSDK/DIOMediaPreloader.h>
 #import <DIOSDK/DIOInFeedVastProtocol.h>
+#import <DIOSDK/DIOInFeedView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInFeedVast : DIOVideoAd <DIOMediaPlayerDelegate, DIOMediaPreloaderDelegate, DIOInFeedViewDelegate, DIOInFeedVastProtocol>
+@interface DIOInFeedVast : DIOVideoAd <DIOMediaPlayerDelegate, DIOMediaPreloaderDelegate, DIOInFeedVastProtocol>
 
 @property (nonatomic, strong) DIOInFeedVideoPlayer *player;
+@property (nonatomic, strong) DIOInFeedView *inFeedView;
 @property (nonatomic) bool headlineMode;
 @property (nonatomic) bool adLabelHide;
 @property (nonatomic) bool ctaHide;

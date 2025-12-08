@@ -8,22 +8,15 @@
 
 #import <DIOSDK/DIOMediaPlayer.h>
 #import <DIOSDK/DIOPlayerView.h>
-#import <DIOSDK/DIOInFeedView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInFeedVideoPlayer : DIOMediaPlayer
 
-@property (nonatomic, strong) DIOInFeedView *inFeedView;
-
 - (instancetype)initWithAd:(id) ad;
 
 - (void)activate;
 - (void)deactivate;
-- (void)leave;
-- (void)reenter;
-- (void)play;
-- (void)pause;
 - (void)showProgress;
 - (void)toggleSound:(BOOL) isEnabled;
 

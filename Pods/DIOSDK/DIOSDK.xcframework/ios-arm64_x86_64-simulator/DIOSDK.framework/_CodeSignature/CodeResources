@@ -40,9 +40,13 @@
 		<data>
 		nbW8Q9eGNkPjIYGMc+ms8PDFH+k=
 		</data>
+		<key>Headers/DIOBannerVideoPlayer.h</key>
+		<data>
+		SvWAbZYTF06lDD236PAAchM/5yA=
+		</data>
 		<key>Headers/DIOBannerView.h</key>
 		<data>
-		bZh3OBYbAxL5ZbczZ0Pm4UyHQKU=
+		M2BqgTxGgQtoN3yGItu+2s32oiw=
 		</data>
 		<key>Headers/DIOConsentManager.h</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Headers/DIOController.h</key>
 		<data>
-		tmUbs30WTtIEiyWDmW1BqGebA94=
+		HHsxHUF+eqaM5hKOUjdaiIukEPg=
 		</data>
 		<key>Headers/DIOCustomWebView.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Headers/DIOInFeedVast.h</key>
 		<data>
-		NsQEAqS9+6JdEvi0bo87L1pCdMo=
+		BbrJWitTj5HUBfaBk9KKUDEWUCU=
 		</data>
 		<key>Headers/DIOInFeedVastProtocol.h</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>Headers/DIOInFeedVideoPlayer.h</key>
 		<data>
-		nwhFmKU9wD7hW/FWKY8/r0dXfhs=
+		PYMIYEv1h7egSBKfTZEN358tSsw=
 		</data>
 		<key>Headers/DIOInFeedView.h</key>
 		<data>
@@ -146,7 +150,7 @@
 		</data>
 		<key>Headers/DIOInterscrollerVideoPlayer.h</key>
 		<data>
-		0h1Zp37WIH/t0kSNJ4Um8Jh/rC4=
+		X8VQuB3GCGLP8NHCV6jKKKbs13k=
 		</data>
 		<key>Headers/DIOInterscrollerView.h</key>
 		<data>
@@ -170,7 +174,7 @@
 		</data>
 		<key>Headers/DIOInterstitialVideoPlayer.h</key>
 		<data>
-		FoGmu9CbMYxbtSuoVnrH2ZvO8P8=
+		Ux+TAd4f64uPnIHoxdd60irAIrI=
 		</data>
 		<key>Headers/DIOInterstitialViewController.h</key>
 		<data>
@@ -190,7 +194,7 @@
 		</data>
 		<key>Headers/DIOMediaPlayer.h</key>
 		<data>
-		X/00GMlbQRDe4ollc4tETlDdR3s=
+		8XBvIkTCXTTS5cfKQFZk++8Y44M=
 		</data>
 		<key>Headers/DIOMediaPreloader.h</key>
 		<data>
@@ -202,11 +206,11 @@
 		</data>
 		<key>Headers/DIOMediatedAdProvider.h</key>
 		<data>
-		F8IFvIBYb74LzCtm2DrQGSidOdc=
+		Sz9+FZwZonH5VakHJb4Z8QLqOec=
 		</data>
 		<key>Headers/DIOMediatedAdType.h</key>
 		<data>
-		o1SZPuSHLHgqoNSPYzFBHZ1q3NA=
+		jL0Iad6Piy2Vs08yfnKmsefaIzc=
 		</data>
 		<key>Headers/DIOMediatedBanner.h</key>
 		<data>
@@ -294,7 +298,7 @@
 		</data>
 		<key>Headers/DIOServiceClient.h</key>
 		<data>
-		2e/WBjy42he3/ch0QfA1/oa/4nE=
+		6J2CeFZCS/rAfu16f5Nwq5sGkzQ=
 		</data>
 		<key>Headers/DIOVideoAd.h</key>
 		<data>
@@ -306,7 +310,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EPKqTX8ex5BEZdc/7AHIPEqpn4g=
+		MJGp4h2qfWQA2FfebTdBwwLRAuc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -410,11 +414,18 @@
 			aDJd114wJ3AP8hoEvgpgLMfm7a0QEVOTdJ0OUQfBKv8=
 			</data>
 		</dict>
+		<key>Headers/DIOBannerVideoPlayer.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jePviBXXia+wVBLL11RZTCD+0sSU56wrAmd6eGY7nGA=
+			</data>
+		</dict>
 		<key>Headers/DIOBannerView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dQsckuoDUZ60sk+0j6CW3cDG1cIMALU8zefroCbGDdw=
+			gNRXLk6Q/J1/t6MjlpengIB3Y1J5MjJtXzI9epNwLB8=
 			</data>
 		</dict>
 		<key>Headers/DIOConsentManager.h</key>
@@ -435,7 +446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DkXscNYjKIkR7UNUYZeSfDPqd1QogrQC/OWJOG5ehjw=
+			hxY8OUXBW0CV0VP6n3Lsl+mgQIN+t1fubmUD/SEs/7I=
 			</data>
 		</dict>
 		<key>Headers/DIOCustomWebView.h</key>
@@ -491,7 +502,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a7na2DBeaWSr4u0ciLTxWTTgTv1Jv/6ylyDlauX3I9A=
+			PZt+eV+g0QSwH3/IErO7RgM8gQXjBgS1UotY2Sgf2Z4=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeedVastProtocol.h</key>
@@ -505,7 +516,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4kjgzp4TsIoSpZDreJoRl1KjTS0o/wYs31ycIi7bVVY=
+			HWpW2TdPIoj/4XWvcz7p+dNP73Y2PecWctC9of/OuYU=
 			</data>
 		</dict>
 		<key>Headers/DIOInFeedView.h</key>
@@ -596,7 +607,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tj4JumDzEpkE+b3aujC8koX+fVYg0hE4CTytplsUSWk=
+			S3a+rKgAwNPOZSqZAwXnOHaFU5MjkmqVtjYbQR5mf1U=
 			</data>
 		</dict>
 		<key>Headers/DIOInterscrollerView.h</key>
@@ -638,7 +649,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2oL0cUSAipdC27XbI6hu597amFi+y8P6by/57YpgveQ=
+			dFPOVKEgdwzMYjT5eO70YoQpJ7hOr3iq/kKZ9PAAzXE=
 			</data>
 		</dict>
 		<key>Headers/DIOInterstitialViewController.h</key>
@@ -673,7 +684,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeQxobXbF4sVODSEAKj8XSzx07lzt3qMQ40Kkin5j/w=
+			xDkSs/mqPMHYDepR0yHL9HFz8KV25p4/3GgjKfjLExI=
 			</data>
 		</dict>
 		<key>Headers/DIOMediaPreloader.h</key>
@@ -694,14 +705,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fb1LFivN2HqcBDuwNl9E6fRlLuO+cHaGEXg0PtmoEj0=
+			Yh2Klwd63CmAsiMd/mjf1AM9AJjMR/ZDSkIubIbbQpo=
 			</data>
 		</dict>
 		<key>Headers/DIOMediatedAdType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e3olc1pIm9yUhOeIgxH3eIx2gAlDzQRymShL3gtE6qM=
+			c3gsujfQnHbXTuHRZKZpe7s8zLJBn47170jwIdiebV0=
 			</data>
 		</dict>
 		<key>Headers/DIOMediatedBanner.h</key>
@@ -855,7 +866,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q2DBNqfEyj9T1tQU68nuf1Sp8trGcVzAbU1dCES1AxQ=
+			KHnY8V+s8mwYhde8VaGHtr+LmjxGLoJoDeeyMem04b8=
 			</data>
 		</dict>
 		<key>Headers/DIOVideoAd.h</key>

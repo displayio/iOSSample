@@ -695,23 +695,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07F8544A467991398EF4DADDFBA75E76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B3F3874CCBE801D5BDC669B6A6E4886 /* FBAudienceNetwork.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FBAudienceNetwork";
-				IBSC_MODULE = FBAudienceNetwork;
-				INFOPLIST_FILE = "Target Support Files/FBAudienceNetwork/ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = FBAudienceNetwork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		17CCE5CC57C0CC870A2F989FEC302DBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D283D368D8992AC12848AC20C1C500D0 /* DIOSDK.release.xcconfig */;
@@ -823,7 +806,7 @@
 			};
 			name = Debug;
 		};
-		614D35B62F3EEC57939E45EA465E9358 /* Debug */ = {
+		676E3511B2D43C968D88FD183617A9CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC70B233BDE592CFA538B798D9BE7045 /* FBAudienceNetwork.debug.xcconfig */;
 			buildSettings = {
@@ -831,45 +814,12 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FBAudienceNetwork";
 				IBSC_MODULE = FBAudienceNetwork;
 				INFOPLIST_FILE = "Target Support Files/FBAudienceNetwork/ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = FBAudienceNetwork;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		6B3E1255295C903161A58F78804BA498 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B3F3874CCBE801D5BDC669B6A6E4886 /* FBAudienceNetwork.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7B543BC1CDCC862BAA9F072953412C1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC70B233BDE592CFA538B798D9BE7045 /* FBAudienceNetwork.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1029,6 +979,56 @@
 			};
 			name = Release;
 		};
+		CB83E7ED00623679D711741FDBE1DC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC70B233BDE592CFA538B798D9BE7045 /* FBAudienceNetwork.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E56D19DBBAD97015F52D5FC9BEDDA107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3F3874CCBE801D5BDC669B6A6E4886 /* FBAudienceNetwork.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD2175254126586D1A73F5249D26F6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3F3874CCBE801D5BDC669B6A6E4886 /* FBAudienceNetwork.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FBAudienceNetwork";
+				IBSC_MODULE = FBAudienceNetwork;
+				INFOPLIST_FILE = "Target Support Files/FBAudienceNetwork/ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = FBAudienceNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1053,8 +1053,8 @@
 		7F895D5E6C10B8A9D5D0C1ACFF8C90FC /* Build configuration list for PBXNativeTarget "FBAudienceNetwork-FBAudienceNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				614D35B62F3EEC57939E45EA465E9358 /* Debug */,
-				07F8544A467991398EF4DADDFBA75E76 /* Release */,
+				676E3511B2D43C968D88FD183617A9CA /* Debug */,
+				FD2175254126586D1A73F5249D26F6B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1062,8 +1062,8 @@
 		A3CCD0BBC0EE16283423BE4C7D883965 /* Build configuration list for PBXAggregateTarget "FBAudienceNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B543BC1CDCC862BAA9F072953412C1A /* Debug */,
-				6B3E1255295C903161A58F78804BA498 /* Release */,
+				CB83E7ED00623679D711741FDBE1DC4A /* Debug */,
+				E56D19DBBAD97015F52D5FC9BEDDA107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,16 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInterscrollerVideoPlayer : DIOMediaPlayer
 
-@property (nonatomic, strong) UIView *view;
-
 - (instancetype)initWithAd:(id) ad;
 
 - (void)activate;
 - (void)deactivate;
-- (void)leave;
-- (void)reenter;
-- (void)play;
-- (void)pause;
 - (void)toggleSound:(BOOL) isEnabled;
 - (void)updateCTAButtonText:(NSString*) text;
 

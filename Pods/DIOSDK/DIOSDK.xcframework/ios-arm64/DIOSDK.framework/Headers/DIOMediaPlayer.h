@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
+@class DIOPlayerView;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -71,6 +72,22 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 @property (nonatomic) BOOL loopVideo;
 @property (nonatomic) BOOL allowPlaybackWhenOutOfView;
 
+@property (nonatomic) BOOL started;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) BOOL alreadyPlayed;
+@property (nonatomic) BOOL hasLeft;
+
+@property (nonatomic, strong) UIView *view;
+@property (nonatomic, strong) DIOPlayerView *playerView;
+@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
+
+@property (nonatomic, strong) UIImageView *soundMaskImageView;
+@property (nonatomic, strong) UIImageView *soundImageView;
+@property (nonatomic, strong) UIImage *soundOnImage;
+@property (nonatomic, strong) UIImage *soundOffImage;
+@property (nonatomic, strong) UIView *soundGizmoView;
+@property (nonatomic) BOOL soundControl;
+
 - (float)volumeLevel;
 - (double)duration;
 
@@ -81,6 +98,23 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 - (void)startWithURL:(NSURL*)url;
 - (UIView*)view;
 - (BOOL)isInView;
+
+- (void)play;
+- (void)pause;
+- (void)leave;
+- (void)reenter;
+- (void)playerTaped;
+- (void)toggleSound:(BOOL)isEnabled;
+- (void)soundButtonTaped;
+
+- (void)registerNotificationObservers;
+- (void)cleanupObservers;
+- (void)cleanupPlayer;
+
+// Notification handlers (can be overridden by subclasses)
+- (void)itemDidFinishPlaying:(NSNotification*)notification;
+- (void)willResignActive:(NSNotification*)notification;
+- (void)didBecomeActive:(NSNotification*)notification;
 
 @end
 

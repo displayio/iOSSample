@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)didMoveToWindow;
 - (void)deviceOrientationDidChange;
+- (void)soundControlClicked:(BOOL)isEnabled;
+- (void)ctaButtonClicked;
 
 @end
 
@@ -21,8 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<DIOBannerViewDelegate> delegate;
 
-- (void)setContainedView:(UIView*)view width:(double)width height:(double)height;
-
+- (void)setContainedView:(UIView*)view withAd:(id)ad;
+- (void)updateSoundControlState:(BOOL)isEnabled;
 
 @end
 
