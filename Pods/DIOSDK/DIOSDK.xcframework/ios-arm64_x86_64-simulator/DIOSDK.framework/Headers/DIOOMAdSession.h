@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DIOOMAdSession : NSObject
 
 -(instancetype) initHtmlAdSessionWithWebView:(UIView*)webView friendlyView:(UIView*)friendlyView;
--(instancetype) initVideoAdSessionWithVideoView:(UIView*)videoView verifications:(NSArray*)verifications;
+-(instancetype) initMediaAdSessionWithVideoView:(UIView*)videoView verifications:(NSArray*)verifications;
 -(void)callVideoEvent:(DIOMediaPlayerEvent)event player:(DIOMediaPlayer*)player;
 -(void)callOmLoadedEventForVideo:(bool)isSkipable skipAfter:(double)skipAfter;
 -(void)impressionOccuredForSessionWithNotifyLoaded:(bool)notifyLoaded;

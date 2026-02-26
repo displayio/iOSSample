@@ -33,11 +33,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithPlacement:(DIOInterscrollerPlacement*)placement;
 
-- (void)setContainedView:(UIView*)view;
+- (void)setContainedView:(nullable UIView*)view;
+- (nullable UIView*)containedView;
 - (void)scaleWebviewToAd:(BOOL)scale;
-- (void)isVideo:(BOOL)isVideo;
+- (void)isDisplay:(BOOL)isDisplay;
 - (void)applyDwellWithHoldPeriod:(int) holdPeriod;
-- (void)setImressionTrackingPercent:(int) percent;
+- (void)setImpressionTrackingPercent:(int) percent;
 - (void)cancel;
 - (int)containerHeight;
 

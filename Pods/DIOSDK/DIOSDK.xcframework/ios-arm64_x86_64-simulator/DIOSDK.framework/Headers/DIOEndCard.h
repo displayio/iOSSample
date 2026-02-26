@@ -25,9 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) int width;
 @property (nonatomic, readonly) int height;
 @property (nonatomic, weak) id<DIOEndCardDelegate> delegate;
+@property (nonatomic, readonly, nullable) NSString* clickUrl;
 
-
-- (instancetype)initWithData:(id)data;
+- (instancetype)initWithData:(id)data blurred:(BOOL)blurred;
 - (void)close;
 - (void)markImpressed;
 - (UIView*)view;

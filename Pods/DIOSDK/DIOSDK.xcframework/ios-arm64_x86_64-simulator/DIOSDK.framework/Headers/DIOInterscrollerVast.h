@@ -6,16 +6,14 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <DIOSDK/DIOVideoAd.h>
+#import <DIOSDK/DIOMediaAd.h>
 #import <DIOSDK/DIOInterscrollerVideoPlayer.h>
 #import <DIOSDK/DIOInterscrollerView.h>
 #import <DIOSDK/DIOMediaPreloader.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterscrollerVast : DIOVideoAd <DIOMediaPlayerDelegate, DIOMediaPreloaderDelegate, DIOInterscrollerViewDelegate>
-
-@property (nonatomic, strong) DIOInterscrollerVideoPlayer *player;
+@interface DIOInterscrollerVast : DIOMediaAd <DIOMediaPreloaderDelegate, DIOInterscrollerViewDelegate>
 
 @end
 

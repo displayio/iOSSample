@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("RewardedVideo placement is deprecated. Use Interstitial instead.")
 @interface DIORewardedVideoPlacement : DIOPlacement
 
 @end

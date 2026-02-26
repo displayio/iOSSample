@@ -10,13 +10,28 @@
 
 static NSString* const INTERSTITIAL = @"interstitial";
 static NSString* const INFEED = @"infeed";
-static NSString* const REWARDEDVIDEO = @"rewardedvideo";
+static NSString* const REWARDEDVIDEO DEPRECATED_MSG_ATTRIBUTE("RewardedVideo is deprecated. Use Interstitial instead.") = @"rewardedvideo";
 static NSString* const INTERSCROLLER = @"interscroller";
 static NSString* const BANNER = @"banner";
-static NSString* const MEDIUMRECTANGLE = @"mediumrectangle";
+static NSString* const MEDIUMRECTANGLE DEPRECATED_MSG_ATTRIBUTE("MediumRectangle is deprecated. Use InFeed instead.") = @"mediumrectangle";
 static NSString* const INRING = @"inring";
 static NSString* const INLINE = @"inline";
 
-static NSString* const SUB_TYPE_VIDEO = @"video";
-static NSString* const SUB_TYPE_AUDIO = @"audio";
-static NSString* const SUB_TYPE_HTML = @"html";
+typedef NS_ENUM(NSInteger, DIOMarkupType) {
+    DIOMarkupTypeUnknown = 0,
+    DIOMarkupTypeBanner  = 1,
+    DIOMarkupTypeVideo   = 2,
+    DIOMarkupTypeAudio   = 3,
+    DIOMarkupTypeNative  = 4
+};
+
+static inline DIOMarkupType DIOMarkupTypeFromValue(NSInteger value) {
+    switch (value) {
+        case 1: return DIOMarkupTypeBanner;
+        case 2: return DIOMarkupTypeVideo;
+        case 3: return DIOMarkupTypeAudio;
+        case 4: return DIOMarkupTypeNative;
+        default: return DIOMarkupTypeUnknown;
+    }
+}
+

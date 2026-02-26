@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DIOAdUnitType.h"
+#import <DIOSDK/DIOAdUnitType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +30,6 @@ typedef NS_ENUM(NSInteger, DIOAdEvent) {
 
 @property (nonatomic, strong) NSString *placementId;
 @property (nonatomic, strong) NSString *requestId;
-@property (nonatomic, strong) NSString *format;
 @property (nonatomic, strong) id data;
 @property (nonatomic) BOOL loaded;
 @property (nonatomic) BOOL impressed;
@@ -90,7 +89,7 @@ Use to track events for InFeed, Banner, Medium Rectangle, Interscroller and OutS
 - (NSString*) advertiserName;
 - (NSString*) advertiserClickURL;
 - (void)updateCTAButtonText:(NSString*) text;
-- (BOOL)reportUserClick;
+- (BOOL)reportUserClick __attribute__((deprecated("This method is deprecated")));
 - (long)adTimeToLive;
 @end
 

@@ -75,11 +75,17 @@ BOOL didLayoutSubviews;
     
     NSString *typeString;
     switch (placementType) {
-        case PlacementTypeInterstitial:
-            typeString = @"Interstitial";
+        case PlacementTypeInterstitialVideo:
+            typeString = @"Interstitial Video";
             break;
-        case PlacementTypeInFeed:
-            typeString = @"Infeed";
+        case PlacementTypeInterstitialHtml:
+            typeString = @"Interstitial Display";
+            break;
+        case PlacementTypeInFeedVideo:
+            typeString = @"Infeed Video";
+            break;
+        case PlacementTypeInFeedHtml:
+            typeString = @"Infeed Display";
             break;
         case PlacementTypeInterscrollerVideo:
             typeString = @"Interscroller Video";
@@ -120,7 +126,8 @@ BOOL didLayoutSubviews;
     NSString *placementId = self.data[indexPath.row][@"id"];
     PlacementType placementType = [self.data[indexPath.row][@"type"] integerValue];
     
-    if (placementType == PlacementTypeInFeed) {
+    if (placementType == PlacementTypeInFeedVideo
+        || placementType == PlacementTypeInFeedHtml) {
         FeedViewController *viewController = [FeedViewController new];
         viewController.placementId = placementId;
 

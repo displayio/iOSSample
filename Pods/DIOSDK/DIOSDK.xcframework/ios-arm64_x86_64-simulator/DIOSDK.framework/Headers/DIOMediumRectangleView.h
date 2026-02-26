@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+DEPRECATED_MSG_ATTRIBUTE("MediumRectangle ad unit is deprecated. Use InFeed instead.")
 @interface DIOMediumRectangleView : UIView
 
 @property (nonatomic, weak) id<DIOMediumRectangleViewDelegate> delegate;

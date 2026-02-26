@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("MediumRectangle ad unit is deprecated. Use InFeed instead.")
 @interface DIOMediumRectangleHtml : DIOHtmlAd
 
 @property (nonatomic) BOOL closed;

@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("MediumRectangle ad unit is deprecated. Use InFeed instead.")
 @interface DIOMediumRectangle : NSObject
 
-+ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
++ (DIOAdUnit*)factoryWithMarkupType:(DIOMarkupType)markupType data:(id)data;
 
 @end
 

@@ -10,11 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("RewardedVideo ad unit is deprecated. Use Interstitial instead.")
 @interface DIORewardedVideo : DIOInterstitialVast
 
 - (NSString*)rewardType;
 - (int)rewardAmount;
-+ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
++ (DIOAdUnit*)factoryWithMarkupType:(DIOMarkupType)markupType data:(id)data;
 
 @end
 

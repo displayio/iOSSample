@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 
 @class DIOPlayerView;
+@class DIOSoundControl;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -53,7 +54,7 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 
 @interface DIOMediaPlayer : NSObject
 
-@property (nonatomic, strong) id<DIOMediaPlayerDelegate> delegate;
+@property (nonatomic, weak) id<DIOMediaPlayerDelegate> delegate;
 
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) id eventBeacons;
@@ -74,19 +75,17 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 
 @property (nonatomic) BOOL started;
 @property (nonatomic) BOOL finished;
+@property (nonatomic) BOOL active;
 @property (nonatomic) BOOL alreadyPlayed;
 @property (nonatomic) BOOL hasLeft;
+@property (nonatomic) BOOL hasPendingUnmute;
 
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, strong) DIOPlayerView *playerView;
-@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
+@property (nonatomic, strong) UIActivityIndicatorView *loadingIndicator;
 
-@property (nonatomic, strong) UIImageView *soundMaskImageView;
-@property (nonatomic, strong) UIImageView *soundImageView;
-@property (nonatomic, strong) UIImage *soundOnImage;
-@property (nonatomic, strong) UIImage *soundOffImage;
-@property (nonatomic, strong) UIView *soundGizmoView;
 @property (nonatomic) BOOL soundControl;
+@property (nonatomic, strong, nullable) DIOSoundControl *soundCtrl;
 
 - (float)volumeLevel;
 - (double)duration;
@@ -103,9 +102,10 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 - (void)pause;
 - (void)leave;
 - (void)reenter;
+- (void)activate;
+- (void)deactivate;
 - (void)playerTaped;
 - (void)toggleSound:(BOOL)isEnabled;
-- (void)soundButtonTaped;
 
 - (void)registerNotificationObservers;
 - (void)cleanupObservers;

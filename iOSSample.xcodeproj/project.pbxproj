@@ -270,10 +270,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOSDK/DIOSDK.framework/DIOSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAudienceNetwork/FBAudienceNetwork.framework/FBAudienceNetwork",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DIOSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAudienceNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

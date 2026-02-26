@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import <DIOSDK/DIOORTBRequest.h>
 
@@ -19,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSMutableArray<DIOAdRequest*> *adRequests;
 @property (nonatomic) BOOL showSoundControl;
+@property (nonatomic, strong) UIColor *audioAccentColor;
+@property (nonatomic, strong) UIColor *audioButtonTextColor;
 
 
 /**

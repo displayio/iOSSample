@@ -33,15 +33,15 @@
     self.appId = @"7522";
     
     self.data = @[
-        @{@"id": @"4788", @"type": @(PlacementTypeInterstitial)},             // Video
-        @{@"id": @"5426", @"type": @(PlacementTypeInFeed)},                   // Video
-        @{@"id": @"6340", @"type": @(PlacementTypeInterscrollerVideo)},       // Video
+        @{@"id": @"4788", @"type": @(PlacementTypeInterstitialVideo)},
+        @{@"id": @"5426", @"type": @(PlacementTypeInFeedVideo)},
+        @{@"id": @"6340", @"type": @(PlacementTypeInterscrollerVideo)},
         @{@"id": @"6340", @"type": @(PlacementTypeInterscrollerVideoORTB)},   // Video oRTB in CollectionView
-        @{@"id": @"6299", @"type": @(PlacementTypeBanner)},                   //Banner
-        @{@"id": @"6372", @"type": @(PlacementTypeMediumRectangle)},          //Mrect
-        @{@"id": @"5427", @"type": @(PlacementTypeInterstitial)},             // Html
-        @{@"id": @"5362", @"type": @(PlacementTypeInFeed)},                   // Html
-        @{@"id": @"6339", @"type": @(PlacementTypeInterscrollerHtml)},        // Html
+        @{@"id": @"6299", @"type": @(PlacementTypeBanner)},
+        @{@"id": @"6372", @"type": @(PlacementTypeMediumRectangle)},
+        @{@"id": @"5427", @"type": @(PlacementTypeInterstitialHtml)},
+        @{@"id": @"5362", @"type": @(PlacementTypeInFeedHtml)},
+        @{@"id": @"6339", @"type": @(PlacementTypeInterscrollerHtml)},
         @{@"id": @"5426", @"type": @(PlacementTypeInFeedSwiftUI)},            // Video
         @{@"id": @"6340", @"type": @(PlacementTypeInterscrollerSwiftUI)},     // Video
     ];

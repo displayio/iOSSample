@@ -10,15 +10,14 @@
 
 #import <DIOSDK/DIOAd.h>
 #import <DIOSDK/DIOOMAdSession.h>
-#import <DIOSDK/DIOEndCard.h>
 #import <DIOSDK/DIOViewabilityMeasurer.h>
+#import <DIOSDK/DIOAdUnitType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOAdUnit : DIOAd
 
 @property (nonatomic, strong) DIOOMAdSession* omAdSession;
-@property (nonatomic, strong, nullable) DIOEndCard *endCard;
 
 @property (nonatomic) BOOL wasMeasuredImpressionAttempt;
 

@@ -6,14 +6,12 @@
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <DIOSDK/DIOVideoAd.h>
+#import <DIOSDK/DIOMediaAd.h>
 #import <DIOSDK/DIOInterstitialVideoPlayer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterstitialVast : DIOVideoAd <DIOMediaPlayerDelegate>
-
-@property (nonatomic) int skippableIn;
+@interface DIOInterstitialVast : DIOMediaAd
 
 @end
 

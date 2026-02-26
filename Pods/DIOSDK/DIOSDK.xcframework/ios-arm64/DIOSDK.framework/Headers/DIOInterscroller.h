@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DIOInterscroller : NSObject
 
-+ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
++ (DIOAdUnit*)factoryWithMarkupType:(DIOMarkupType)markupType data:(id)data;
 
 @end
 

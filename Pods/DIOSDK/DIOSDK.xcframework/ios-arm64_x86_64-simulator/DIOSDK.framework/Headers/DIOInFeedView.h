@@ -24,6 +24,7 @@
 - (void)didMoveAway;
 - (void)didClick;
 - (void)didGoToHeadlineMode;
+- (void)soundControlClicked:(BOOL)isEnabled;
 
 @end
 

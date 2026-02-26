@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+DEPRECATED_MSG_ATTRIBUTE("MediumRectangle placement is deprecated. Use InFeed instead.")
 @interface DIOMediumRectanglePlacement : DIOPlacement
 - (void)loadMRectFromORTB:(id)ortbResp
          adReceivedHandler:(void (^)(DIOAd*))adReceivedHandler

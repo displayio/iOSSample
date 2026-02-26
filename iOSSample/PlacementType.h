@@ -10,8 +10,10 @@
 #define PlacementType_h
 
 typedef NS_ENUM(NSInteger, PlacementType) {
-    PlacementTypeInterstitial,
-    PlacementTypeInFeed,
+    PlacementTypeInterstitialVideo,
+    PlacementTypeInterstitialHtml,
+    PlacementTypeInFeedVideo,
+    PlacementTypeInFeedHtml,
     PlacementTypeInFeedSwiftUI,
     PlacementTypeInterscrollerSwiftUI,
     PlacementTypeInterscrollerVideo,

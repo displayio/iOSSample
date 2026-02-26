@@ -7,11 +7,10 @@
 //
 
 #import <DIOSDK/DIOHtmlAd.h>
-#import <DIOSDK/DIOContainer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInterstitialHtml : DIOHtmlAd <DIOContainerDelegate>
+@interface DIOInterstitialHtml : DIOHtmlAd
 
 @end
 

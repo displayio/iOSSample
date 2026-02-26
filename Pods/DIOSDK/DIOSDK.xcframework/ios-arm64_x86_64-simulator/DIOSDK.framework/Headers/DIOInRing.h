@@ -1,22 +1,22 @@
 //
-//  DIOInFeedVast.h
+//  DIOInRing.h
 //  DIOSDK
 //
 //  Created by Ariel Malka on 4/23/19.
 //  Copyright © 2019 Display.io. All rights reserved.
 //
 
-#import <DIOSDK/DIOAdUnit.h>
+#import <DIOSDK/DIOMediaAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DIOInRing : DIOAdUnit 
+@interface DIOInRing : DIOMediaAd
 
-+ (DIOAdUnit*)factoryWithSubtype:(NSString*)subtype data:(id)data;
++ (DIOAdUnit*)factoryWithMarkupType:(DIOMarkupType)markupType data:(id)data;
 
--(int)getMediaDuration;
--(void)play;
--(void)pause;
+- (int)getMediaDuration;
+- (void)play;
+- (void)pause;
 
 @end
 

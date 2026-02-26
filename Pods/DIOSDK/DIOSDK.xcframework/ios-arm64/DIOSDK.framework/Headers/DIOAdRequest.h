@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DIOAdUnit.h"
-#import "DIOAppData.h"
+#import <DIOSDK/DIOAdUnit.h>
+#import <DIOSDK/DIOAppData.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
