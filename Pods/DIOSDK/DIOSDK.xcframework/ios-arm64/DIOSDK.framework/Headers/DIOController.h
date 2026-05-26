@@ -50,6 +50,7 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
 @property (nonatomic, strong) NSMutableDictionary *placements;
 @property (nonatomic, strong) NSString *mraidJsScript;
 @property (nonatomic, strong) NSString *userSession;
+@property (nonatomic, copy, nullable) NSString *userId;
 @property (nonatomic, strong) DIODeviceData *deviceData;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 @property (nonatomic, strong) CLPlacemark *lastKnownPlacemark;
@@ -70,6 +71,16 @@ extern NSString* const ERROR_LEVEL_TRACKING_ERROR;
  @param errorHandler A block object to be executed when something is going wrong. This block takes one argument: the error.
  */
 - (void)initializeWithAppId:(NSString*)appId completionHandler:(void (^)(void))completionHandler errorHandler:(void (^)(NSError*))errorHandler;
+
+/**
+ Initializes the DIOController with an optional userId that will be forwarded
+ to /serving/init as user.id and used as the default user.id on every ad request
+ (publishers can override per-request via DIOAdRequest setUserId:).
+ */
+- (void)initializeWithAppId:(NSString*)appId
+                     userId:(nullable NSString*)userId
+          completionHandler:(void (^)(void))completionHandler
+               errorHandler:(void (^)(NSError*))errorHandler;
 
 /**
  @param placementId The placement id as defined in the Display.io control panel.
@@ -119,6 +130,7 @@ Stops all ads and releases the resources associated with each of them
 - (void)crash;
 - (NSString*)getSDKVersion;
 - (NSString*)getSDKName;
+- (NSString*)getToken;
 
 @end
 

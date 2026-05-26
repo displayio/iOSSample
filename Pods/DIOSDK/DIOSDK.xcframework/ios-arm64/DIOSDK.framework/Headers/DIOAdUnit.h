@@ -51,6 +51,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)dismissSKOverlay;
 - (void)prepareSKStoreProductViewController:(NSString*)urlString;
 -(NSString*)clickTrackingBeacon;
+- (BOOL)isAppsrvHost:(NSString *)urlString;
+- (NSArray<NSString *> *)mergedTrackers:(id)raw ownUrl:(NSString *)ownUrl;
 - (BOOL)isEndcardAvailable;
 - (NSString *)description;
 

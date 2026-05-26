@@ -61,13 +61,15 @@ Use to track events for InFeed, Banner, Medium Rectangle, Interscroller and OutS
 
 /**
  Leaves ad's current screen (for in-feed video ads only)
+ @deprecated SDK now auto-pauses when the ad's container view leaves its window.
  */
-- (void)leave;
+- (void)leave __attribute__((deprecated("SDK auto-pauses on container view leaving window")));
 
 /**
  Re-enters ad's current screen (for in-feed video ads only)
+ @deprecated SDK now auto-resumes when the ad's container view returns to its window.
  */
-- (void)reenter;
+- (void)reenter __attribute__((deprecated("SDK auto-resumes on container view returning to window")));
 
 /**
  Stops an ad and releases the resources associated with it

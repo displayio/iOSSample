@@ -8,6 +8,8 @@
 
 #define DIOAdUnitType_h
 
+#import <Foundation/Foundation.h>
+
 static NSString* const INTERSTITIAL = @"interstitial";
 static NSString* const INFEED = @"infeed";
 static NSString* const REWARDEDVIDEO DEPRECATED_MSG_ATTRIBUTE("RewardedVideo is deprecated. Use Interstitial instead.") = @"rewardedvideo";
@@ -15,7 +17,9 @@ static NSString* const INTERSCROLLER = @"interscroller";
 static NSString* const BANNER = @"banner";
 static NSString* const MEDIUMRECTANGLE DEPRECATED_MSG_ATTRIBUTE("MediumRectangle is deprecated. Use InFeed instead.") = @"mediumrectangle";
 static NSString* const INRING = @"inring";
+static NSString* const INFLOWAUDIO = @"inflowaudio";
 static NSString* const INLINE = @"inline";
+static NSString* const NATIVE = @"native";
 
 typedef NS_ENUM(NSInteger, DIOMarkupType) {
     DIOMarkupTypeUnknown = 0,

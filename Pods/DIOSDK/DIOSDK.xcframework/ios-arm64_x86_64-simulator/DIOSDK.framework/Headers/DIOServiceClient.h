@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *urlString;
 
-- (void)placementsForAppId:(NSString*)appId completionHandler:(void (^)(id, NSError*))completionHandler;
+- (void)initForAppId:(NSString*)appId completionHandler:(void (^)(id, NSError*))completionHandler;
 - (void)getAdForPlacementId:(NSString*)placementId data:(id)data completionHandler:(void (^)(id, NSError*))completionHandler;
 - (void)reportErrorForAppId:(NSString*)appId messageLog:(NSString*)messageLog error:(NSString*)error trace:(NSString*)trace level:(NSString*)level;
 - (void)reportWithScreenCapture:(NSString*)reportUrl data:(id)data completionHandler:(void (^)(id, NSError*))completionHandler;

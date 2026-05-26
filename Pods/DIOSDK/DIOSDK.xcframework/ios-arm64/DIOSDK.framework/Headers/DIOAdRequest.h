@@ -17,7 +17,8 @@ typedef NS_ENUM(NSInteger, DIOMediationPlatform) {
     DIOMediationPlatformNone = 0,
     DIOMediationPlatformAppLovin = 1,
     DIOMediationPlatformGAM = 2,
-    DIOMediationPlatformIronSource = 3
+    DIOMediationPlatformIronSource = 3,
+    DIOMediationPlatformTopOn = 4
 };
 
 typedef NS_ENUM(NSInteger, DIOComplianceState) {
@@ -76,7 +77,8 @@ typedef NS_ENUM(NSInteger, DIOGender) {O, M, F};
 - (void)setKeywords:(NSString*)keywords;
 - (void)setBidFloor:(NSNumber*)bidFloor;
 - (void)setTmax:(NSNumber*)tmax;
-- (void)setMediationPlatform:(DIOMediationPlatform) platform;
+- (void)setMediationPlatform:(DIOMediationPlatform) platform
+    __attribute__((deprecated("No longer used; will be removed in a future release.")));
 - (void)setChildCompliant:(DIOComplianceState) complianceState;
 
 - (void)setSKAdNetListMax:(NSNumber*) skadnetlistMax;

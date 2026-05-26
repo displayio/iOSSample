@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
            noAdHandler:(void (^)(NSError*))noAdHandler;
 
 - (instancetype)initWithData:(id)data;
++ (NSString *)placementType;
 - (BOOL)hasPendingAdRequests;
 - (DIOAdRequest*)lastAdRequest;
 - (DIOAdRequest*)adRequestById:(NSString*)requestId;

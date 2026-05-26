@@ -78,7 +78,10 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOInRingPlacement.h>
 #import <DIOSDK/DIOInlinePlacement.h>
 #import <DIOSDK/DIOInRing.h>
+#import <DIOSDK/DIOInFlowAudio.h>
+#import <DIOSDK/DIOInFlowAudioPlacement.h>
 #import <DIOSDK/DIOAudioPlayer.h>
+#import <DIOSDK/DIOPureAudioPlayer.h>
 #import <DIOSDK/DIOMediatedAdProvider.h>
 #import <DIOSDK/DIOMediatedInterstitialAdPresenter.h>
 #import <DIOSDK/DIOMediatedAd.h>
@@ -89,3 +92,13 @@ FOUNDATION_EXPORT const unsigned char DIOSDKVersionString[];
 #import <DIOSDK/DIOMediatedBanner.h>
 #import <DIOSDK/DIOMediatedMrect.h>
 #import <DIOSDK/DIOViewabilityMeasurer.h>
+#import <DIOSDK/CMPDataStorageUserDefaults.h>
+#import <DIOSDK/DIOAdUnitType.h>
+#import <DIOSDK/DIOAppData.h>
+#import <DIOSDK/DIOFullscreenAudioCoverLayout.h>
+#import <DIOSDK/DIOOMAdSession.h>
+#import <DIOSDK/DIOORTBRequest.h>
+#import <DIOSDK/DIONativeAdInterface.h>
+#import <DIOSDK/DIONativeMediaView.h>
+#import <DIOSDK/DIONativePlacement.h>
+#import <DIOSDK/DIONativePlacementAssetParams.h>

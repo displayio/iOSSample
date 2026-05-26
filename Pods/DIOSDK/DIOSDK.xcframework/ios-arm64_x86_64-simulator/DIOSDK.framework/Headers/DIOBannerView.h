@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)soundControlClicked:(BOOL)isEnabled;
 - (void)ctaButtonClicked;
 
+@optional
+- (void)didMoveOutOfWindow;
+
 @end
 
 @interface DIOBannerView : UIView

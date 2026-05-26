@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype) initHtmlAdSessionWithWebView:(UIView*)webView friendlyView:(UIView*)friendlyView;
 -(instancetype) initMediaAdSessionWithVideoView:(UIView*)videoView verifications:(NSArray*)verifications;
+-(nullable instancetype) initNativeDisplayAdSessionWithRootView:(UIView*)rootView verifications:(nullable NSArray*)verifications;
 -(void)callVideoEvent:(DIOMediaPlayerEvent)event player:(DIOMediaPlayer*)player;
 -(void)callOmLoadedEventForVideo:(bool)isSkipable skipAfter:(double)skipAfter;
 -(void)impressionOccuredForSessionWithNotifyLoaded:(bool)notifyLoaded;

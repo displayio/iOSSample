@@ -4,3 +4,8 @@ framework module DIOSDK {
 
   module * { export * }
 }
+
+module DIOSDK.Swift {
+  header "DIOSDK-Swift.h"
+  requires objc
+}

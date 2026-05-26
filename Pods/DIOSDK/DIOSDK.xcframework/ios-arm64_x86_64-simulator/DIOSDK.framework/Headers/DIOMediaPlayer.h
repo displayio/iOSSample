@@ -56,8 +56,7 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 
 @property (nonatomic, weak) id<DIOMediaPlayerDelegate> delegate;
 
-@property (nonatomic, strong) AVPlayer *player;
-@property (nonatomic, strong) id eventBeacons;
+@property (nonatomic, strong) AVPlayer *avPlayer;
 
 /*
  * https://developer.apple.com/documentation/avfoundation/media_assets_playback_and_editing/observing_the_playback_time?language=objc
@@ -70,7 +69,7 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 
 @property (nonatomic) double durationInSeconds;
 @property (nonatomic) BOOL muted;
-@property (nonatomic) BOOL loopVideo;
+@property (nonatomic) BOOL loopMedia;
 @property (nonatomic) BOOL allowPlaybackWhenOutOfView;
 
 @property (nonatomic) BOOL started;
@@ -78,13 +77,12 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 @property (nonatomic) BOOL active;
 @property (nonatomic) BOOL alreadyPlayed;
 @property (nonatomic) BOOL hasLeft;
-@property (nonatomic) BOOL hasPendingUnmute;
+@property (nonatomic) BOOL errorReported;
 
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, strong) DIOPlayerView *playerView;
-@property (nonatomic, strong) UIActivityIndicatorView *loadingIndicator;
 
-@property (nonatomic) BOOL soundControl;
+@property (nonatomic) BOOL showSoundControl;
 @property (nonatomic, strong, nullable) DIOSoundControl *soundCtrl;
 
 - (float)volumeLevel;
@@ -98,6 +96,7 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 - (UIView*)view;
 - (BOOL)isInView;
 
+- (BOOL)isPlayError;
 - (void)play;
 - (void)pause;
 - (void)leave;
@@ -107,9 +106,11 @@ typedef NS_ENUM(NSInteger, DIOMediaPlayerEvent) {
 - (void)playerTaped;
 - (void)toggleSound:(BOOL)isEnabled;
 
+- (void)attachSoundControlToView:(UIView *)hostView;
+
 - (void)registerNotificationObservers;
 - (void)cleanupObservers;
-- (void)cleanupPlayer;
+- (void)close;
 
 // Notification handlers (can be overridden by subclasses)
 - (void)itemDidFinishPlaying:(NSNotification*)notification;
