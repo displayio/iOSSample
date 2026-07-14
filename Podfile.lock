@@ -1,10 +1,14 @@
 PODS:
-  - DIOSDK (4.7.1):
+  - DIOSDK (4.7.5):
+    - DIOSDK/Full (= 4.7.5)
+  - DIOSDK/Core (4.7.5)
+  - DIOSDK/Full (4.7.5):
+    - DIOSDK/Core
     - FBAudienceNetwork
   - FBAudienceNetwork (6.21.1)
 
 DEPENDENCIES:
-  - DIOSDK (= 4.7.1)
+  - DIOSDK (= 4.7.5)
 
 SPEC REPOS:
   trunk:
@@ -12,9 +16,9 @@ SPEC REPOS:
     - FBAudienceNetwork
 
 SPEC CHECKSUMS:
-  DIOSDK: 8059534eebed98d4bd3725a6255472d3535a85f1
+  DIOSDK: e91127144a05b10eda631eb4b1b1e05dff226293
   FBAudienceNetwork: 85d18a65c9e35bc426bd4664cf3ae2a1172d7b60
 
-PODFILE CHECKSUM: 662f20005c98bc66c056f805b611dffc2f32fb4b
+PODFILE CHECKSUM: ac8db0c702c2d9e33e98ca42a3d46e54956fa2fa
 
 COCOAPODS: 1.16.2

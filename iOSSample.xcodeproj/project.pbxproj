@@ -163,7 +163,7 @@
 				A866C055225B881E00A42940 /* Resources */,
 				A866C075225B8A8500A42940 /* Embed Frameworks */,
 				EEB9281A50340E32E2D602F4 /* [CP] Embed Pods Frameworks */,
-				EB5C1F7C8A51A0B9C767F5BE /* [CP] Copy Pods Resources */,
+				FC14CE446BB1CD7C8890E797 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +244,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB5C1F7C8A51A0B9C767F5BE /* [CP] Copy Pods Resources */ = {
+		EEB9281A50340E32E2D602F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOSDK/Core/DIOSDK.framework/DIOSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAudienceNetwork/FBAudienceNetwork.framework/FBAudienceNetwork",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DIOSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAudienceNetwork.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC14CE446BB1CD7C8890E797 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,26 +280,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEB9281A50340E32E2D602F4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/DIOSDK/DIOSDK.framework/DIOSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAudienceNetwork/FBAudienceNetwork.framework/FBAudienceNetwork",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DIOSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAudienceNetwork.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSSample/Pods-iOSSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
